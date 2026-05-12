@@ -2,6 +2,7 @@
 
 <!-- vale Google.Colons = NO -->
 <!-- vale Google.Parens = NO -->
+<!-- vale ai-tells-experimental.VocabularySwap = NO -->
 The `ai-tells-experimental` style contains script-based rules that use Tengo to detect structural patterns beyond Vale's regular expression rules. These rules analyze document-level properties like sentence-length distribution and paragraph uniformity.
 
 All experimental rules default to `warning` level. They ship as a separate `ai-tells-experimental.zip` release artifact (which includes the `config/scripts/` directory the Tengo rules need). Download it and unzip into your `StylesPath`, then opt in:
@@ -176,9 +177,9 @@ A capitalization rule that flags markdown headings using Title Case instead of s
 
 - Wikipedia "Signs of AI writing": "AI chatbots strongly tend to capitalize all main words in section headings."
 
-**How it works:** Uses Vale's built-in `capitalization` extension with `match: $sentence` and `scope: heading`. Includes an exceptions list for common acronyms (API, SQL, etc.) and proper nouns (GitHub, Docker, PostgreSQL, etc.).
+**How it works:** Uses Vale's built-in `capitalization` extension. The two relevant settings are `match: $sentence` and `scope: heading`. Acronyms like API and SQL, alongside proper nouns like GitHub, Docker, and PostgreSQL, live in a built-in exceptions list that the rule consults before flagging anything.
 
-**Adding project-specific exceptions:** Users can add their own exceptions (product names, domain terms) without modifying the rule. Add terms to your project's `accept.txt` vocabulary file:
+**Adding project-specific exceptions:** Users can add their own exceptions (product names, domain terms) without modifying the rule. Drop the relevant entries into your project's `accept.txt` vocabulary file:
 
 ```text
 # styles/config/vocabularies/MyProject/accept.txt

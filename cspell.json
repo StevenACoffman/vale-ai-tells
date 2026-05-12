@@ -10,7 +10,7 @@
   ],
   "overrides": [
     {
-      "filename": "styles/**/*.yml",
+      "filename": ["styles/**/*.yml", "styles/config/vocabularies/**/accept.txt"],
       "ignoreRegExpList": [
         "/\\[[A-Z][a-z]\\]\\w+/g"
       ]

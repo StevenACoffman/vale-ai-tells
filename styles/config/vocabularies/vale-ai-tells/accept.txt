@@ -7,6 +7,7 @@ BLEU
 GPT
 ICSE
 LLM
+LLMs
 MDX
 MIT
 MSR
@@ -21,17 +22,37 @@ arXiv
 # Technical terms
 allowlist
 burstiness
+chatbots
+coreference
 gitmoji
+H_max
+Jaccard
 lookups
+lowercased
 [Mm]etacommentary
+[Nn]ominalizations
 proselint
+rumdl
+cspell
 stylometric
 substring
+templated
 [Tt]engo
+[Tt]ricolon
+[Tt]ricolons
+tokenizer
+whitepaper
 yamllint
+
+# Author and tool names
+Gorrie
+Kassorla
+Pangram
+Reinhart
 
 # Common words
 repo
+[Tt]odo
 
 # File names
 Justfile
