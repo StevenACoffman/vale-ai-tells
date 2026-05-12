@@ -7,6 +7,54 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-05-11
+
+<!-- vale off -->
+
+### Added
+
+Seven new rules in the `ai-tells-commits` style, bringing the total to 13.
+
+- **CommitTestEnumeration**: Flags scoreboard-style test reporting in commit
+  messages such as enumerated pass and fail counts, percentage coverage
+  figures, and the catch-all phrases about every test passing or being green.
+  Commits should link the CI run instead of restating raw numbers.
+- **CommitAttribution**: Flags agent marketing trailers including robot-emoji
+  "Generated with" banners, "Co-Authored-By" lines naming Claude, Copilot, or
+  Cursor, and the Anthropic noreply email signature. Kernel-style
+  `Assisted-by: AGENT:VERSION` trailers remain allowed.
+- **CommitPastTense**: Flags past-tense and present-participle verbs on the
+  subject line ("Added X," "Fixed Y," "Refactoring Z"). Uses `\A` with
+  `scope: raw` so body paragraphs that happen to start with one of these
+  verbs are not flagged.
+- **CommitChangelogStyle**: Flags Keep-a-Changelog headings inside a single
+  commit body (`## Added`, `### Fixed`, `### Breaking Changes`, etc.).
+  CHANGELOG.md is the place for that format; commit bodies should explain
+  in prose what changed and why.
+- **CommitMarketingAdjectives**: Flags marketing intensifiers in commit
+  messages ("production-ready," "enterprise-grade," "mission-critical,"
+  "battle-tested," "bulletproof"). Four hyphenated tokens already covered
+  by `OverusedVocabulary` and `AICompoundPhrases` are intentionally omitted.
+- **CommitUnquantifiedClaims** (warning): Flags performance, size, and speed
+  claims used without numbers ("significantly faster," "much smaller,"
+  "blazingly fast"). Ships at warning rather than error so legitimate
+  commits with obvious gains are not blocked.
+- **CommitFileListing** (warning): Flags commit bodies that enumerate three
+  or more consecutive bullets which look like file paths. The diff already
+  shows which files changed; the body should describe what changed about
+  the code.
+
+<!-- vale on -->
+
+### Fixed
+
+- **Lint**: Cleaned up pre-existing `Vale.Spelling` and `Google.Semicolons`
+  noise by extending the project vocabulary with legitimate technical terms
+  and author names, suppressing the leaked `Google.Semicolons` override on
+  synced style packages via the `styles/**` section of `.vale.ini`, and
+  reworking one paragraph in `EXPERIMENTAL.md` so it stops tripping the
+  experimental sentence-length-variance rule.
+
 ## [1.6.3] - 2026-03-25
 
 <!-- vale off -->
@@ -509,6 +557,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.7.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.3...v1.7.0
 [1.6.3]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.0...v1.6.1
