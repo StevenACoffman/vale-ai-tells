@@ -42,7 +42,7 @@ AI-generated commit messages carry the same fingerprints as AI-generated prose, 
 <!-- vale ai-tells.OverusedVocabulary = YES -->
 <!-- vale ai-tells.AIAdjectiveNounPairs = YES -->
 
-The `ai-tells-commits` style provides 6 rules purpose-built for commit messages, separate from the prose rules so you can opt in without pulling them into your docs.
+The `ai-tells-commits` style provides 13 rules purpose-built for commit messages, separate from the prose rules so you can opt in without pulling them into your docs.
 
 ### Commit message rules
 
@@ -56,6 +56,13 @@ The `ai-tells-commits` style provides 6 rules purpose-built for commit messages,
 | `CommitHedging` | Inappropriate uncertainty for changes already made: "This should fix...," "This may help...," "seems to resolve...," etc. |
 | `CommitEmoji` | Systematic gitmoji prefixes (✨🐛♻️📝⚡✅🔧🔥🚀 etc.) — emoji commit adoption has jumped from ~25% to ~75% of organizations, driven almost entirely by AI tools. |
 | `CommitOverexplanation` | Filler that pads without informing: "As part of this change...," "The purpose of this commit...," "Summary of changes," "The following changes were made," etc. |
+| `CommitTestEnumeration` | Scoreboard-style test reporting: "All 47 tests passing," "Tests: 12 passed, 0 failed," "Coverage: 87%," "100% test coverage," etc. Link the CI run instead. |
+| `CommitAttribution` | Agent marketing trailers: robot-emoji "Generated with" lines, "Co-Authored-By: Claude/Copilot/Cursor," "<noreply@anthropic.com>," etc. Use kernel-style `Assisted-by: AGENT:VERSION` instead. |
+| `CommitPastTense` | Past-tense or present-participle verbs on the subject line: "Added X," "Fixed Y," "Refactoring Z." Use imperative mood. |
+| `CommitChangelogStyle` | Keep-a-Changelog-style headings inside a single commit body: `## Added`, `### Fixed`, `### Breaking Changes`, etc. CHANGELOG.md is the place for that format. |
+| `CommitMarketingAdjectives` | Marketing intensifiers: "production-ready," "enterprise-grade," "mission-critical," "battle-tested," "bulletproof," etc. State what changed and why. |
+| `CommitUnquantifiedClaims` | Unquantified performance, size, or speed claims: "significantly faster," "much smaller," "blazingly fast," etc. Currently at `warning` level. Back claims with numbers. |
+| `CommitFileListing` | Three or more consecutive bullets that look like file paths. Currently at `warning` level. The diff already shows files changed; describe what changed about the code. |
 
 <!-- vale on -->
 
