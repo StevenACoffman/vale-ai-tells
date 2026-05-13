@@ -93,3 +93,59 @@ tokens:
 
   # Three prepositional phrase chains: "with X, through Y, and for Z" style
   - "(?:with|through|by|for|via|within) [^,]+, (?:with|through|by|for|via|within) [^,]+, (?:and )?(?:with|through|by|for|via|within) [^.!?]+"
+
+  # === Adverb anaphora ===
+
+  # "Always X. Always Y." pattern (2+ consecutive)
+  - "Always [^.]+\\. Always [^.]+\\."
+
+  # "always X, always Y." pattern (2+ comma-separated)
+  - "[Aa]lways [^,]+, always [^.!?]+"
+
+  # "Never X. Never Y." pattern (2+ consecutive)
+  - "Never [^.]+\\. Never [^.]+\\."
+
+  # "never X, never Y." pattern (2+ comma-separated)
+  - "[Nn]ever [^,]+, never [^.!?]+"
+
+  # "Fully X. Fully Y." pattern (2+ consecutive)
+  - "Fully [^.]+\\. Fully [^.]+\\."
+
+  # "fully X, fully Y." pattern (2+ comma-separated)
+  - "[Ff]ully [^,]+, fully [^.!?]+"
+
+  # "Completely X. Completely Y." pattern (2+ consecutive)
+  - "Completely [^.]+\\. Completely [^.]+\\."
+
+  # "completely X, completely Y." pattern (2+ comma-separated)
+  - "[Cc]ompletely [^,]+, completely [^.!?]+"
+
+  # "Entirely X. Entirely Y." pattern (2+ consecutive)
+  - "Entirely [^.]+\\. Entirely [^.]+\\."
+
+  # "entirely X, entirely Y." pattern (2+ comma-separated)
+  - "[Ee]ntirely [^,]+, entirely [^.!?]+"
+
+  # "Truly X. Truly Y." pattern (2+ consecutive)
+  - "Truly [^.]+\\. Truly [^.]+\\."
+
+  # "truly X, truly Y." pattern (2+ comma-separated)
+  - "[Tt]ruly [^,]+, truly [^.!?]+"
+
+  # "Purely X. Purely Y." pattern (2+ consecutive)
+  - "Purely [^.]+\\. Purely [^.]+\\."
+
+  # "purely X, purely Y." pattern (2+ comma-separated)
+  - "[Pp]urely [^,]+, purely [^.!?]+"
+
+  # "Only X. Only Y." pattern (2+ consecutive)
+  - "Only [^.]+\\. Only [^.]+\\."
+
+  # "only X, only Y." pattern (2+ comma-separated)
+  - "[Oo]nly [^,]+, only [^.!?]+"
+
+  # "Just X. Just Y." pattern (2+ consecutive)
+  - "Just [^.]+\\. Just [^.]+\\."
+
+  # "just X, just Y." pattern (2+ comma-separated)
+  - "[Jj]ust [^,]+, just [^.!?]+"

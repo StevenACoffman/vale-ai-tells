@@ -301,6 +301,44 @@ Few systems scale this way. Few teams attempt it.
 
 All roads lead here. All signals point the same way. All evidence supports the conclusion.
 
+## StackedAnaphora (adverb patterns)
+
+Always local. Always yours.
+
+The architecture is simple: always single-user, always local.
+
+Never tracks you. Never leaks data.
+
+It works offline, never connects, never reports home.
+
+Fully local. Fully open.
+
+Built to be fully transparent, fully auditable.
+
+Completely free. Completely private.
+
+The tool is completely standalone, completely portable.
+
+Entirely offline. Entirely yours.
+
+Runs entirely in-browser, entirely client-side.
+
+Truly private. Truly portable.
+
+A truly minimal, truly composable toolkit.
+
+Purely functional. Purely declarative.
+
+Designed to be purely additive, purely opt-in.
+
+Only the essentials. Only what matters.
+
+We ship only the basics, only what you asked for.
+
+Just code. Just ship.
+
+The workflow is just write, just commit.
+
 ## VerbTricolon
 
 ### Gerund tricolons
