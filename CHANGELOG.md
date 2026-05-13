@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-05-13
+
+<!-- vale off -->
+
+### Added
+
+- **StackedAnaphora**: Extended to cover adverb anchors — always, never,
+  fully, completely, entirely, truly, purely, only, and just. Each adverb
+  gets a period-separated variant (two parallel sentences sharing the lead
+  adverb) and a comma-separated variant (two parallel clauses sharing the
+  lead adverb). The comma variant accepts a lowercase second clause so
+  colon-led shapes also match.
+
+<!-- vale on -->
+
 ## [1.7.0] - 2026-05-11
 
 <!-- vale off -->
@@ -557,6 +572,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.8.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.3...v1.7.0
 [1.6.3]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.1...v1.6.2
