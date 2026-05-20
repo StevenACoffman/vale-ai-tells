@@ -41,6 +41,22 @@ tokens:
   - doing the legwork
   - do the heavy lifting
 
+  # "Load-bearing" / "doing work" family.
+  # Restricted to qualified shapes ("the real work," "the actual work," ...) —
+  # bare "does the work" matches too many legitimate human-subject sentences.
+  - load-bearing
+  - load bearing
+  - does? the real work
+  - doing the real work
+  - does? the actual work
+  - doing the actual work
+  - does? the hard work
+  - doing the hard work
+  - does? the important work
+  - doing the important work
+  - does? most of the work
+  - doing most of the work
+
   # "Standing" family
   - stands? on its own
   - standing on its own

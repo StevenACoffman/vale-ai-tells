@@ -41,7 +41,7 @@ The embark terminal at the port was closed for repairs.
 
 (No known false positives. Patterns are tightly scoped to explainer announcements.)
 
-## HedgingPhrases: genuine requirements that should NOT trigger
+## HedgingPhrases: real requirements that should NOT trigger
 
 It is important to test this before deploying to production.
 
@@ -110,6 +110,73 @@ Same as above, but with the timeout increased to 30 seconds.
 With PostgreSQL, the binary requires a running database server on the network.
 
 With practice, developers learn to spot these patterns quickly.
+
+## ColloquialAssessments: literal uses that should NOT trigger
+
+The plane lands at 6 PM.
+
+The plane landed safely after the storm.
+
+The bird lands on the branch outside the window.
+
+Salmon lands on the menu only in spring.
+
+The PR lands in main once CI passes.
+
+The change landed in v1.8 last week.
+
+The asteroid landed in the desert.
+
+The kicker lands the field goal from 50 yards.
+
+The dancer lands the jump cleanly.
+
+The probe lands on the moon's south pole.
+
+## ColloquialAssessments ("move"): literal uses that should NOT trigger
+
+The next move in the protocol is a handshake.
+
+His best move was to fold.
+
+The move from monolith to services took two years.
+
+A bold move from the new CEO.
+
+<!-- Known limitation: chess analysis like "Nf3 is the move" or "White is the move"
+     will trigger. Suppress per-section in chess writing. -->
+<!-- vale ai-tells.ColloquialAssessments = NO -->
+White is the move in this chess position.
+Nf3 is the move after the Ruy Lopez.
+<!-- vale ai-tells.ColloquialAssessments = YES -->
+
+## ColloquialAssessments ("matters"): bare uses that should NOT trigger
+
+Latency matters more than throughput here.
+
+Every line of code matters when the binary is this small.
+
+It matters whether the lock is held during the write.
+
+The order of operations matters.
+
+## AnthropomorphicJustification ("work"): literal uses that should NOT trigger
+
+The team does the work of reviewing every PR.
+
+Engineers do the hard work of maintaining the runtime.
+
+The interns did real work on the migration tooling.
+
+Engineers do a lot of work that nobody sees.
+
+## VocabularySwap ("unlock"): literal uses that should NOT trigger
+
+Unlock the door before the alarm trips.
+
+The phone unlocks with a fingerprint.
+
+The achievement unlocked at level 30.
 
 ## VerbTricolon: noun lists that should NOT trigger
 

@@ -1,0 +1,45 @@
+---
+extends: existence
+message: >-
+  AI colloquial assessment: '%s'.
+  Knowing-tone phrases like this manufacture confidence rather than demonstrate it.
+  State the assessment directly.
+level: error
+nonword: true
+ignorecase: true
+tokens:
+  # ==========================================================================
+  # "X lands" — figurative landing of jokes, points, arguments, analogies.
+  # Anchored to a narrow noun list (and to "really/actually lands") so that
+  # literal uses ("the plane lands," "the PR lands in main") don't trigger.
+  # ==========================================================================
+  - "[Tt]he (?:joke|point|argument|line|metaphor|analogy|comparison|critique|distinction|observation|framing|insight|takeaway|punchline|callback|bit|reference|callout) (?:really |actually |just |finally )?lands?\\b"
+  - "[Tt]he (?:joke|point|argument|line|metaphor|analogy|comparison|critique|distinction|observation|framing|insight|takeaway|punchline|callback|bit|reference|callout) (?:really|actually|just|finally) landed\\b"
+  - "\\b(?:really|actually) lands\\b"
+  - "\\b(?:really|actually) landed\\b"
+
+  # ==========================================================================
+  # "X is the move" — anchored verdict. Bare "the move" is too broad (chess,
+  # dance, real-estate), so we only catch the assessment shape.
+  # ==========================================================================
+  - "\\bis the move\\b"
+  - "\\bwas the move\\b"
+  - "\\b(?:that|this)'?s the move\\b"
+  - "\\b(?:that|this) is the move\\b"
+  - "\\bthe right move\\b"
+  - "\\bthe smart move\\b"
+  - "\\bthe obvious move\\b"
+  - "\\bthe play here\\b"
+  - "\\bthe move here\\b"
+
+  # ==========================================================================
+  # "What really matters" — the knowing-tone matters phrase. Bare "matters" is
+  # ordinary English; this targets the rhetorical wind-up.
+  # ==========================================================================
+  - "\\bwhat really matters\\b"
+  - "\\bwhat truly matters\\b"
+  - "\\bwhat actually matters\\b"
+  - "\\bwhat genuinely matters\\b"
+  - "\\bwhat matters most\\b"
+  - "\\ball that (?:really |truly |actually )?matters\\b"
+  - "\\bthe only thing that (?:really |truly |actually )?matters\\b"

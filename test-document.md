@@ -594,3 +594,145 @@ And that's okay. And that's fine. And that's the point.
 Security is non-negotiable. Full stop.
 
 We do not ship on Fridays. Period.
+
+## ColloquialAssessments
+
+### Figurative "lands"
+
+The joke lands every time.
+
+The point really lands when you see the data.
+
+The analogy actually lands once you sit with it.
+
+The metaphor just lands.
+
+The argument finally landed with the room.
+
+The callback lands in the second act.
+
+The framing really lands.
+
+The critique actually landed.
+
+### "The move" verdicts
+
+Caching the result is the move.
+
+Migrating now was the move here.
+
+That's the move when latency matters.
+
+This is the move for small teams.
+
+Going with PostgreSQL is the right move.
+
+Sharding early is the smart move.
+
+Rewriting the parser is the obvious move.
+
+Caching at the edge is the play here.
+
+Splitting the service is the move here.
+
+### "What really matters"
+
+What really matters is shipping reliably.
+
+What truly matters is the user's experience.
+
+What actually matters is correctness.
+
+What matters most is the read path.
+
+All that really matters is whether the tests pass.
+
+The only thing that truly matters is observability.
+
+## AnthropomorphicJustification (load-bearing / doing work)
+
+The cache layer is load-bearing in this design.
+
+That assumption is load bearing for the whole proof.
+
+The type system does the real work of validation.
+
+The middleware does the actual work of authentication.
+
+This single function is doing the hard work.
+
+The schema does the important work of enforcing constraints.
+
+That one query does most of the work for the dashboard.
+
+## NarrativePivots (game / playbook / script)
+
+This release changed the game for our customers.
+
+That decision changes the game forever.
+
+The new pricing changed everything forever.
+
+Open source changed the landscape for databases.
+
+That paper rewrote the rules of distributed consensus.
+
+The startup rewrote the playbook on enterprise sales.
+
+The new entrant flipped the script on the incumbents.
+
+They moved the goalposts mid-sprint.
+
+The launch shifted the paradigm.
+
+## AICompoundPhrases (needle / unlock)
+
+The redesign really moves the needle on retention.
+
+We need to find the work that moves the needle.
+
+That experiment finally moved the needle.
+
+We want to move the needle on adoption.
+
+Memoization unlocks new performance wins.
+
+The new API unlocked new integration patterns.
+
+This abstraction is unlocking new ways to model the problem.
+
+A faster build will unlock new workflows.
+
+The framework unlocks the potential of declarative configuration.
+
+This change unlocks the value hidden in the cache.
+
+The runtime unlocks capabilities the previous version could not.
+
+The new tier unlocks possibilities for hobby projects.
+
+## OverusedVocabulary (genuinely / genuine)
+
+This refactor is genuinely better than the previous design.
+
+The interface is a genuine improvement.
+
+## FillerPhrases (honesty hedges)
+
+I'll be honest, the migration was harder than expected.
+
+I will be honest, this code has problems.
+
+To be perfectly honest, the docs are out of date.
+
+To be completely honest, the test suite is flaky.
+
+To be totally honest, we should rewrite this.
+
+To be brutally honest, this design will not scale.
+
+The honest truth is that we underestimated the work.
+
+My honest take is that we should ship the v1 and iterate.
+
+The honest answer is that we don't know yet.
