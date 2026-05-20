@@ -7,6 +7,58 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9.0] - 2026-05-20
+
+<!-- vale off -->
+
+### Added
+
+- **ColloquialAssessments**: New rule for knowing-tone verdicts that
+  surface as recurring AI tells in casual technical writing. Covers
+  figurative landing of jokes, points, and analogies (anchored to a
+  narrow noun list plus `really lands` and `actually lands`); anchored
+  move-as-verdict shapes like `is the move`, `that's the move`, `the
+  right move`, and `the play here`; and rhetorical wind-ups about what
+  counts most (`what really matters`, `all that matters`, `the only
+  thing that truly matters`). Chess analysis where `Nf3 is the move`
+  is the natural phrasing is documented as a known per-section
+  limitation.
+
+### Changed
+
+- **AnthropomorphicJustification**: Extended to cover structural-
+  importance descriptors (`load-bearing`, `load bearing`) and a
+  qualified work-doing family (`does the real work`, `doing the
+  important work`, `does most of the work`, and so on). Bare work-doing
+  patterns without the qualifier were intentionally omitted to avoid
+  matching legitimate human-subject sentences such as "engineers do the
+  work."
+- **AICompoundPhrases**: Extended with needle-moving variants (`move`,
+  `moves`, `moved`, `moving the needle`, plus `nudge the needle`
+  forms) and capability-unlocking shapes (`unlocks new`, `unlocks the
+  potential`, `unlocks the power`, `unlocks the value`, `unlocks
+  capabilities`, `unlocks possibilities`).
+- **NarrativePivots**: Extended with industry-altering rhetoric
+  (`changed the game` and `changed the landscape` variants),
+  rule-overhauling (`rewrote the rules`, `rewrote the playbook`), and
+  script-flipping (`flipped the script`, `moved the goalposts`,
+  `shifted the paradigm`).
+- **OverusedVocabulary**: Added the sincerity adjective and adverb
+  (`genuine`, `genuinely`).
+- **FillerPhrases**: Extended the performative-sincerity section with
+  honesty-preamble hedges (`I'll be honest`, `to be perfectly honest`,
+  `to be completely honest`, `to be totally honest`, `to be brutally
+  honest`, `the honest truth`, `my honest take`, `honest answer`, and
+  related forms).
+- **VocabularySwap** (experimental, warning level): Added
+  substitution suggestions for the sincerity adverb (`genuinely` to
+  `really` or `truly`), the sincerity adjective (`genuine` to `real`,
+  `authentic`, or `true`), and the figurative-enabling verb (`unlock`,
+  `unlocks`, `unlocked`, `unlocking` to `enable` variants or `make
+  possible`).
+
+<!-- vale on -->
+
 ## [1.8.0] - 2026-05-13
 
 <!-- vale off -->
@@ -572,6 +624,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.9.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.3...v1.7.0
 [1.6.3]: https://github.com/tbhb/vale-ai-tells/compare/v1.6.2...v1.6.3
