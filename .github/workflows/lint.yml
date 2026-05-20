@@ -13,11 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
-      - name: Install tools
+      - name: Install Python and Node tooling
         run: |
           pip install yamllint
           npm install -g cspell
-          brew install vale rumdl
 
       - name: Lint YAML
         run: yamllint --strict .
@@ -26,13 +25,18 @@ jobs:
         run: cspell .
 
       - name: Lint Markdown
-        run: rumdl check .
+        uses: rvben/rumdl@e2084bd1bc70402a142a6c65475a0b07ae687847 # v0.1.95
+        with:
+          path: .
+          report-type: annotations
 
       - name: Lint GitHub Actions workflows
         uses: raven-actions/actionlint@e01d1ea33dd6a5ed517d95b4c0c357560ac6f518 # v2
 
-      - name: Sync Vale packages
-        run: vale sync
-
       - name: Lint prose
-        run: vale --glob='!test-*.md' --minAlertLevel=error .
+        uses: vale-cli/vale-action@85f9f7f2c5f449ac0ae5b66662961bae3f77ca6a # 2.1.2
+        with:
+          files: .
+          vale_flags: "--glob=!test-*.md --minAlertLevel=error"
+          fail_on_error: "true"
+          filter_mode: nofilter
