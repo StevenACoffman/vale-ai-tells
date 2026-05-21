@@ -34,6 +34,24 @@ jobs:
           rsync -a --exclude='vocabularies/' styles/config/ pkg/ai-tells-experimental/styles/config/
           cd pkg && zip -r ../ai-tells-experimental.zip ai-tells-experimental
 
+      - name: Extract release notes from CHANGELOG
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          awk -v ver="$VERSION" '
+            $0 ~ "^## \\[" ver "\\]" {flag=1; next}
+            /^## \[/ {flag=0}
+            flag
+          ' CHANGELOG.md \
+            | sed -E '/^<!-- vale (off|on) -->$/d' \
+            | awk 'NF{found=1} found' \
+            > release-notes.md
+          if [ ! -s release-notes.md ]; then
+            echo "No CHANGELOG section found for v${VERSION}" >&2
+            exit 1
+          fi
+          echo "--- release-notes.md ---"
+          cat release-notes.md
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
@@ -41,4 +59,5 @@ jobs:
             ai-tells.zip
             ai-tells-commits.zip
             ai-tells-experimental.zip
+          body_path: release-notes.md
           generate_release_notes: true
