@@ -7,6 +7,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **WrapUpHeadings**: New heading-scoped rule for closing-flourish
+  headings that summarize what the section already said. Covers
+  `Final Thoughts`, `Closing Thoughts`, `Parting Thoughts`, `Wrapping
+  Up`, `Wrap-Up`, `Wrap Up`, `Putting It All Together`, `Bringing It
+  All Together`, `Tying It All Together`, `The Big Picture`, `The
+  Bottom Line`, `The Takeaway`, `Final Word`, `Last Word`, and `Final
+  Take`. Conventional one-word headings like `Conclusion`, `Summary`,
+  and `Overview` were intentionally omitted to avoid false positives
+  on standard documentation structure.
+- **ExplainerHeadings**: New heading-scoped rule for tutorial-blog
+  heading clichés. Covers `Deep Dive`, `Under the Hood`, `Demystifying`,
+  `Why It Matters`, `Why This Matters`, `A Closer Look`, and `The
+  Inner Workings`. The `X 101` pattern was considered but omitted
+  because Go RE2 lacks the lookahead needed to exclude legitimate uses
+  like `Highway 101` or `Route 101`.
+- **MarketingHeadings**: New heading-scoped rule for promotional-
+  register headings. Covers `The Ultimate Guide`, `Everything You
+  Need to Know`, `Mastering`, `Unlocking`, `The Power of`, `The
+  Magic of`, `Why Choose`, `The Future of`, `The Art of`, `The
+  Science of`, `A Game-Changer`, and `Revolutionizing`. `Transforming`
+  was considered but omitted as too operational (`Transforming Data
+  with X` is a legitimate heading shape).
+- **AnnouncementHeadings**: New heading-scoped rule for headings that
+  narrate content delivery instead of delivering it. Covers `What
+  You'll Learn` / `What You Will Learn`, `What We'll Cover` / `What
+  We Will Cover`, `What to Expect`, `What We're Building` / `What We
+  Are Building`, and `Here's What You'll Get` / `Here's What You Get`.
+  Navigation-style sections like `What's Next` and `Next Steps` were
+  intentionally omitted because they serve a real navigation purpose
+  in READMEs.
+
+<!-- vale on -->
+
 ## [1.9.0] - 2026-05-20
 
 <!-- vale off -->

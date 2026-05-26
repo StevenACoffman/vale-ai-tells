@@ -1,0 +1,16 @@
+---
+extends: existence
+message: >-
+  AI explainer heading: '%s'.
+  Tutorial-blog cliché — name what you're explaining instead.
+level: error
+ignorecase: true
+scope: heading
+tokens:
+  - Deep Dive
+  - Under the Hood
+  - Demystifying
+  - Why It Matters
+  - Why This Matters
+  - A Closer Look
+  - The Inner Workings

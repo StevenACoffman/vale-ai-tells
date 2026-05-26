@@ -736,3 +736,81 @@ The honest truth is that we underestimated the work.
 My honest take is that we should ship the v1 and iterate.
 
 The honest answer is that we don't know yet.
+
+## WrapUpHeadings
+
+### Final Thoughts
+
+### Closing Thoughts
+
+### Wrapping Up
+
+### Wrap-Up
+
+### Putting It All Together
+
+### Bringing It All Together
+
+### Tying It All Together
+
+### The Big Picture
+
+### The Bottom Line
+
+### The Takeaway
+
+### Final Word
+
+## ExplainerHeadings
+
+### Deep Dive
+
+### A Deep Dive Into Vale
+
+### Under the Hood
+
+### Demystifying OAuth
+
+### Why It Matters
+
+### Why This Matters
+
+### A Closer Look
+
+### The Inner Workings
+
+## MarketingHeadings
+
+### The Ultimate Guide to Vale
+
+### Everything You Need to Know About Linting
+
+### Mastering Vale
+
+### Unlocking Performance
+
+### The Power of Vale
+
+### Why Choose Vale
+
+### The Future of Linting
+
+### The Art of Code Review
+
+### A Game-Changer for Documentation
+
+### Revolutionizing Prose Linting
+
+## AnnouncementHeadings
+
+### What You'll Learn
+
+### What You Will Learn
+
+### What We'll Cover
+
+### What to Expect
+
+### What We're Building
+
+### Here's What You'll Get

@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 45 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 49 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -147,6 +147,7 @@ This package contains 45 rule files covering different categories of AI tells. A
 | `AbsoluteAssertions` | AI overconfidence: "the only way to," "the only real solution," "make no mistake," "there is no denying," "above all else," etc. Verify the claim or soften it. |
 | `AIAdjectiveNounPairs` | AI adjective immediately preceding a noun: "holistic approach," "seamless integration," "transformative impact," etc. Currently at `warning` level. |
 | `AICompoundPhrases` | Compound phrases: "rich tapestry," "intricate interplay," "paradigm shift," "double-edged sword," "moving the needle," "unlocks new," etc. |
+| `AnnouncementHeadings` | Headings that narrate content rather than being it: "What You'll Learn," "What We'll Cover," "What to Expect," "Here's What You'll Get," etc. |
 | `AnthropomorphicJustification` | Treating abstractions like employees: "earns its keep," "does the heavy lifting," "pulls its weight," "pays for itself," "speaks for itself," "load-bearing," "does the real work," etc. |
 | `AffirmativeFormulas` | Revelation patterns: "Here's the thing," "And that's the beauty of it," "Let that sink in," etc. |
 | `ClosingPleasantries` | Sign-off language: "I hope this helps," "Feel free to ask," "Don't hesitate to reach out," etc. |
@@ -157,6 +158,7 @@ This package contains 45 rule files covering different categories of AI tells. A
 | `DespiteChallenges` | The "despite challenges" dismissal formula: "despite these challenges," "while challenges remain," "challenges notwithstanding," etc. |
 | `EmDashUsage` | Em-dashes, which AI uses excessively |
 | `EmphaticCopula` | Italicized copula verbs and determiners for manufactured profundity |
+| `ExplainerHeadings` | Tutorial-blog heading clichés: "Deep Dive," "Under the Hood," "Demystifying X," "Why It Matters," "A Closer Look," etc. |
 | `FalseBalance` | Evasive "both sides" language: "both sides present valid points," "nuanced approach," etc. |
 | `FalseExclusivity` | False insider drama: "nobody talks about," "what most people miss," "the dirty secret," "the elephant in the room," etc. |
 | `FillerPhrases` | Padding and performative sincerity: "a wide range of," "in order to," "honestly," "to be perfectly honest," "the honest truth," etc. |
@@ -164,6 +166,7 @@ This package contains 45 rule files covering different categories of AI tells. A
 | `FormalTransitions` | Formal transitions: "Moreover," "Furthermore," "What's more," "Case in point," etc. |
 | `HedgingPhrases` | Compulsive hedging: "It's important to note that," "That being said," "Generally speaking," "As you might expect," etc. |
 | `ListIntroductions` | Announcements of upcoming lists or summaries: "Below you'll find," "Here's a breakdown of," "Here's everything you need to know," "The following sections will," etc. |
+| `MarketingHeadings` | Promotional-register heading clichés: "The Ultimate Guide," "Everything You Need to Know," "Mastering X," "Unlocking X," "The Power of X," "The Future of X," "Revolutionizing X," etc. |
 | `Metacommentary` | Throat-clearing and self-commentary that narrates the text rather than adding content |
 | `MicDrop` | Short dramatic sentences for manufactured emphasis in technical prose: "It matters." "Full stop." "And it shows." Contrastive fragments: "Dense, not cramped." Preference fragments: "Clarity over cleverness." Imperative mic-drops: "Trust the process." Categorical declarations: "Density is a feature." |
 | `MicDropHeadings` | Tagline-style headings: "Clarity, not cleverness," "Simple, then fast," "Speed over correctness," "X first, Y second," etc. |
@@ -189,6 +192,7 @@ This package contains 45 rule files covering different categories of AI tells. A
 | `VagueAttributions` | Claims attributed to unnamed authorities: "experts argue," "studies show that," "research suggests," "a growing body of evidence," etc. |
 | `VerbTricolon` | Exactly-three parallel verb lists: "build, test, and deploy," "define, validate, and transform," etc. |
 | `VerbTricolonDensity` | Multiple verb tricolons in one paragraph — LLM prose clusters exactly-three enumerations. |
+| `WrapUpHeadings` | Closing-flourish headings: "Final Thoughts," "Closing Thoughts," "Wrapping Up," "Putting It All Together," "The Big Picture," "The Bottom Line," "The Takeaway," etc. |
 
 <!-- vale on -->
 
