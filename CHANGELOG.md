@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.11.0] - 2026-05-27
+
+<!-- vale off -->
+
+### Added
+
+- **RedundantPrecaution**: New rule for a redundant-precaution idiom
+  that has graduated to AI-cliché status in public discourse. Narrow
+  scope by design — covers the flagship spaced form (`belt and
+  suspenders`) and its hyphenated adjectival form
+  (`belt-and-suspenders`). Neighboring patterns in the same register
+  (`for good measure`, `out of an abundance of caution`, `cover all
+  the bases`, `just to be safe`) were intentionally omitted; they may
+  land in a follow-up if the cluster proves coherent.
+
+<!-- vale on -->
+
 ## [1.10.0] - 2026-05-26
 
 <!-- vale off -->
@@ -663,6 +680,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.11.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.10.0...v1.11.0
 [1.10.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.9.0...v1.10.0
 [1.9.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.7.0...v1.8.0
