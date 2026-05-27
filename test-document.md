@@ -801,6 +801,12 @@ The honest answer is that we don't know yet.
 
 ### Revolutionizing Prose Linting
 
+## RedundantPrecaution
+
+We added a second check, belt and suspenders, so retries can't escape the queue.
+
+The belt-and-suspenders approach guards against both failure modes at once.
+
 ## AnnouncementHeadings
 
 ### What You'll Learn

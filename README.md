@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 49 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 50 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -178,6 +178,7 @@ This package contains 49 rule files covering different categories of AI tells. A
 | `ParallelStaccato` | Back-to-back minimal sentences with parallel structure: "Engineers build. Managers ship." "Content carries the personality. Chrome doesn't." Solo two-word staccato: "Complexity scales." |
 | `ParticipialPadding` | Present participle (-ing) phrases appended for shallow analysis: "highlighting its importance," "reflecting broader trends," "underscoring its role," "solidifying its position," etc. The #1 discriminating feature in the PNAS study (527% of human rate). |
 | `PromotionalPuffery` | Ad-copy and travel-brochure language: "nestled in," "vibrant community," "a beacon of," "renowned for its," "has emerged as a," "left an indelible mark," etc. |
+| `RedundantPrecaution` | Redundant-precaution idioms that signal over-engineering thinking: "belt and suspenders," "belt-and-suspenders." |
 | `RestatementMarkers` | Redundant restatements: "In other words," "Simply put," "To be more specific," etc. |
 | `RhetoricalDevices` | Rhetorical question patterns: "Ask yourself:", "The test:", "When doing X, ask:" etc. |
 | `RhetoricalSelfAnswer` | Self-posed rhetorical questions answered for dramatic effect: "The result/catch/worst part?" followed by an immediate answer. |
