@@ -57,6 +57,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   write lands in Y.`). The shared-verb framing carries the
   drumroll even with only two sentences.
 
+### Changed
+
+- **README**: Document two structural patterns Vale can't reliably
+  flag — noun-phrase + past-participle fragments
+  (`The same set, applied identically by every client...`) and
+  adjective-led fragments without an explicit subject
+  (`Durable enough for coordination state, without...`). Both
+  need syntactic parsing beyond regex token matching.
+
 <!-- vale on -->
 
 ## [1.11.0] - 2026-05-27

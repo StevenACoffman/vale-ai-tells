@@ -315,6 +315,8 @@ AI writing research documents these patterns, but they need analysis beyond Vale
 - **Content duplication:** Repeating entire sections or paragraphs verbatim within the same piece. Requires document-level diff analysis.
 - **Unnecessary inline definitions:** AI habitually inserts appositive definitions like "X, a [definition], does Y" even when the audience already knows the term. Too many false positives for token matching.
 - **Invented concept labels:** AI appends abstract problem-nouns like "paradox," "trap," "creep," and "divide" to domain words and treats them as established terms. Too many legitimate uses for token matching.
+- **Noun-phrase + participial-phrase fragments:** AI drops fragments built from a noun phrase and a trailing past-participle modifier ("The same set, applied identically by every client on every open.") as paragraph closers. Distinguishing them from legitimate appositive constructions requires syntactic parsing.
+- **Adjective-led sentence fragments:** AI ends paragraphs with adjective-led fragments that lack an explicit subject or verb ("Durable enough for coordination state, without the full-sync cost on every commit."). Without dependency parsing, regex can't separate these from valid continuations of a prior sentence's subject.
 
 <!-- vale ai-tells.OverusedVocabulary = YES -->
 <!-- vale ai-tells.EmDashUsage = YES -->
