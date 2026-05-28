@@ -74,6 +74,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   glosses like `Time-To-Live (TTL)`. Requires sentence-initial
   capital `The` to reduce mid-sentence false positives on
   legitimate enumerations.
+- **StackedAnaphora**: Catch the `Whether X, or whether Y.`
+  subordinate-clause fragment — a `whether... or whether...`
+  pair promoted to a standalone sentence with no main clause.
+  Also catches the two-sentence variant
+  `Whether X. Whether Y.` (anaphoric paired fragments).
 
 ### Changed
 

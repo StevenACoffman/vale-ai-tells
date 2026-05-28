@@ -173,3 +173,13 @@ tokens:
   # Sentence-initial capital "The" reduces mid-sentence
   # false positives.
   - "The [\\w-]+(?: [\\w-]+){0,4}(?:, the [\\w-]+(?: [\\w-]+){0,4}){2,}\\."
+
+  # === "Whether X, or whether Y." subordinate-clause fragment ===
+  # AI promotes a "whether... or whether..." subordinate-clause
+  # pair to a standalone sentence with no main clause. The
+  # paired "whether" markers carry the rhetorical weight a real
+  # verb would carry.
+  - "Whether [^.]+, or whether [^.!?]+\\."
+
+  # Two consecutive "Whether X." sentences — same shape, paired.
+  - "Whether [^.]+\\. Whether [^.]+\\."
