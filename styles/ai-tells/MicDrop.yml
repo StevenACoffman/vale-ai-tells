@@ -164,6 +164,13 @@ tokens:
   - "[A-Z][a-z]+(?: \\w+){0,2} (?:stays?|remains?|becomes?|feels?|reads?|seems?|sounds?|looks?|appears?|grows?|ends? up|comes? across) [a-z-]+, not [a-z-]+\\."
   - "[A-Z][a-z]+(?: \\w+){0,2} (?:stays?|remains?|becomes?|feels?|reads?|seems?|sounds?|looks?|appears?|grows?|ends? up|comes? across) [a-z-]+, never [a-z-]+\\."
 
+  # Verb-led contrastive with non-linking verbs + noun objects:
+  # "They share a contract, not code."
+  # "Custom signals belong in stderr text, not in the exit number."
+  # Different shape from the linking-verb family above — the object
+  # is a noun phrase rather than an adjective.
+  - "[A-Z][a-z]+(?: \\w+){0,2} (?:shares?|keeps?|holds?|lives?|belongs?|sits?|points?|goes|go|gives?|takes?) (?:(?:in|on|to|at|with|for) )?[\\w-]+(?: [\\w-]+){0,3}, not (?:(?:in|on|to|at|with|for) )?[\\w-]+(?: [\\w-]+){0,3}[.:]"
+
   # "X over Y." — preference fragment
   # "Clarity over cleverness." "Depth over breadth."
   - "[A-Z][a-z]+ over [a-z]+\\."

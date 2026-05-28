@@ -33,6 +33,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   with `Not? \w+\.` — accepts more conversational false positives
   (`No way.`, `Not bad.`) in exchange for full coverage of the
   AI register without maintaining a token list.
+- **MicDrop**: Extend the verb-led contrastive family to non-linking
+  verbs with noun objects. `They share a contract, not code.`,
+  `Custom signals belong in stderr text, not in the exit number.`
+  Covers `share`, `keep`, `hold`, `live`, `belong`, `sit`, `point`,
+  `go`, `give`, `take` with optional prepositional heads
+  (`in`, `on`, `to`, `at`, `with`, `for`).
 
 <!-- vale on -->
 
