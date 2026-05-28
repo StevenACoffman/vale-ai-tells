@@ -39,6 +39,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Covers `share`, `keep`, `hold`, `live`, `belong`, `sit`, `point`,
   `go`, `give`, `take` with optional prepositional heads
   (`in`, `on`, `to`, `at`, `with`, `for`).
+- **MicDrop**: Catch the comparative aphorism mic-drop
+  (`Disk costs less than lost context.`) — subject + verb +
+  comparative adjective + `than` + object + period. Concise,
+  sentence-final, in the AI tutorial-blog tone. Covers `more`,
+  `less`, `fewer`, `faster`, `slower`, `cheaper`, `cleaner`,
+  `simpler`, `safer`, `tighter`, `better`, `worse`, `larger`,
+  `smaller`, `bigger`, `higher`, `lower`, `longer`, `shorter`.
 
 <!-- vale on -->
 

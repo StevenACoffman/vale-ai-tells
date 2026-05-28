@@ -152,7 +152,14 @@ Nf3 is the move after the Ruy Lopez.
 
 ## ColloquialAssessments ("matters"): bare uses that should NOT trigger
 
+<!-- Known limitation: the comparative-aphorism mic-drop
+     ("X verbs more/less/faster/... than Y") now fires (added in
+     v1.13.0). The shape is genuinely an AI tell most of the time,
+     but legitimate human-subject uses do exist. Suppress
+     per-section if legit. -->
+<!-- vale ai-tells.MicDrop = NO -->
 Latency matters more than throughput here.
+<!-- vale ai-tells.MicDrop = YES -->
 
 Every line of code matters when the binary is this small.
 

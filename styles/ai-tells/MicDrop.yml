@@ -175,6 +175,12 @@ tokens:
   # "Clarity over cleverness." "Depth over breadth."
   - "[A-Z][a-z]+ over [a-z]+\\."
 
+  # Comparative aphorism: "X verbs comparative-adjective than Y."
+  # "Disk costs less than lost context."
+  # "Tests run faster than docs."
+  # Concise, sentence-final, AI tutorial-blog tone.
+  - "[A-Z][a-z]+(?: \\w+){0,2} \\w+s (?:more|less|fewer|faster|slower|cheaper|cleaner|simpler|safer|tighter|better|worse|larger|smaller|bigger|higher|lower|longer|shorter) than [^.!?]+\\."
+
   # "X, not Y, not Z." — extended contrastive
   - "[A-Z][a-z]+, not [a-z]+, not [a-z]+\\."
 
