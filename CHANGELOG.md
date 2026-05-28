@@ -27,6 +27,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   exemplification stack patterns to accept `An` as well as `A`.
   Catches mixed pairs like `An unset X counts as Y. A set-but-wrong
   value belongs to Z.`
+- **MicDrop**: Broaden the bare-`Not X.` one-word-verdict rule to
+  also catch the bare `No X.` form (`No singleton.`, `No daemon.`,
+  `No fallback.`, etc.). Replaced the v1.12.0 enumerated tail list
+  with `Not? \w+\.` — accepts more conversational false positives
+  (`No way.`, `Not bad.`) in exchange for full coverage of the
+  AI register without maintaining a token list.
 
 <!-- vale on -->
 
