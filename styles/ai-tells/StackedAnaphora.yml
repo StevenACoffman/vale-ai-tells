@@ -149,3 +149,11 @@ tokens:
 
   # "just X, just Y." pattern (2+ comma-separated)
   - "[Jj]ust [^,]+, just [^.!?]+"
+
+  # === Indefinite-article exemplification stack ===
+  # AI loves stacking hypothetical scenarios as parallel sentences:
+  # "A hook wants to count failures. A subagent wants to record a
+  # result. A skill wants to stash a value." The shape — A + noun
+  # (1-3 words) + present-tense verb — paired across 3 sentences
+  # is distinctive enough to flag even when verbs differ.
+  - "A \\w+(?: \\w+){0,2} \\w+s [^.]+\\. A \\w+(?: \\w+){0,2} \\w+s [^.]+\\. A \\w+(?: \\w+){0,2} \\w+s [^.!?]+"

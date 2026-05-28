@@ -46,6 +46,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `real ownership`, `real accountability`, `real tradeoffs`,
   and similar. Enumerated rather than bare `real` to avoid
   `real-time`, `real estate`, `real world` collisions.
+- **StackedAnaphora**: Add 3-sentence indefinite-article
+  exemplification stacks — `A [noun] [verb]s ... A [noun] [verb]s
+  ... A [noun] [verb]s ...` — the shape AI reaches for when
+  enumerating hypothetical scenarios. The construction predates
+  LLMs in API/concurrency reference docs but is now a sufficiently
+  strong AI tell to flag uniformly.
 
 <!-- vale on -->
 
