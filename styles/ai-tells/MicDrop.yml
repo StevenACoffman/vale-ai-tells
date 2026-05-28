@@ -100,6 +100,13 @@ tokens:
   # Parallel noun-phrase fragment pairs: "Clean separation, clear ownership."
   - "(?:Clean|Clear|Pure|Simple|Single|One|Zero|Full|Same|Thin|Flat|Strict|Minimal|Explicit|Complete|Total|Direct|Separate) \\w+, (?:clean|clear|pure|simple|single|one|zero|full|same|thin|flat|strict|minimal|explicit|complete|total|direct|separate|different|no|fewer?) \\w+\\."
 
+  # Comparative-adjective balanced fragments:
+  # "Stronger isolation, more lifecycle machinery."
+  # "Faster delivery, fewer surprises."
+  # Comparative adjective + 1-2 word noun, paired with another
+  # comparative + noun. The balanced tradeoff aphorism shape.
+  - "(?:Stronger|Weaker|Faster|Slower|Better|Worse|Cleaner|Simpler|Smaller|Larger|Bigger|Higher|Lower|Tighter|Looser|Smoother|Newer|Older|Richer|Leaner|Safer|Saner|More|Less|Fewer) [\\w-]+(?: [\\w-]+)?, (?:stronger|weaker|faster|slower|better|worse|cleaner|simpler|smaller|larger|bigger|higher|lower|tighter|looser|smoother|newer|older|richer|leaner|safer|saner|more|less|fewer) [\\w-]+(?: [\\w-]+)?\\."
+
   # "Just/Pure/Clean + noun" standalone fragments: "Pure orchestration." "Just data."
   - "(?:Just|Pure|Clean|Plain|Bare|Raw|Straight|Strict|Simple|Mere) \\w+\\."
 

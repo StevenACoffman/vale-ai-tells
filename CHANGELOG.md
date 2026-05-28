@@ -79,6 +79,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pair promoted to a standalone sentence with no main clause.
   Also catches the two-sentence variant
   `Whether X. Whether Y.` (anaphoric paired fragments).
+- **MicDrop**: Extend the parallel noun-phrase fragment family
+  to comparative adjectives — `Stronger isolation, more lifecycle
+  machinery.`, `Faster delivery, fewer surprises.` Covers
+  `Stronger`, `Weaker`, `Faster`, `Slower`, `Better`, `Worse`,
+  `Cleaner`, `Simpler`, `Smaller`, `Larger`, `Bigger`, `Higher`,
+  `Lower`, `Tighter`, `Looser`, `Smoother`, `Newer`, `Older`,
+  `Richer`, `Leaner`, `Safer`, `Saner`, `More`, `Less`, `Fewer`.
 
 ### Changed
 
