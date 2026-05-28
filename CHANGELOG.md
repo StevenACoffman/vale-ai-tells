@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **AnthropomorphicJustification**: Cover bare `does the work` /
+  `doing the work`. Originally excluded as too prone to human-subject
+  false positives, but in practice legitimate human uses tend to come
+  with qualifiers (`the work of three people`), contrast (`does the
+  work, gets no credit`), or relative clauses (`the team that does
+  the work`). The bare construction with a non-human subject
+  (`the CLI does the work`) is distinctive enough to flag.
+
+<!-- vale on -->
+
 ## [1.11.0] - 2026-05-27
 
 <!-- vale off -->

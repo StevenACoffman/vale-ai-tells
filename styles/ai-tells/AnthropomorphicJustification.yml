@@ -42,10 +42,10 @@ tokens:
   - do the heavy lifting
 
   # "Load-bearing" / "doing work" family.
-  # Restricted to qualified shapes ("the real work," "the actual work," ...) —
-  # bare "does the work" matches too many legitimate human-subject sentences.
   - load-bearing
   - load bearing
+  - does? the work
+  - doing the work
   - does? the real work
   - doing the real work
   - does? the actual work
