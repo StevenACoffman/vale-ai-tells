@@ -23,6 +23,13 @@ tokens:
   - "[A-Z][a-z]+ [^.!?]+\\. [A-Z][a-z]+ does not\\."
   - "[A-Z][a-z]+ [^.!?]+\\. [A-Z][a-z]+ do not\\."
 
+  # Multi-word-subject parallel-staccato:
+  # "Concurrent readers don't block each other. One writer at a time
+  # doesn't block readers."
+  # Subjects up to 5 words; second sentence carries the verb pattern.
+  # Matches both "doesn't"/"don't" and "does not"/"do not" forms.
+  - "[A-Z][a-z]+(?: [\\w-]+){1,4} [^.!?]+\\. [A-Z][a-z]+(?: [\\w-]+){1,4} (?:doesn'?t|don'?t|does not|do not)\\b[^.!?]*\\."
+
   # === Solo two-word staccato (enumerated verbs) ===
   # Single "Subject verb." sentences that AI drops for dramatic effect.
   # Only flagged for verbs commonly used this way.

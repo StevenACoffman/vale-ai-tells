@@ -46,6 +46,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `less`, `fewer`, `faster`, `slower`, `cheaper`, `cleaner`,
   `simpler`, `safer`, `tighter`, `better`, `worse`, `larger`,
   `smaller`, `bigger`, `higher`, `lower`, `longer`, `shorter`.
+- **ParallelStaccato**: Add multi-word-subject negation-parallel
+  pairs — `Concurrent readers don't block each other. One writer
+  at a time doesn't block readers.` Existing patterns only handled
+  single-word subjects; this extends to 2-5 word noun phrases on
+  both sides of the pair.
 
 <!-- vale on -->
 
