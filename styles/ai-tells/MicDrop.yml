@@ -145,6 +145,13 @@ tokens:
   - "[A-Z][a-z]+, not [a-z]+\\."
   - "[A-Z][a-z]+, never [a-z]+\\."
 
+  # Bare "Not X." standalone fragment: "Not now." "Not yet."
+  # AI deploys these as one-word verdicts — a tiny period-bound
+  # answer that the surrounding prose pretends to be responding
+  # to. Enumerated to keep "Not bad." / "Not good." conversational
+  # responses from firing unless they're in the tell register.
+  - "Not (?:now|yet|today|tomorrow|always|never|necessarily|exactly|really|quite|anymore|enough|here|there|optional|random|magic|magical|accidental|arbitrary|automatic|coincidence|kidding|likely|unlikely)\\."
+
   # Verb-led contrastive: the extended-sentence remediation cheat
   # that appears after the bare-fragment form above gets flagged.
   # "Isolation here stays logical, not physical."

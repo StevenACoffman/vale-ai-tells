@@ -86,6 +86,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `Cleaner`, `Simpler`, `Smaller`, `Larger`, `Bigger`, `Higher`,
   `Lower`, `Tighter`, `Looser`, `Smoother`, `Newer`, `Older`,
   `Richer`, `Leaner`, `Safer`, `Saner`, `More`, `Less`, `Fewer`.
+- **MicDrop**: Catch the bare `Not X.` one-word-verdict fragment
+  (`Not now.`, `Not yet.`, `Not necessarily.`, `Not magic.`,
+  `Not optional.`, `Not random.`, `Not arbitrary.`, etc.).
+  Enumerated tail to keep conversational `Not bad.` / `Not good.`
+  responses from firing unless they sit in the tell register.
 
 ### Changed
 
