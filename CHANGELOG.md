@@ -99,6 +99,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   punctuation. Triggered by a 4+ word definite-NP subject,
   indefinite article after the colon, and 6+ token descriptive
   content so short pedagogical `X is: Y` answers stay quiet.
+- **AICompoundPhrases**: Add the investigation-thread family
+  (`threads to pull on`, `thread to pull on`, `loose threads
+  to pull`, `loose threads to chase`, `another thread to pull`,
+  etc.) and the solidification-metaphor family
+  (`before/after [X] hardens` / `hardened` / `solidifies` /
+  `solidified` / `ossifies` / `ossified`). Both are AI
+  tutorial-blog vocabulary that recurs in design docs and
+  pre-release write-ups.
 
 ### Changed
 

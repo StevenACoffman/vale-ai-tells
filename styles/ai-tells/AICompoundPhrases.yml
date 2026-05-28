@@ -114,3 +114,26 @@ tokens:
   - real choices
   - real options
   - real differences
+
+  # Investigation-thread metaphors: AI's preferred way to describe
+  # "open questions" or "loose ends." Tutorial-blog tone.
+  - threads to pull on
+  - thread to pull on
+  - threads to pull
+  - thread to pull
+  - loose threads to pull
+  - loose threads to chase
+  - another thread to pull
+  - more threads to pull
+
+  # Solidification metaphors: the surface/design/contract "hardens"
+  # before some deadline. AI reaches for this constantly when
+  # describing in-progress work or pre-release windows.
+  # Broad regex catches "before/after X hardens" for any 1-6
+  # word X.
+  - (?:before|after) [^.,;:!?]{1,40} hardens
+  - (?:before|after) [^.,;:!?]{1,40} hardened
+  - (?:before|after) [^.,;:!?]{1,40} solidifies
+  - (?:before|after) [^.,;:!?]{1,40} solidified
+  - (?:before|after) [^.,;:!?]{1,40} ossifies
+  - (?:before|after) [^.,;:!?]{1,40} ossified
