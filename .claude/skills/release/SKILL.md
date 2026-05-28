@@ -24,7 +24,11 @@ Perform a full release for version $ARGUMENTS.
 
 Read CHANGELOG.md and make these edits:
 
-1. Replace `## [Unreleased]` with `## [$ARGUMENTS] - YYYY-MM-DD`, using today's date
+1. Replace `## [Unreleased]` with `## [$ARGUMENTS_NO_V] - YYYY-MM-DD`,
+   using today's date. The heading uses the version without the leading
+   `v` to match the existing convention and to match the link reference
+   added in step 3 (rumdl will report `MD053 Unused link/image reference`
+   if the two get out of sync).
 2. Insert a new empty `## [Unreleased]` section before it
 3. Add a comparison link at the bottom of the file, before the current top link:
    `[$ARGUMENTS_NO_V]: https://github.com/tbhb/vale-ai-tells/compare/PREV_TAG...$ARGUMENTS`
