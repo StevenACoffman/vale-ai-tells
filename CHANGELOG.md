@@ -30,6 +30,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   (`deserves noting`, `deserves exploring`, `deserves unpacking`,
   `deserves confirming`, `deserves revisiting`) that treats
   inanimate subjects as moral agents owed consideration.
+- **RhetoricalDevices**: Add the dramatic-colon `The X:` family —
+  terse noun-colon constructions where AI manufactures a drumroll
+  instead of writing `The X is...`. Covers `The price:`,
+  `The catch:`, `The kicker:`, `The upshot:`, `The tradeoff:`,
+  `The trick:`, `The cost:`, `The downside:`, `The flip side:`,
+  `The bottom line:`, `The takeaway:`, `The result:`,
+  `The answer:`, `The reason:`, `The lesson:`, `The moral:`,
+  `The point:`, `The pitch:`, `The fix:`, `The payoff:`.
 
 <!-- vale on -->
 
