@@ -39,13 +39,13 @@ CHANGELOG. Paraphrase them instead, as in v1.4.0.
 
 <!-- vale Google.Headings = YES -->
 
-Find the line:
+The release workflow builds three packages at every tag
+(`ai-tells.zip`, `ai-tells-commits.zip`, `ai-tells-experimental.zip`).
+Bump the version in every `releases/download/vX.Y.Z/...` URL in the
+README so all package references point at the new tag.
 
-```ini
-Packages = https://github.com/tbhb/vale-ai-tells/releases/download/vX.Y.Z/ai-tells.zip
-```
-
-and update the version to `$ARGUMENTS`.
+Use `grep -n "releases/download" README.md` to enumerate every
+occurrence before editing.
 
 ## 4. Pre-commit checks
 
@@ -89,4 +89,5 @@ Run `gh release view $ARGUMENTS` to confirm:
 
 - Release notes match the CHANGELOG entry
 - The "Full Changelog" comparison link appears and points to the right range
-- The `ai-tells.zip` asset appears in the release
+- All three package assets appear in the release:
+  `ai-tells.zip`, `ai-tells-commits.zip`, `ai-tells-experimental.zip`
