@@ -24,6 +24,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `adds up.` and the plural `These/Those [noun] matter.` family.
   Subjects allow up to three words and tolerate hyphens, so shapes
   like `The unset-versus-bogus distinction matters.` are caught.
+- **AnthropomorphicJustification**: Add a `deserves`/`deserve`
+  family. Covers older idiomatic shapes (`deserves a closer look`,
+  `deserves mention`, `deserves scrutiny`) and the gerund tell
+  (`deserves noting`, `deserves exploring`, `deserves unpacking`,
+  `deserves confirming`, `deserves revisiting`) that treats
+  inanimate subjects as moral agents owed consideration.
 
 <!-- vale on -->
 
