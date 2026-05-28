@@ -51,6 +51,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   at a time doesn't block readers.` Existing patterns only handled
   single-word subjects; this extends to 2-5 word noun phrases on
   both sides of the pair.
+- **README**: Document the inline-code-stripping limitation. Vale
+  strips inline-code content before applying regex rules, so AI
+  tells whose subjects are wrapped in backticks (`` `session` ``,
+  `` `PreToolUse` ``) silently slip past several `StackedAnaphora`
+  patterns. Tested `scope: raw` against a 376-file corpus; gained
+  14% more catches but also fired on repetition inside code blocks
+  and on pattern-documentation. Not worth the FP cost.
 
 <!-- vale on -->
 
