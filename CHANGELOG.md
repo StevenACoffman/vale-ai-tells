@@ -91,6 +91,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `Not optional.`, `Not random.`, `Not arbitrary.`, etc.).
   Enumerated tail to keep conversational `Not bad.` / `Not good.`
   responses from firing unless they sit in the tell register.
+- **ServesAsDodge**: Catch the colon-cheat copula-replacement —
+  `The candidate mechanism: a hook on Bash that...` where AI has
+  swapped `is` or `are` for a colon to dodge weak-verb or
+  passive-voice lints. Same anti-`is` evasion as the
+  `serves as a` / `stands as the` patterns, just performed with
+  punctuation. Triggered by a 4+ word definite-NP subject,
+  indefinite article after the colon, and 6+ token descriptive
+  content so short pedagogical `X is: Y` answers stay quiet.
 
 ### Changed
 

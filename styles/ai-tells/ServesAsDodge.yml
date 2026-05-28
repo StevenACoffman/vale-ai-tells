@@ -54,3 +54,13 @@ tokens:
   - offers a wide
   - offers a comprehensive
   - offers a diverse
+
+  # === Colon-cheat: copula-replacement remediation ===
+  # AI evades weak-verb / passive-voice lints by replacing "is" or
+  # "are" with a colon — same appositive shape, no verb.
+  # "The candidate mechanism is a hook." -->
+  # "The candidate mechanism: a hook on Bash that..."
+  # Triggered by a 4+ word definite-NP subject, indefinite article
+  # after the colon, and 6+ token descriptive content (filters
+  # short pedagogical "X is: Y" answers).
+  - "The [^,.:!?\\s]+(?: [^,.:!?\\s]+){2,}: an? [^,.:!?\\s]+(?: [^,.:!?\\s]+){4,}"
