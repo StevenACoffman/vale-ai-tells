@@ -138,6 +138,16 @@ tokens:
   - "[A-Z][a-z]+, not [a-z]+\\."
   - "[A-Z][a-z]+, never [a-z]+\\."
 
+  # Verb-led contrastive: the extended-sentence remediation cheat
+  # that appears after the bare-fragment form above gets flagged.
+  # "Isolation here stays logical, not physical."
+  # "The output reads clean, not cluttered."
+  # "Code becomes declarative, not imperative."
+  # Subject is 1-3 words; the linking-ish verb list mirrors the
+  # copula sense ("X stays/remains/becomes Y" = "X is Y").
+  - "[A-Z][a-z]+(?: \\w+){0,2} (?:stays?|remains?|becomes?|feels?|reads?|seems?|sounds?|looks?|appears?|grows?|ends? up|comes? across) [a-z-]+, not [a-z-]+\\."
+  - "[A-Z][a-z]+(?: \\w+){0,2} (?:stays?|remains?|becomes?|feels?|reads?|seems?|sounds?|looks?|appears?|grows?|ends? up|comes? across) [a-z-]+, never [a-z-]+\\."
+
   # "X over Y." — preference fragment
   # "Clarity over cleverness." "Depth over breadth."
   - "[A-Z][a-z]+ over [a-z]+\\."

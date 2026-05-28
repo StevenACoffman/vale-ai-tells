@@ -59,6 +59,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **ExplainerHeadings**: Add `Why It Exists` and `Why This Exists`
   alongside the existing `Why It Matters` / `Why This Matters`
   pair. Same explanatory-throat-clearing register.
+- **MicDrop**: Catch the verb-led contrastive form that appears as
+  a remediation cheat after the bare `X, not Y.` fragment gets
+  flagged. Shape: `[Subject] [linking verb] [adjective], not
+  [adjective].` Linking verbs include `stays`, `remains`,
+  `becomes`, `feels`, `reads`, `seems`, `sounds`, `looks`,
+  `appears`, `grows`, `ends up`, `comes across`. Example:
+  `Isolation here stays logical, not physical.` Lives in MicDrop
+  alongside the bare-fragment form so the same family triggers
+  the same message.
 
 ### Changed
 
