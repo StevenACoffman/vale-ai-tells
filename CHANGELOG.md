@@ -110,12 +110,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **README**: Document two structural patterns Vale can't reliably
-  flag — noun-phrase + past-participle fragments
-  (`The same set, applied identically by every client...`) and
+- **README**: Document three structural patterns Vale can't
+  reliably flag — noun-phrase + past-participle fragments
+  (`The same set, applied identically by every client...`),
   adjective-led fragments without an explicit subject
-  (`Durable enough for coordination state, without...`). Both
-  need syntactic parsing beyond regex token matching.
+  (`Durable enough for coordination state, without...`), and
+  headless-infinitive section openers
+  (`Threads to pull on in X before Y hardens.`). All three
+  need syntactic parsing beyond regex token matching. Some
+  characteristic vocabulary of the third shape now fires via
+  `AICompoundPhrases`, but the structure itself stays beyond
+  reach.
 
 <!-- vale on -->
 
