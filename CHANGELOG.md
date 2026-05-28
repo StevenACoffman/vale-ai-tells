@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **AnthropomorphicJustification**: Extend the "paying" family with
+  `pays its rent`, `paid its rent`, `paying its rent`. Same metaphor
+  as `earns its keep` and `pays for itself` — treats inanimate
+  subjects as tenants justifying their place.
+
+<!-- vale on -->
+
 ## [1.12.0] - 2026-05-28
 
 <!-- vale off -->

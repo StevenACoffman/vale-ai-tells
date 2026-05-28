@@ -19,9 +19,12 @@ tokens:
   # "Paying" family
   - pays? for itself
   - pays? dividends
+  - pays? its rent
   - more than pays? for itself
   - paid for itself
   - paid dividends
+  - paid its rent
+  - paying its rent
 
   # "Weight" family
   - pulls? its weight
