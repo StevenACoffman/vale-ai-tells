@@ -153,17 +153,17 @@ tokens:
   # === Indefinite-article exemplification stack ===
   # AI loves stacking hypothetical scenarios as parallel sentences:
   # "A hook wants to count failures. A subagent wants to record a
-  # result. A skill wants to stash a value." The shape — A + noun
-  # (1-3 words) + present-tense verb — paired across 3 sentences
-  # is distinctive enough to flag even when verbs differ.
-  - "A \\w+(?: \\w+){0,2} \\w+s [^.]+\\. A \\w+(?: \\w+){0,2} \\w+s [^.]+\\. A \\w+(?: \\w+){0,2} \\w+s [^.!?]+"
+  # result. A skill wants to stash a value." The shape — A/An +
+  # noun (1-3 words) + present-tense verb — paired across 3
+  # sentences is distinctive enough to flag even when verbs differ.
+  - "(?:A|An) \\w+(?: \\w+){0,2} \\w+s [^.]+\\. (?:A|An) \\w+(?: \\w+){0,2} \\w+s [^.]+\\. (?:A|An) \\w+(?: \\w+){0,2} \\w+s [^.!?]+"
 
-  # 2-sentence parallel-mirror pair: "A session write lands in X.
-  # A subagent write lands in Y." Same A + NP + verb-s shape but
-  # paired instead of tripled. Common in technical prose written
-  # by humans too, but the dramatic shared-verb framing reads as
-  # an AI tell in practice.
-  - "A \\w+(?: \\w+){0,2} \\w+s [^.]+\\. A \\w+(?: \\w+){0,2} \\w+s [^.!?]+"
+  # 2-sentence parallel-mirror pair: "An unset X counts as Y.
+  # A set-but-wrong value belongs to Z." Same A/An + NP + verb-s
+  # shape but paired instead of tripled. Common in technical prose
+  # written by humans too, but the dramatic shared-verb framing
+  # reads as an AI tell in practice.
+  - "(?:A|An) \\w+(?: \\w+){0,2} \\w+s [^.]+\\. (?:A|An) \\w+(?: \\w+){0,2} \\w+s [^.!?]+"
 
   # === Definite-article noun-list fragment ===
   # "The X, the Y, the Z." — three or more comma-separated

@@ -21,6 +21,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   register — the heading restates the section's job rather than
   doing it.
 
+### Changed
+
+- **StackedAnaphora**: Extend the 2- and 3-sentence indefinite-article
+  exemplification stack patterns to accept `An` as well as `A`.
+  Catches mixed pairs like `An unset X counts as Y. A set-but-wrong
+  value belongs to Z.`
+
 <!-- vale on -->
 
 ## [1.12.0] - 2026-05-28
