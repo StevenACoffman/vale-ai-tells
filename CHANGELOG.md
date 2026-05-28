@@ -56,6 +56,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   of the same shape (`A session write lands in X. A subagent
   write lands in Y.`). The shared-verb framing carries the
   drumroll even with only two sentences.
+- **ExplainerHeadings**: Add `Why It Exists` and `Why This Exists`
+  alongside the existing `Why It Matters` / `Why This Matters`
+  pair. Same explanatory-throat-clearing register.
 
 ### Changed
 
