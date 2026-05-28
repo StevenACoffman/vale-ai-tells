@@ -52,6 +52,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   enumerating hypothetical scenarios. The construction predates
   LLMs in API/concurrency reference docs but is now a sufficiently
   strong AI tell to flag uniformly.
+- **StackedAnaphora**: Add the 2-sentence parallel-mirror variant
+  of the same shape (`A session write lands in X. A subagent
+  write lands in Y.`). The shared-verb framing carries the
+  drumroll even with only two sentences.
 
 <!-- vale on -->
 
