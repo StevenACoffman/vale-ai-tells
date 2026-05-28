@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI despite-formula: '%s'. This acknowledges problems only to dismiss them. Either engage with the challenges substantively or remove the hedge."
+message: "AI despite-formula: '%s'. Engage with the challenges substantively or remove the hedge."
 level: error
 ignorecase: true
 tokens:

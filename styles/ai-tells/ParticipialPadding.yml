@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI participial padding: '%s'. This -ing phrase adds shallow analysis. Delete it or make the point concrete."
+message: "AI participial padding: '%s'. Delete it or make the point concrete."
 level: error
 ignorecase: true
 tokens:

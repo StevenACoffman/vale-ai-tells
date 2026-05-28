@@ -1,9 +1,6 @@
 ---
 extends: existence
-message: >-
-  AI mic-drop: '%s'.
-  Tagline-style headings are a common AI pattern.
-  Use a descriptive heading instead.
+message: "AI mic-drop: '%s'. Use a descriptive heading instead."
 level: error
 nonword: true
 scope: heading

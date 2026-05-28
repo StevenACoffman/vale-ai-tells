@@ -1,9 +1,6 @@
 ---
 extends: existence
-message: >-
-  AI rhetoric: '%s'.
-  Back-to-back minimal sentences with parallel structure
-  read like a movie trailer. Combine them or vary the structure.
+message: "AI staccato: '%s'. Combine these clipped parallel sentences or vary the structure."
 level: error
 nonword: true
 tokens:

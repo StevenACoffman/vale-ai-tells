@@ -36,11 +36,12 @@ vale --config=.vale.ini test-document.md
 **Running all linters:**
 
 ```bash
-just lint           # run all linters (lint-yaml, lint-prose, lint-markdown, lint-spelling)
+just lint           # run all linters (yaml, prose, markdown, spelling, messages)
 just lint-yaml      # yamllint on all YAML files
 just lint-prose     # Vale on all files
 just lint-markdown  # rumdl on all Markdown files
 just lint-spelling  # codespell
+just lint-messages  # Vale on each rule's own message: field (dogfooding)
 ```
 
 **Pre-commit hooks:**
@@ -66,6 +67,12 @@ All rules use `error` level by default. Users can override this in their `.vale.
 - `message`: Clear explanation of why the rule flags the pattern
 - `level`: Always `error`
 - `tokens` or `swap`: The patterns to match
+
+Messages must pass the `ai-tells` style themselves: no em-dashes, no anthropomorphic
+or cliché idioms, no quoting a flagged word as an example (give the good word instead).
+Write each message as `AI <label>: '%s'. <concrete action>.` so agents can act on it.
+`just lint-messages` enforces this via the `RuleMessage` View (selects the `message`
+field with Dasel and lints it as prose); it runs as part of `just lint`.
 
 ## Tone
 

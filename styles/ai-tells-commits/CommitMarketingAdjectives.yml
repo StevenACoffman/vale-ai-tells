@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI commit tell: '%s'. This is marketing copy, not a commit message. State what changed and why."
+message: "AI commit tell: '%s'. State what changed and why, not marketing copy."
 level: error
 ignorecase: true
 # The hyphenated forms 'state-of-the-art', 'best-in-class', 'world-class',

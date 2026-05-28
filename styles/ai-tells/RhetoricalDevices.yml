@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI rhetoric: '%s'. This rhetorical device is overrepresented in AI-generated text."
+message: "AI rhetoric: '%s'. Remove it or rephrase as a plain statement."
 level: error
 nonword: true
 tokens:

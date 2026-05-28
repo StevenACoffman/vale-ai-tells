@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI rhetoric: '%s'. This preemptively defends against an objection the reader hasn't made. State your point directly and let it stand on its own."
+message: "AI defensive hedge: '%s'. State your point directly without pre-defending it."
 level: error
 nonword: true
 tokens:

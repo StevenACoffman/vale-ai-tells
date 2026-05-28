@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI sequencing: '%s'. Numbering your points with ordinal markers is a common AI pattern. Use natural transitions or just write a list."
+message: "AI sequencing: '%s'. Use natural transitions or write an actual list."
 level: error
 tokens:
   - Firstly

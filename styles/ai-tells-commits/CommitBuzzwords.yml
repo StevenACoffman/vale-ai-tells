@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI commit tell: '%s'. This vague buzzword combo is a hallmark of AI-generated commits. Be specific about what actually changed."
+message: "AI commit tell: '%s'. Be specific about what actually changed."
 level: error
 ignorecase: true
 tokens:

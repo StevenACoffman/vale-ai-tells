@@ -1,9 +1,6 @@
 ---
 extends: existence
-message: >-
-  AI wrap-up heading: '%s'.
-  Closing-flourish headings tend to summarize what the section already said.
-  Either delete the section or rename the heading to the topic.
+message: "AI wrap-up heading: '%s'. Delete the section or rename the heading to the topic."
 level: error
 ignorecase: true
 scope: heading

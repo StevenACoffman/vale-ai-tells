@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI commit tell: '%s'. This trailing justification restates the obvious—if the change is good, the diff shows it."
+message: "AI commit tell: '%s'. Cut it; if the change is good, the diff shows it."
 level: error
 ignorecase: true
 tokens:

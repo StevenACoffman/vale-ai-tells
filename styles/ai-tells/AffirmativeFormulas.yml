@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI rhetoric: '%s'. Just state your point directly. Delete the preamble and start with what you're actually saying."
+message: "AI affirmation: '%s'. Cut the flourish and state the point plainly."
 level: error
 tokens:
   # "And that's [the/what] X" patterns

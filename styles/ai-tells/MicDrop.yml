@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI mic-drop: '%s'. Short dramatic sentences for emphasis are a common AI tell in technical prose. Integrate the point into surrounding text or cut it."
+message: "AI mic-drop: '%s'. Integrate the point into the surrounding text or cut it."
 level: error
 nonword: true
 tokens:

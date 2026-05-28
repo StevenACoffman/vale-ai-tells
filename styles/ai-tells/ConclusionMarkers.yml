@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI tell: '%s'. Delete this and let your final point stand on its own."
+message: "AI conclusion: '%s'. Delete this and end on your final point."
 level: error
 ignorecase: true
 tokens:

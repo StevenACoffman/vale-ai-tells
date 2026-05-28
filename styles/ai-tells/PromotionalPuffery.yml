@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI puffery: '%s'. This reads like ad copy or a travel brochure. Use neutral, specific language."
+message: "AI puffery: '%s'. Use neutral, specific language."
 level: error
 ignorecase: true
 tokens:

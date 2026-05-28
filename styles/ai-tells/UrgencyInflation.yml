@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI urgency: '%s'. This asserts importance rather than demonstrating it. Delete it and let your point speak for itself."
+message: "AI urgency: '%s'. Delete it or show the stakes concretely."
 level: error
 ignorecase: true
 tokens:

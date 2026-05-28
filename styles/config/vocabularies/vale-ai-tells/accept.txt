@@ -45,6 +45,7 @@ whitepaper
 yamllint
 
 # Author and tool names
+Dasel
 Gorrie
 Kassorla
 Pangram

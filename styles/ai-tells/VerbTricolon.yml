@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI rhetoric: '%s'. Verb tricolons (exactly three parallel verbs) are an LLM fingerprint. Restructure or vary the count."
+message: "AI tricolon: '%s'. Three parallel verbs in series. Restructure or vary the count."
 level: error
 nonword: true
 tokens:

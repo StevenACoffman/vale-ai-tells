@@ -1,9 +1,6 @@
 ---
 extends: existence
-message: >-
-  AI cliché: '%s'.
-  Treating abstractions like employees under performance review
-  is a common AI pattern. Say what you mean directly.
+message: "AI cliché: '%s'. Say what you mean directly."
 level: error
 ignorecase: true
 tokens:

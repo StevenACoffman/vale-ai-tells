@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI commit tell: '%s'. You already made the change—don't hedge about whether it works. If you're unsure, say what you tested."
+message: "AI commit tell: '%s'. You already made the change. Don't hedge about whether it works; state what you tested instead."
 level: error
 ignorecase: true
 tokens:

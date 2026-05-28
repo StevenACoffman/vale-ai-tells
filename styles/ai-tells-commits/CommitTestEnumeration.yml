@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI commit tell: '%s'. Don't enumerate test results in commits — link the CI run or describe what coverage actually changed."
+message: "AI commit tell: '%s'. Don't enumerate test results in commits. Link the CI run or describe what coverage actually changed."
 level: error
 # Vale concatenates raw entries without a separator, so wrap the
 # alternation in a single non-capturing group. Escape literal '%' as '%%'

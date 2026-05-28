@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI narrative pivot: '%s'. This manufactures drama without delivering insight. State your point directly."
+message: "AI narrative pivot: '%s'. State your point directly."
 level: error
 ignorecase: true
 tokens:

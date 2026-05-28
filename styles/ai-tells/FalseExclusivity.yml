@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI false exclusivity: '%s'. Claiming insider knowledge is a common AI dramatic device. Just state the point directly."
+message: "AI false exclusivity: '%s'. State the point directly without claiming insider knowledge."
 level: error
 ignorecase: true
 tokens:

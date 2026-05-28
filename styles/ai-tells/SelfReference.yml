@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI cross-reference: '%s'. These backward/forward references are an AI writing habit. Rewrite to stand on its own or restructure the content."
+message: "AI cross-reference: '%s'. Rewrite the passage to work without the cross-reference."
 level: error
 ignorecase: true
 tokens:

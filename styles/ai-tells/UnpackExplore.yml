@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI explainer prompt: '%s'. Just explain it—skip the announcement."
+message: "AI explainer prompt: '%s'. Explain it directly instead of announcing it."
 level: error
 ignorecase: true
 tokens:

@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI commit tell: '%s'. Systematic gitmoji is a fingerprint of AI commit tools. Use words."
+message: "AI commit tell: '%s'. Drop the gitmoji and use words."
 level: error
 nonword: true
 tokens:

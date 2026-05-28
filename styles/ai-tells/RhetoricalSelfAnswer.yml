@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI rhetorical self-answer: '%s'. Self-posed questions answered for dramatic effect are a common AI pattern. Integrate the point into your prose."
+message: "AI rhetorical self-answer: '%s'. State the point directly instead of posing and answering your own question."
 level: error
 nonword: true
 scope: raw

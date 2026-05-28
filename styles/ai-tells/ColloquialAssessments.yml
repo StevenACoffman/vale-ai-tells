@@ -1,9 +1,6 @@
 ---
 extends: existence
-message: >-
-  AI colloquial assessment: '%s'.
-  Knowing-tone phrases like this manufacture confidence rather than demonstrate it.
-  State the assessment directly.
+message: "AI colloquial assessment: '%s'. State the assessment directly."
 level: error
 nonword: true
 ignorecase: true

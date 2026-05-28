@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI rhetoric: '%s'. Stacked repetition for emphasis is a common AI pattern. Vary your sentence structure or combine into a single statement."
+message: "AI anaphora: '%s'. Vary the sentence openings or combine into a single statement."
 level: error
 nonword: true
 tokens:

@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI commit tell: '%s'. Commit messages shouldn't narrate themselves—just state what you did and why."
+message: "AI commit tell: '%s'. Commit messages shouldn't narrate themselves. State what you did and why."
 level: error
 ignorecase: true
 tokens:

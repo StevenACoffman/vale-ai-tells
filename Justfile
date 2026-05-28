@@ -28,7 +28,7 @@ fix-markdown *args:
 # --- Lint ---
 
 # Run all linters
-lint: lint-yaml lint-prose lint-markdown lint-spelling
+lint: lint-yaml lint-prose lint-markdown lint-spelling lint-messages
 
 # Lint YAML files
 lint-yaml *args:
@@ -45,6 +45,12 @@ lint-markdown *args:
 # Check spelling
 lint-spelling *args:
   cspell {{ if args == "" { "." } else { args } }}
+
+# Lint each rule file's own `message:` field with the ai-tells prose style, so
+# the package's diagnostics don't contain the patterns they flag. Uses the
+# RuleMessage View (styles/config/views/RuleMessage.yml) to select the field.
+lint-messages:
+  vale --config=.vale-messages.ini styles/ai-tells styles/ai-tells-commits styles/ai-tells-experimental
 
 # --- Utilities ---
 

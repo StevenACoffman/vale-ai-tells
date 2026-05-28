@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI formalism: '%s'. Use a simpler word (e.g., 'use' instead of 'utilize')."
+message: "AI formalism: '%s'. Use a plainer everyday word (e.g., 'use', 'help', 'start')."
 level: error
 tokens:
   - utilize
