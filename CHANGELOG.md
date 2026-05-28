@@ -15,6 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `pays its rent`, `paid its rent`, `paying its rent`. Same metaphor
   as `earns its keep` and `pays for itself` — treats inanimate
   subjects as tenants justifying their place.
+- **ExplainerHeadings**: Add the `What It X` family alongside the
+  `Why It X` shapes. Covers `What It Solves`, `What This Solves`,
+  `What It Does`, `What This Does`. Same explanatory-throat-clearing
+  register — the heading restates the section's job rather than
+  doing it.
 
 <!-- vale on -->
 
