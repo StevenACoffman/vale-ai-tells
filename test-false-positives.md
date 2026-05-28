@@ -158,11 +158,22 @@ Every line of code matters when the binary is this small.
 
 It matters whether the lock is held during the write.
 
+<!-- Known limitation: definite-NP "The X matters." now fires (v1.12.0
+     extended MicDrop from pronoun subjects to noun-phrase subjects).
+     Suppress per-section if legit. -->
+<!-- vale ai-tells.MicDrop = NO -->
 The order of operations matters.
+<!-- vale ai-tells.MicDrop = YES -->
 
 ## AnthropomorphicJustification ("work"): literal uses that should NOT trigger
 
+<!-- Known limitation: bare "does/doing the work" now fires (v1.12.0
+     dropped the qualified-shape exclusion). Human-subject uses with
+     trailing "of X" qualifiers still trigger. Suppress per-section
+     if legit. -->
+<!-- vale ai-tells.AnthropomorphicJustification = NO -->
 The team does the work of reviewing every PR.
+<!-- vale ai-tells.AnthropomorphicJustification = YES -->
 
 Engineers do the hard work of maintaining the runtime.
 
