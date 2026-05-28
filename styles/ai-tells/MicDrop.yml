@@ -26,6 +26,17 @@ tokens:
   - "(?:It|This|That) pays off\\."
   - "(?:It|This|That) depends\\."
 
+  # ---- Explicit-NP subject + intransitive mic-drop verb ----
+  # Same family as the pronoun set above, but with definite or demonstrative
+  # noun-phrase subjects instead of bare pronouns. AI punctuates technical
+  # discussion with these terminal one-liners.
+  # "The unset-versus-bogus distinction matters." "The trust compounds."
+  # [\w-] catches hyphenated subjects ("load-bearing", "user-facing").
+  - "(?:The|This|That) [\\w-]+(?: [\\w-]+){0,2} (?:matters|compounds|pays off|adds up)\\."
+
+  # Plural form: "These details matter." "Those choices add up."
+  - "(?:These|Those) [\\w-]+(?: [\\w-]+){0,2} (?:matter|compound|pay off|add up)\\."
+
   # ---- "This/That/It + copula + adjective" emphatic declarations ----
   # "This is key." "That's intentional." "It was deliberate."
   - "(?:It|This|That)(?:'s| is| was) (?:key|crucial|critical|intentional|deliberate|powerful|elegant|subtle|clean|simple|clear|important|significant|telling|striking|notable|profound|revealing|transformative|remarkable|essential|fundamental|beautiful|paramount|vital|obvious|neat|real|enough)\\."

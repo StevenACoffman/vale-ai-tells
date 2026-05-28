@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   work, gets no credit`), or relative clauses (`the team that does
   the work`). The bare construction with a non-human subject
   (`the CLI does the work`) is distinctive enough to flag.
+- **MicDrop**: Extend the pronoun mic-drop family (`It matters.`,
+  `This compounds.`) to explicit noun-phrase subjects. Covers
+  `The/This/That [noun] matters.`, `compounds.`, `pays off.`,
+  `adds up.` and the plural `These/Those [noun] matter.` family.
+  Subjects allow up to three words and tolerate hyphens, so shapes
+  like `The unset-versus-bogus distinction matters.` are caught.
 
 <!-- vale on -->
 
