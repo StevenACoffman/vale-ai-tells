@@ -68,6 +68,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `Isolation here stays logical, not physical.` Lives in MicDrop
   alongside the bare-fragment form so the same family triggers
   the same message.
+- **StackedAnaphora**: Catch verbless definite-article noun-list
+  fragments — `The X, the Y, the Z.` (3+ items, asyndetic or
+  syndetic). Items may be up to 5 words to tolerate parenthetical
+  glosses like `Time-To-Live (TTL)`. Requires sentence-initial
+  capital `The` to reduce mid-sentence false positives on
+  legitimate enumerations.
 
 ### Changed
 
