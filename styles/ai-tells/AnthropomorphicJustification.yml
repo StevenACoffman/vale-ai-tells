@@ -98,3 +98,21 @@ tokens:
   - deserves? checking
   - deserves? rethinking
   - deserves? revisiting
+
+  # "Harm" family.
+  # Treats inanimate subjects (a check, a config, a flag) as moral
+  # agents capable of inflicting or withholding damage — the
+  # Hippocratic register applied to code. "The check passes too
+  # without doing harm." Technical writing rarely needs it; just say
+  # what the change does or doesn't do.
+  # NOTE: legitimate in medical / health-software prose ("the device
+  # must do no harm"). No regex-clean way to detect that context;
+  # disable this rule for those files via .vale.ini if needed.
+  - does? harm
+  - doing harm
+  - does? no harm
+  - doing no harm
+  - without doing harm
+  - causes? harm
+  - causing harm
+  - without causing harm

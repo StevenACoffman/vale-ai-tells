@@ -665,6 +665,12 @@ The schema does the important work of enforcing constraints.
 
 That one query does most of the work for the dashboard.
 
+The added check passes too without doing harm.
+
+The flag does no harm to existing callers.
+
+This migration causes harm if run twice.
+
 ## NarrativePivots (game / playbook / script)
 
 This release changed the game for our customers.

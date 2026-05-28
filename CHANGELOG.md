@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **AnthropomorphicJustification**: Add a "harm" family — `does harm`,
+  `doing harm`, `does no harm`, `without doing harm`, `causes harm`,
+  `causing harm`, and the `without causing harm` form. Treats
+  inanimate subjects as moral agents capable of inflicting or
+  withholding damage; technical prose rarely needs the Hippocratic
+  register. Legitimate in medical / health-software writing, where
+  the rule can be disabled per file via `.vale.ini`.
+
+<!-- vale on -->
+
 ## [1.13.0] - 2026-05-28
 
 <!-- vale off -->
