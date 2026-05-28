@@ -38,6 +38,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `The bottom line:`, `The takeaway:`, `The result:`,
   `The answer:`, `The reason:`, `The lesson:`, `The moral:`,
   `The point:`, `The pitch:`, `The fix:`, `The payoff:`.
+- **AICompoundPhrases**: Add the `real` intensifier family for
+  abstract nouns where AI inflates weight: `a real choice`,
+  `a real option`, `a real difference`, `a real test`,
+  `a real question`, `a real chance`, `a real problem`,
+  `real value`, `real progress`, `real flexibility`,
+  `real ownership`, `real accountability`, `real tradeoffs`,
+  and similar. Enumerated rather than bare `real` to avoid
+  `real-time`, `real estate`, `real world` collisions.
 
 <!-- vale on -->
 

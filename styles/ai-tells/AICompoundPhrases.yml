@@ -83,3 +83,34 @@ tokens:
   - unlock capabilities
   - unlocks possibilities
   - unlock possibilities
+
+  # "real" as intensifier before an abstract noun.
+  # AI reaches for "a real choice" / "a real difference" to inflate
+  # weight where a plain noun would do. Bare "real" is too broad
+  # (real-time, real estate, real world), so this is enumerated.
+  - a real choice
+  - a real option
+  - a real difference
+  - a real test
+  - a real question
+  - a real chance
+  - a real problem
+  - a real shot
+  - a real risk
+  - a real cost
+  - a real benefit
+  - real value
+  - real progress
+  - real flexibility
+  - real benefits
+  - real costs
+  - real impact
+  - real leverage
+  - real ownership
+  - real accountability
+  - real consequences
+  - real tradeoffs
+  - real trade-offs
+  - real choices
+  - real options
+  - real differences
