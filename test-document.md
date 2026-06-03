@@ -930,3 +930,15 @@ The framework anchors the whole argument.
 It became an emotional anchor for the team.
 
 The refrain serves as an anchor for the essay.
+
+## StrategyBuzzwords
+
+We built a growth flywheel that compounds.
+
+Our competitive moat keeps widening.
+
+Pick a north star metric and stick to it.
+
+Strong network effects take over.
+
+This is about first-mover advantage in a market land grab.

@@ -281,3 +281,13 @@ Bolt the bracket so it is anchored to the wall.
 Negotiators exploit anchoring bias in pricing.
 
 The mall's anchor tenant signed a lease.
+
+## StrategyBuzzwords: literal uses that should NOT trigger
+
+The engine's flywheel cracked at high rpm.
+
+The castle's moat was dry that summer.
+
+Sailors steer by the North Star.
+
+Settlers joined the Oklahoma land grab of 1889.

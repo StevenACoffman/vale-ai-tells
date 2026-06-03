@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **StrategyBuzzwords**: New rule. Flags strategy-deck buzzword
+  metaphors: "growth flywheel," "competitive moat," "north star
+  metric," "network effects," "first-mover advantage," "land grab."
+  Each term is scoped to its figurative shape so the literal homograph
+  stays clean (the engine's flywheel, a castle's moat, the real North
+  Star). Network effects and first-mover advantage are the most
+  legitimate as analytical terms and are the first to drop if they fire
+  on genuine analysis.
+
+<!-- vale on -->
+
 ## [1.15.0] - 2026-06-03
 
 <!-- vale off -->
