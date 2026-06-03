@@ -864,3 +864,21 @@ Always be shipping.
 They run a tight ship.
 
 The ship has sailed on that idea.
+
+## ResonateOveruse
+
+This really resonates with our audience.
+
+The message resonated deeply.
+
+A story that resonates with readers.
+
+## OverusedVocabulary (hype verbs)
+
+We supercharge the deployment pipeline.
+
+The platform unleashes new capabilities.
+
+This release will turbocharge growth.
+
+We democratize access to the tooling.

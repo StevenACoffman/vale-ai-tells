@@ -231,3 +231,15 @@ The flagship product and the spaceship are just props.
 He attends worship at the township chapel.
 
 The shipment arrived and every shipment is tracked.
+
+## ResonateOveruse: noun forms that should NOT trigger
+
+The cavity has a resonant frequency.
+
+Acoustic resonance filled the hall.
+
+## OverusedVocabulary (hype verbs): literal forms that should NOT trigger
+
+The supercharged engine roared to life.
+
+A turbocharged sedan passed us.

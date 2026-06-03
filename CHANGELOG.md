@@ -32,12 +32,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   boundaries keep the `-ship` suffixes (relationship, leadership) and
   compounds (spaceship, flagship) clean. Disable the whole rule for
   maritime or logistics prose.
+- **ResonateOveruse**: New rule. Flags "resonate" as an overused
+  reception verb ("resonates with audiences," "resonates deeply").
+  Flagged broadly with no exemptions; the only literal sense is physics
+  and acoustics, a clear domain that disables the whole rule. The noun
+  forms "resonance" and "resonant" are a different word and stay clean.
 
 ### Changed
 
 - **ColloquialAssessments**: Drop the release-verb token ("lands in
   main") and the "lands at just the right" token, both now covered by
   FigurativeLands. The assessment sense ("the joke lands") stays.
+- **OverusedVocabulary**: Add marketing and hype verbs (supercharge,
+  unleash, turbocharge, democratize). The `-ed` forms of super and
+  turbocharge are omitted so the literal "supercharged engine" stays
+  clean.
 
 <!-- vale on -->
 

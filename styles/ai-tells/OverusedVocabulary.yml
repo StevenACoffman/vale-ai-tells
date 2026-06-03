@@ -166,3 +166,20 @@ tokens:
   - vibrantly
   - genuinely
   - genuine
+  # Marketing and hype verbs (zeitgeist). Case-sensitive like the rest of this
+  # rule, so a sentence-initial form is missed. The -ed forms of super/turbo are
+  # omitted to spare the literal "supercharged engine."
+  - supercharge
+  - supercharges
+  - supercharging
+  - turbocharge
+  - turbocharges
+  - turbocharging
+  - unleash
+  - unleashes
+  - unleashing
+  - unleashed
+  - democratize
+  - democratizes
+  - democratizing
+  - democratized

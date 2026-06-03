@@ -174,12 +174,13 @@ This package contains 50 rule files covering different categories of AI tells. A
 | `NarrativePivots` | Unearned dramatic pivots: "something shifted," "everything changed," "that changed everything," "changed the game," "rewrote the playbook," "flipped the script," "it was a wake-up call," etc. |
 | `OpeningCliches` | AI-style openings: "In today's rapidly evolving landscape," "Without further ado," "Whether you're," etc. |
 | `OrganicConsequence` | False inevitability: "emerges naturally," "a natural consequence," "follows naturally from," etc. |
-| `OverusedVocabulary` | Words with documented AI overuse: "delve," "comprehensive," "unprecedented," "sophisticated," "salient," "efficacy," "paramount," "cognizant," "camaraderie," "palpable," "fleeting," "amidst," "genuinely," "genuine," etc. Verb forms (leverage, harness, etc.) moved to `OverusedVocabularyVerbs`. |
+| `OverusedVocabulary` | Words with documented AI overuse: "delve," "comprehensive," "unprecedented," "sophisticated," "salient," "efficacy," "paramount," "cognizant," "camaraderie," "palpable," "fleeting," "amidst," "genuinely," "genuine," "supercharge," "unleash," "democratize," etc. Verb forms (leverage, harness, etc.) moved to `OverusedVocabularyVerbs`. |
 | `OverusedVocabularyVerbs` | Verb forms of AI vocabulary fingerprints: "leverage," "navigate," "showcase," "harness," "embark," "foster," "spearhead." Sequence-based for precision — noun forms such as "financial leverage" do not trigger. |
 | `ParallelStaccato` | Back-to-back minimal sentences with parallel structure: "Engineers build. Managers ship." "Content carries the personality. Chrome doesn't." Solo two-word staccato: "Complexity scales." |
 | `ParticipialPadding` | Present participle (-ing) phrases appended for shallow analysis: "highlighting its importance," "reflecting broader trends," "underscoring its role," "solidifying its position," etc. The #1 discriminating feature in the PNAS study (527% of human rate). |
 | `PromotionalPuffery` | Ad-copy and travel-brochure language: "nestled in," "vibrant community," "a beacon of," "renowned for its," "has emerged as a," "left an indelible mark," etc. |
 | `RedundantPrecaution` | Redundant-precaution idioms that signal over-engineering thinking: "belt and suspenders," "belt-and-suspenders." |
+| `ResonateOveruse` | "Resonate" as an overused reception verb: "resonates with audiences," "resonates deeply." Flagged broadly; the only literal sense is physics and acoustics, so disable the rule for physics or audio writing. |
 | `RestatementMarkers` | Redundant restatements: "In other words," "Simply put," "To be more specific," etc. |
 | `RhetoricalDevices` | Rhetorical question patterns: "Ask yourself:", "The test:", "When doing X, ask:" etc. |
 | `RhetoricalSelfAnswer` | Self-posed rhetorical questions answered for dramatic effect: "The result/catch/worst part?" followed by an immediate answer. |
