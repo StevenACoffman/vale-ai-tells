@@ -225,3 +225,17 @@ They need servers, databases, and load balancers.
 We use PostgreSQL, Redis, and Elasticsearch.
 
 You want speed, reliability, and simplicity.
+
+## ShipOveruse: suffixes and compounds that should NOT trigger
+
+Our relationship and their partnership deepened over the years.
+
+Good leadership outlasts any membership fee.
+
+She earned a scholarship and an internship.
+
+The flagship product and the spaceship are just props.
+
+He attends worship at the township chapel.
+
+The shipment arrived and every shipment is tracked.

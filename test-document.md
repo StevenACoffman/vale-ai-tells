@@ -850,3 +850,17 @@ Focus lands on the first input.
 The webhook lands at the wrong endpoint.
 
 The estimate lands at five million.
+
+## ShipOveruse
+
+Ship it. Just ship it and move on.
+
+We ship fast and ship early and often.
+
+The team shipped the feature last sprint.
+
+Always be shipping.
+
+They run a tight ship.
+
+The ship has sailed on that idea.

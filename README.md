@@ -186,6 +186,7 @@ This package contains 50 rule files covering different categories of AI tells. A
 | `SelfReference` | Self-referential cross-references: "as mentioned above," "as noted earlier," "as we'll explore," etc. |
 | `SequencingMarkers` | Formulaic ordinal sequencing: "Firstly," "Secondly," "Thirdly," "The first takeaway," "The second benefit," etc. |
 | `ServesAsDodge` | Inflated copula replacements: "serves as a," "stands as the," "represents a pivotal," "boasts a vibrant," etc. Use "is" or "are" instead. |
+| `ShipOveruse` | "Ship" as an AI overuse fingerprint: the release verb ("ship it," "ship fast," "ship the feature") and the maritime clichés ("run a tight ship," "the ship has sailed"). Deliberately broad with no exemptions, so the logistics verb and the vessel noun are flagged too. Disable the rule for maritime or logistics writing. |
 | `StackedAnaphora` | Stacked repetition for emphasis: "No X. No Y. No Z." "It's X. It's Y. It's Z." etc. |
 | `StructureAnnouncements` | Narrating upcoming structure: "key takeaway," "quick recap," "to recap," "quick summary," "to put it plainly," "to put this in perspective," etc. |
 | `SycophancyMarkers` | Flattering phrases: "Great question," "I'm happy to help," "You make an excellent point," etc. |

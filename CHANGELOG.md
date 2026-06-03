@@ -22,6 +22,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   exemptions. Known limitation: the infinitive "to land on" fires
   (the matched subject is "to"), which suits the figurative sense but
   catches literal "to land on the runway."
+- **ShipOveruse**: New rule. Flags "ship" as an AI overuse fingerprint:
+  the release verb ("ship it," "ship fast," "ship the feature") and the
+  maritime clichés ("run a tight ship," "the ship has sailed").
+  Deliberately broad with no exemptions, so the logistics verb ("ship
+  the order") and the vessel noun ("a cargo ship") are flagged too. Word
+  boundaries keep the `-ship` suffixes (relationship, leadership) and
+  compounds (spaceship, flagship) clean. Disable the whole rule for
+  maritime or logistics prose.
 
 ### Changed
 
@@ -501,8 +509,10 @@ Seven new rules in the `ai-tells-commits` style, bringing the total to 13.
 
 ### Changed
 
+<!-- vale ai-tells.ShipOveruse = NO -->
 - **Release workflow**: `ai-tells-experimental.zip` now ships as its own
   release artifact alongside `ai-tells.zip` and `ai-tells-commits.zip`
+<!-- vale ai-tells.ShipOveruse = YES -->
 
 ### Fixed
 
@@ -538,10 +548,12 @@ Seven new rules in the `ai-tells-commits` style, bringing the total to 13.
 
 ### Fixed
 
+<!-- vale ai-tells.ShipOveruse = NO -->
 - **Packaging**: `ai-tells-commits` now ships as its own zip asset,
   `ai-tells-commits.zip`, so Vale can install it as a separate package.
   Before, it shipped inside `ai-tells.zip`, which Vale ignored during
   sync because the directory name didn't match the package name.
+<!-- vale ai-tells.ShipOveruse = YES -->
 
 ## [1.5.0] - 2026-03-20
 
