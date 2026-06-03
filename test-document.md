@@ -894,3 +894,19 @@ The command returns exit 0 (no stdout, no stderr).
 No setup, no config, no credit card.
 
 Fast startup, no heavy dependencies.
+
+## GrowthMetaphors
+
+We incubate early-stage ideas in our accelerator.
+
+The concept gestated for months before launch.
+
+A nascent market with embryonic potential.
+
+Our fledgling startup is still in its infancy.
+
+We cultivate partnerships and nurture emerging talent.
+
+The plan is to close a seed funding round and build the minimum viable product.
+
+The company prefers organic growth over acquisitions.

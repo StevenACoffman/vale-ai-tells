@@ -251,3 +251,13 @@ The feature is no longer supported.
 She paused, no longer sure of the answer.
 
 We left at dawn, no sooner than we had to.
+
+## GrowthMetaphors: scoped words that should NOT trigger
+
+We chose the most viable option available.
+
+Set the random seed before training the model.
+
+The store sells fresh organic produce.
+
+Her earliest memories date from infancy.

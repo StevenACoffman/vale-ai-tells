@@ -37,6 +37,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Flagged broadly with no exemptions; the only literal sense is physics
   and acoustics, a clear domain that disables the whole rule. The noun
   forms "resonance" and "resonant" are a different word and stay clean.
+- **GrowthMetaphors**: New rule. The startup-as-organism register:
+  "incubate," "gestate," "nascent," "fledgling," "embryonic,"
+  "cultivate," "nurture," and "in its infancy" are flagged broadly. The
+  finance and tech-overloaded words are scoped to their startup phrases
+  ("minimum viable," "seed funding," "organic growth") so the random
+  seed, a viable option, and organic produce stay clean. Disable for
+  medical or nature writing.
 - **ContrastiveNegation**: New rule. Catches the telegraphic negation
   cadence agents reach for once "not X; it's Y" gets flagged: stacked
   "no setup, no config, no hassle" and the single clause-final fragment
