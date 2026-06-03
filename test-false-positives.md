@@ -261,3 +261,9 @@ Set the random seed before training the model.
 The store sells fresh organic produce.
 
 Her earliest memories date from infancy.
+
+## SemicolonUsage: legitimate semicolons that should NOT trigger
+
+We visited Paris, France; Berlin, Germany; and Tokyo, Japan.
+
+Compute the centroid; if it is on the far side, reverse the order.

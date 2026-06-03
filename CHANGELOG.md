@@ -37,6 +37,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Flagged broadly with no exemptions; the only literal sense is physics
   and acoustics, a clear domain that disables the whole rule. The noun
   forms "resonance" and "resonant" are a different word and stay clean.
+- **SemicolonUsage**: New rule. Catches the semicolon used as an
+  em-dash substitute: the punchy, comma-free, clause-final continuation
+  an agent reaches for after the em-dash gets flagged. Following
+  Google's guidance, it exempts the legitimate uses, which carry a comma
+  (a series with internal punctuation, a "; however," join, a complex
+  clause) or a conjunctive adverb. Several internal rule messages were
+  reworded to drop their own semicolons.
 - **GrowthMetaphors**: New rule. The startup-as-organism register:
   "incubate," "gestate," "nascent," "fledgling," "embryonic,"
   "cultivate," "nurture," and "in its infancy" are flagged broadly. The

@@ -910,3 +910,11 @@ We cultivate partnerships and nurture emerging talent.
 The plan is to close a seed funding round and build the minimum viable product.
 
 The company prefers organic growth over acquisitions.
+
+## SemicolonUsage
+
+The result was clear; a total failure.
+
+It does one thing; it does it well.
+
+The build passed; the tests stayed green.

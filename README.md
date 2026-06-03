@@ -187,6 +187,7 @@ This package contains 50 rule files covering different categories of AI tells. A
 | `RhetoricalDevices` | Rhetorical question patterns: "Ask yourself:", "The test:", "When doing X, ask:" etc. |
 | `RhetoricalSelfAnswer` | Self-posed rhetorical questions answered for dramatic effect: "The result/catch/worst part?" followed by an immediate answer. |
 | `SelfReference` | Self-referential cross-references: "as mentioned above," "as noted earlier," "as we'll explore," etc. |
+| `SemicolonUsage` | Semicolons used as an em-dash substitute: a comma-free, clause-final continuation ("It does one thing; it does it well."). Exempts the legitimate uses, which carry a comma (lists with internal punctuation, "; however," joins, complex clauses). `Google.Semicolons` still warns on the rest. |
 | `SequencingMarkers` | Formulaic ordinal sequencing: "Firstly," "Secondly," "Thirdly," "The first takeaway," "The second benefit," etc. |
 | `ServesAsDodge` | Inflated copula replacements: "serves as a," "stands as the," "represents a pivotal," "boasts a vibrant," etc. Use "is" or "are" instead. |
 | `ShipOveruse` | "Ship" as an AI overuse fingerprint: the release verb ("ship it," "ship fast," "ship the feature") and the maritime clichés ("run a tight ship," "the ship has sailed"). Deliberately broad with no exemptions, so the logistics verb and the vessel noun are flagged too. Disable the rule for maritime or logistics writing. |
