@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.14.0] - 2026-06-02
+
 <!-- vale off -->
 
 ### Added
@@ -18,8 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   territory nouns). The list is intentionally not exhaustive: rare
   landers fire, so aviation or nature writing disables the rule. Built
   on a broad match plus an exemption list because Vale's RE2 engine has
-  no lookbehind, so the
-  rule cannot scope by negative subject. Exemptions carry an inline
+  no lookbehind, so the rule cannot scope by negative subject.
+  Exemptions carry an inline
   case-insensitive flag because `ignorecase` covers tokens but not
   exemptions. Known limitation: the infinitive "to land on" fires
   (the matched subject is "to"), which suits the figurative sense but
@@ -68,6 +70,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   unleash, turbocharge, democratize). The `-ed` forms of super and
   turbocharge are omitted so the literal "supercharged engine" stays
   clean.
+- **Rule messages**: Standardize every diagnostic message to the
+  `AI <label>: '%s'. <action>.` shape and add a RuleMessage view so the
+  messages lint themselves (`just lint-messages`).
 
 <!-- vale on -->
 
@@ -939,6 +944,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.14.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.13.1...v1.14.0
 [1.13.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.13.0...v1.13.1
 [1.13.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.12.0...v1.13.0
 [1.12.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.11.0...v1.12.0
