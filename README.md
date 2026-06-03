@@ -154,6 +154,7 @@ This package contains 50 rule files covering different categories of AI tells. A
 | `ColloquialAssessments` | Knowing-tone verdicts: "the joke lands," "really lands," "X is the move," "that's the move," "what really matters," "all that matters," etc. |
 | `ConclusionMarkers` | Formulaic conclusions: "In conclusion," "Ultimately," "At the end of the day," etc. |
 | `ContrastiveFormulas` | Rhetorical contrasts: "It's not just X; it's Y," "These aren't X. They're Y," "This doesn't mean X. It means Y," "The real question isn't X; it's Y," "Not only X but also Y," etc. |
+| `ContrastiveNegation` | Telegraphic negation cadence that replaces the "not X; it's Y" formula once it gets flagged: stacked "no setup, no config, no hassle" and the single clause-final fragment "cleartext repo names, no k-anonymity gate." Aggressive; it can fire on "coffee, no sugar," so disable it for terse spec lists. |
 | `DefensiveHedges` | Preemptive concessions: "This may seem X, but..." "Admittedly, X, but..." "At first glance," etc. |
 | `DespiteChallenges` | The "despite challenges" dismissal formula: "despite these challenges," "while challenges remain," "challenges notwithstanding," etc. |
 | `EmDashUsage` | Em-dashes, which AI uses excessively |

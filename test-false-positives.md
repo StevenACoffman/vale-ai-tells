@@ -243,3 +243,11 @@ Acoustic resonance filled the hall.
 The supercharged engine roared to life.
 
 A turbocharged sedan passed us.
+
+## ContrastiveNegation: non-tells that should NOT trigger
+
+The feature is no longer supported.
+
+She paused, no longer sure of the answer.
+
+We left at dawn, no sooner than we had to.

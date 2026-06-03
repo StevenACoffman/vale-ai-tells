@@ -882,3 +882,15 @@ The platform unleashes new capabilities.
 This release will turbocharge growth.
 
 We democratize access to the tooling.
+
+## ContrastiveNegation
+
+Cleartext repo names, no k-anonymity gate.
+
+Lifetime totals on the dashboard, no rollup expiry.
+
+The command returns exit 0 (no stdout, no stderr).
+
+No setup, no config, no credit card.
+
+Fast startup, no heavy dependencies.
