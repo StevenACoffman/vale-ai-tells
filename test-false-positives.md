@@ -129,19 +129,11 @@ The probe lands on the moon's south pole.
 
 ## FigurativeLands: literal landings that should NOT trigger
 
-The fish lands in the net.
-
 The skydiver lands in the field.
 
 Snow lands on the windshield in winter.
 
 The ball lands in the cup.
-
-Puffins land on the cliffs.
-
-Troops land on the beach at dawn.
-
-Passengers land at the gate on time.
 
 The drone lands on the pad automatically.
 

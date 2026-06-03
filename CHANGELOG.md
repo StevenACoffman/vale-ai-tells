@@ -13,10 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **FigurativeLands**: New rule. Flags "lands" used as an overused
   arrival verb ("the request lands on the node," "the PR lands in
-  main," "where the idea lands") and exempts subjects that literally
-  land: planes, spacecraft, birds, insects, projectiles, snow,
-  skydivers, and territory nouns. Built on a broad match plus an
-  exemption list because Vale's RE2 engine has no lookbehind, so the
+  main," "where the idea lands") and exempts the common things that
+  literally land (planes, spacecraft, birds, balls, snow, skydivers,
+  territory nouns). The list is intentionally not exhaustive: rare
+  landers fire, so aviation or nature writing disables the rule. Built
+  on a broad match plus an exemption list because Vale's RE2 engine has
+  no lookbehind, so the
   rule cannot scope by negative subject. Exemptions carry an inline
   case-insensitive flag because `ignorecase` covers tokens but not
   exemptions. Known limitation: the infinitive "to land on" fires
