@@ -615,6 +615,12 @@ The framing really lands.
 
 The critique actually landed.
 
+The whole thing lands flat.
+
+This is where it lands.
+
+The pacing lands at just the right moment.
+
 ### "The move" verdicts
 
 Caching the result is the move.
@@ -826,3 +832,21 @@ The belt-and-suspenders approach guards against both failure modes at once.
 ### What We're Building
 
 ### Here's What You'll Get
+
+## FigurativeLands
+
+The request lands on the load balancer before routing.
+
+The user lands on the homepage after signing in.
+
+The PR lands in main once CI passes.
+
+The change lands in v1.8 next week.
+
+Rows land in the staging table.
+
+Focus lands on the first input.
+
+The webhook lands at the wrong endpoint.
+
+The estimate lands at five million.

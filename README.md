@@ -161,6 +161,7 @@ This package contains 50 rule files covering different categories of AI tells. A
 | `ExplainerHeadings` | Tutorial-blog heading clichés: "Deep Dive," "Under the Hood," "Demystifying X," "Why It Matters," "A Closer Look," etc. |
 | `FalseBalance` | Evasive "both sides" language: "both sides present valid points," "nuanced approach," etc. |
 | `FalseExclusivity` | False insider drama: "nobody talks about," "what most people miss," "the dirty secret," "the elephant in the room," etc. |
+| `FigurativeLands` | "Lands" as an overused arrival verb: "the request lands on the node," "the PR lands in main," "where the idea lands." Exempts things that literally land (a plane, a bird, a probe). Name the literal action instead. |
 | `FillerPhrases` | Padding and performative sincerity: "a wide range of," "in order to," "honestly," "to be perfectly honest," "the honest truth," etc. |
 | `FormalRegister` | Overly formal vocabulary: "utilize," "facilitate," "commence," etc. |
 | `FormalTransitions` | Formal transitions: "Moreover," "Furthermore," "What's more," "Case in point," etc. |

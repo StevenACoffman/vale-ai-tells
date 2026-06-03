@@ -119,12 +119,6 @@ The plane landed safely after the storm.
 
 The bird lands on the branch outside the window.
 
-Salmon lands on the menu only in spring.
-
-The PR lands in main once CI passes.
-
-The change landed in v1.8 last week.
-
 The asteroid landed in the desert.
 
 The kicker lands the field goal from 50 yards.
@@ -132,6 +126,26 @@ The kicker lands the field goal from 50 yards.
 The dancer lands the jump cleanly.
 
 The probe lands on the moon's south pole.
+
+## FigurativeLands: literal landings that should NOT trigger
+
+The fish lands in the net.
+
+The skydiver lands in the field.
+
+Snow lands on the windshield in winter.
+
+The ball lands in the cup.
+
+Puffins land on the cliffs.
+
+Troops land on the beach at dawn.
+
+Passengers land at the gate on time.
+
+The drone lands on the pad automatically.
+
+Public lands in the west are federally protected.
 
 ## ColloquialAssessments ("move"): literal uses that should NOT trigger
 

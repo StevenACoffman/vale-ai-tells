@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **FigurativeLands**: New rule. Flags "lands" used as an overused
+  arrival verb ("the request lands on the node," "the PR lands in
+  main," "where the idea lands") and exempts subjects that literally
+  land: planes, spacecraft, birds, insects, projectiles, snow,
+  skydivers, and territory nouns. Built on a broad match plus an
+  exemption list because Vale's RE2 engine has no lookbehind, so the
+  rule cannot scope by negative subject. Exemptions carry an inline
+  case-insensitive flag because `ignorecase` covers tokens but not
+  exemptions. Known limitation: the infinitive "to land on" fires
+  (the matched subject is "to"), which suits the figurative sense but
+  catches literal "to land on the runway."
+
+### Changed
+
+- **ColloquialAssessments**: Drop the release-verb token ("lands in
+  main") and the "lands at just the right" token, both now covered by
+  FigurativeLands. The assessment sense ("the joke lands") stays.
+
+<!-- vale on -->
+
 ## [1.13.1] - 2026-05-28
 
 <!-- vale off -->
