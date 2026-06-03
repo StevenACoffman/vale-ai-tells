@@ -918,3 +918,15 @@ The result was clear; a total failure.
 It does one thing; it does it well.
 
 The build passed; the tests stayed green.
+
+## FigurativeAnchor
+
+Our strategy is anchored in our core values.
+
+We anchored the roadmap in customer research.
+
+The framework anchors the whole argument.
+
+It became an emotional anchor for the team.
+
+The refrain serves as an anchor for the essay.

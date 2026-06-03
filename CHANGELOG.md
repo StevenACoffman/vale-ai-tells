@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **FigurativeAnchor** (experimental): New rule. Flags "anchor" used
+  figuratively to ground an abstraction ("anchored in our values,"
+  "anchor the strategy," "an emotional anchor," "serves as an anchor").
+  Lives in the experimental package at `warning` because anchor is
+  heavily homographic: the HTML anchor tag, a news anchor, a ship's
+  anchor, an anchor tenant, and the anchoring bias are all literal and
+  stay clean. Exemptions cover the physical objects something anchors to
+  (a wall, the seabed); the rest leans on the figurative shape.
+
+<!-- vale on -->
+
 ## [1.14.0] - 2026-06-02
 
 <!-- vale off -->

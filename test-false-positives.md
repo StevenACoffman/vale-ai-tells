@@ -267,3 +267,17 @@ Her earliest memories date from infancy.
 We visited Paris, France; Berlin, Germany; and Tokyo, Japan.
 
 Compute the centroid; if it is on the far side, reverse the order.
+
+## FigurativeAnchor: literal anchor uses that should NOT trigger
+
+Use the anchor tag to link within the page.
+
+She is the news anchor for the evening broadcast.
+
+The boat is anchored in the harbor overnight.
+
+Bolt the bracket so it is anchored to the wall.
+
+Negotiators exploit anchoring bias in pricing.
+
+The mall's anchor tenant signed a lease.
