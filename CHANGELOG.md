@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **EmptyPadding**: New rule. Flags an empty modifier before a noun the
+  noun does not need: "named stakeholders," "various stakeholders,"
+  "respective roles," "given task," "certain constraints," "particular
+  concerns." Sequence-based (modifier plus noun) and deliberately broad,
+  so it also catches literal uses such as "named pipe," "various
+  reasons," and "a certain amount." Suppress per-section where the
+  literal sense is common.
+
+<!-- vale on -->
+
 ## [1.16.0] - 2026-06-03
 
 <!-- vale off -->

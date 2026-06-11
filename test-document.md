@@ -942,3 +942,15 @@ Pick a north star metric and stick to it.
 Strong network effects take over.
 
 This is about first-mover advantage in a market land grab.
+
+## EmptyPadding
+
+We consulted various stakeholders before the launch.
+
+A named stakeholder raised the issue.
+
+Their respective roles were never spelled out.
+
+Each given task carries certain constraints.
+
+We flagged particular concerns in the review.

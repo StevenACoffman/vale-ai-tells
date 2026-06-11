@@ -291,3 +291,18 @@ The castle's moat was dry that summer.
 Sailors steer by the North Star.
 
 Settlers joined the Oklahoma land grab of 1889.
+
+## EmptyPadding: non-noun follow-words that should NOT trigger
+
+The library is named after its original author.
+
+<!-- Known limitation: the broad modifier-plus-noun sequence flags a
+     modifier before a proper name, because the POS tagger labels a
+     mid-sentence name as a common noun (NN), not a proper noun (NNP).
+     It also flags literal uses such as "named pipe" and "various
+     reasons." This breadth was a deliberate choice; suppress
+     per-section where the literal sense is common. -->
+<!-- vale ai-tells.EmptyPadding = NO -->
+A developer named Alex joined the team.
+She was certain Maria would arrive on time.
+<!-- vale ai-tells.EmptyPadding = YES -->

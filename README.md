@@ -68,7 +68,7 @@ The `ai-tells-commits` style provides 13 rules purpose-built for commit messages
 
 ### Setup
 
-Add a `[formats]` section and a named section for the commit message file to your `.vale.ini`:
+Add a `[formats]` section and a dedicated section for the commit message file to your `.vale.ini`:
 
 ```ini
 [formats]
@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 50 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 58 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -159,6 +159,7 @@ This package contains 50 rule files covering different categories of AI tells. A
 | `DespiteChallenges` | The "despite challenges" dismissal formula: "despite these challenges," "while challenges remain," "challenges notwithstanding," etc. |
 | `EmDashUsage` | Em-dashes, which AI uses excessively |
 | `EmphaticCopula` | Italicized copula verbs and determiners for manufactured profundity |
+| `EmptyPadding` | Empty modifiers before a noun the noun does not need: "named stakeholders," "various stakeholders," "respective roles," "given task," "particular concerns," etc. Sequence-based (modifier + noun), so it casts a wide net and flags literal uses too ("named pipe," "various reasons," "a certain amount"). Deliberately broad; suppress per-section or disable where the literal sense is common. |
 | `ExplainerHeadings` | Tutorial-blog heading clichés: "Deep Dive," "Under the Hood," "Demystifying X," "Why It Matters," "A Closer Look," etc. |
 | `FalseBalance` | Evasive "both sides" language: "both sides present valid points," "nuanced approach," etc. |
 | `FalseExclusivity` | False insider drama: "nobody talks about," "what most people miss," "the dirty secret," "the elephant in the room," etc. |
