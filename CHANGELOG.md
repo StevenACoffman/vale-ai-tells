@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **EmptyPaddingStacked**: New rule. A three-token companion to
+  EmptyPadding that catches an empty modifier with an adjective ahead of
+  the noun, such as "named operational support" or "certain strategic
+  concerns." EmptyPadding stays on the bare modifier-noun pair; this rule
+  covers the stacked shape, since Vale sequences cannot make the
+  adjective slot optional.
+
+<!-- vale on -->
+
 ## [1.17.0] - 2026-06-11
 
 <!-- vale off -->
