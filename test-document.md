@@ -986,3 +986,11 @@ during the meeting. The budget is considered adequate for the first phase.
 A decision has been made to proceed. The vendor was selected after a long
 evaluation. Implementation details will be finalized next quarter. The team
 felt good about the outcome.
+
+## ColonUsage: capitals after colons that should trigger
+
+The takeaway: Always check the output.
+
+We compared three options: Each one failed differently.
+
+One pattern stood out: Capitalizing after every colon.

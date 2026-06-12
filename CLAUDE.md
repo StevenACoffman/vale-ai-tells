@@ -2,7 +2,7 @@
 
 ## Project overview
 
-vale-ai-tells provides a Vale package for detecting linguistic patterns commonly associated with AI-generated prose. It provides 25 YAML rule files that flag vocabulary fingerprints, structural patterns, and rhetorical tells.
+vale-ai-tells provides a Vale package for detecting linguistic patterns commonly associated with AI-generated prose. It provides YAML rule files that flag vocabulary fingerprints, structural patterns, and rhetorical tells. The README tracks the current rule count.
 
 ## Repository structure
 
@@ -68,11 +68,11 @@ All rules use `error` level by default. Users can override this in their `.vale.
 - `level`: Always `error`
 - `tokens` or `swap`: The patterns to match
 
-Messages must pass the `ai-tells` style themselves: no em-dashes, no anthropomorphic
-or cliché idioms, no quoting a flagged word as an example (give the good word instead).
+Messages must pass the `ai-tells` style themselves: avoid em-dashes, anthropomorphic
+or cliché idioms, and quoted examples of the flagged word (give the good word instead).
 Write each message as `AI <label>: '%s'. <concrete action>.` so agents can act on it.
 `just lint-messages` enforces this via the `RuleMessage` View (selects the `message`
-field with Dasel and lints it as prose); it runs as part of `just lint`.
+field with Dasel and lints it as prose). It runs as part of `just lint`.
 
 ## Tone
 

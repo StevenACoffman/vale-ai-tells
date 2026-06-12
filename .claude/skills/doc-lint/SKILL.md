@@ -80,7 +80,7 @@ just lint-docs path/to/file.md
 
 ## Handling difficult warnings
 
-Don't dismiss warnings. Never call one "acceptable" or write it off as a false positive without asking the user first. If you hit a warning you genuinely can't resolve:
+Don't dismiss warnings. Never call one "acceptable" or write it off as a false positive without asking the user first. If you hit a warning you truly can't resolve:
 
 1. Explain the specific warning and why you think you can't fix it
 2. Propose options: rewrite the sentence or add a vale directive; or update the vocabulary or ask the user to adjust the configuration

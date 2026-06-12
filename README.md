@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 59 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 60 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -152,6 +152,7 @@ This package contains 59 rule files covering different categories of AI tells. A
 | `AffirmativeFormulas` | Revelation patterns: "Here's the thing," "And that's the beauty of it," "Let that sink in," etc. |
 | `ClosingPleasantries` | Sign-off language: "I hope this helps," "Feel free to ask," "Don't hesitate to reach out," etc. |
 | `ColloquialAssessments` | Knowing-tone verdicts: "the joke lands," "really lands," "X is the move," "that's the move," "what really matters," "all that matters," etc. |
+| `ColonUsage` | A capitalized word after a colon, the "Label: Sentence" construction ("The takeaway: Always test."). Replaces `Google.Colons`, which also lints heading text and flags the title half of "Appendix A: Glossary"; headings are exempt here. Acronyms, the pronoun "I," quotations, and clock times stay clean. Vale strips markup before matching, so run-in bold labels ("**Example:** Like this.") still flag; disable the rule where that convention is established. |
 | `ConclusionMarkers` | Formulaic conclusions: "In conclusion," "Ultimately," "At the end of the day," etc. |
 | `ContrastiveFormulas` | Rhetorical contrasts: "It's not just X; it's Y," "These aren't X. They're Y," "This doesn't mean X. It means Y," "The real question isn't X; it's Y," "Not only X but also Y," etc. |
 | `ContrastiveNegation` | Telegraphic negation cadence that replaces the "not X; it's Y" formula once it gets flagged: stacked "no setup, no config, no hassle" and the single clause-final fragment "cleartext repo names, no k-anonymity gate." Aggressive; it can fire on "coffee, no sugar," so disable it for terse spec lists. |
@@ -326,9 +327,9 @@ AI writing research documents these patterns, but they need analysis beyond Vale
 - **Unnecessary inline definitions:** AI habitually inserts appositive definitions like "X, a [definition], does Y" even when the audience already knows the term. Too many false positives for token matching.
 - **Invented concept labels:** AI appends abstract problem-nouns like "paradox," "trap," "creep," and "divide" to domain words and treats them as established terms. Too many legitimate uses for token matching.
 - **Noun-phrase + participial-phrase fragments:** AI drops fragments built from a noun phrase and a trailing past-participle modifier ("The same set, applied identically by every client on every open.") as paragraph closers. Distinguishing them from legitimate appositive constructions requires syntactic parsing.
-- **Adjective-led sentence fragments:** AI ends paragraphs with adjective-led fragments that lack an explicit subject or verb ("Durable enough for coordination state, without the full-sync cost on every commit."). Without dependency parsing, regex can't separate these from valid continuations of a prior sentence's subject.
-- **Headless-infinitive openers:** AI opens sections with a noun + infinitive-modifier fragment ("Threads to pull on in Claude Code before the surface hardens.") that reads as a section title posing as a sentence. Catching the structure requires distinguishing it from legitimate noun-phrase headings, which regex can't do reliably. Some of the vocabulary that recurs in these fragments (thread-pulling metaphors, solidification metaphors) is now covered by `AICompoundPhrases`.
-- **AI tells with inline-code subjects.** Vale strips inline code (`` ` `` `code` `` ` ``) from prose before applying regex rules, so patterns like the `A X verbs ... A Y verbs ...` parallel-mirror or `No X, no Y.` anaphora silently fail when the subject contains an identifier wrapped in backticks — common in technical documentation. Switching the rule to `scope: raw` would catch them but also fires on repetition inside code blocks and on documentation that quotes example patterns. The marginal coverage gain isn't worth the new FP sources.
+- **Adjective-led sentence fragments:** AI ends paragraphs with adjective-led fragments that lack an explicit subject or verb ("Durable enough for coordination state, without the full-sync cost on every commit."). Without dependency parsing, regular expressions can't separate these from valid continuations of a prior sentence's subject.
+- **Headless-infinitive openers:** AI opens sections with a noun + infinitive-modifier fragment ("Threads to pull on in Claude Code before the surface hardens.") that reads as a section title posing as a sentence. Catching the structure requires distinguishing it from legitimate noun-phrase headings, which regular expressions can't do reliably. Some of the vocabulary that recurs in these fragments (thread-pulling metaphors, solidification metaphors) is now covered by `AICompoundPhrases`.
+- **AI tells with inline-code subjects.** Vale strips inline code (`` ` `` `code` `` ` ``) from prose before applying regular-expression rules, so patterns like the `A X verbs ... A Y verbs ...` parallel-mirror or `No X, no Y.` anaphora silently fail when the subject contains an identifier wrapped in backticks — common in technical documentation. Switching the rule to `scope: raw` would catch them but also fires on repetition inside code blocks and on documentation that quotes example patterns. The marginal coverage gain isn't worth the new FP sources.
 
 <!-- vale ai-tells.OverusedVocabulary = YES -->
 <!-- vale ai-tells.EmDashUsage = YES -->

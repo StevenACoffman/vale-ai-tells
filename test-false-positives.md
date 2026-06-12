@@ -328,3 +328,26 @@ The committee reviewed the proposal and wrote the report.
 She was tired after the long meeting.
 The team is excited about the launch.
 <!-- vale ai-tells-experimental.PassiveVoice = YES -->
+
+## ColonUsage: colons that should NOT trigger
+
+### Appendix A: Glossary
+
+Heading text is exempt, so the capitalized title half above stays clean.
+
+Check the output: it stays clean when lowercase follows.
+
+Run it again: I checked twice.
+
+Rotate the key first: API tokens expire monthly.
+
+Meet at 10:30: Lunch follows at noon.
+
+He said: "Go home now."
+
+<!-- Known limitation: Vale strips markup before matching, so a run-in
+     bold label reads as a plain "Label: Sentence" construction and
+     flags. Disable the rule where that convention is established. -->
+<!-- vale ai-tells.ColonUsage = NO -->
+**Example:** Run-in bold labels flag without this suppression.
+<!-- vale ai-tells.ColonUsage = YES -->
