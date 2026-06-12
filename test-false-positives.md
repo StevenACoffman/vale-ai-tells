@@ -306,3 +306,25 @@ The library is named after its original author.
 A developer named Alex joined the team.
 She was certain Maria would arrive on time.
 <!-- vale ai-tells.EmptyPadding = YES -->
+
+## PassiveVoice: predicate adjectives that should NOT trigger
+
+The results were mixed.
+
+The talk was indeed useful.
+
+The color is red.
+
+The committee reviewed the proposal and wrote the report.
+
+### PassiveVoice: known tagger limitations
+
+<!-- Known limitation: participles that double as adjectives ("tired,"
+     "excited") tag as VBN even in predicate-adjective position, so
+     these fire. Deliberate: the rule carries no exception list, and
+     the genuine passive sense ("the electron is excited by a photon")
+     must stay flagged. Users decide what to except. -->
+<!-- vale ai-tells-experimental.PassiveVoice = NO -->
+She was tired after the long meeting.
+The team is excited about the launch.
+<!-- vale ai-tells-experimental.PassiveVoice = YES -->

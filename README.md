@@ -402,7 +402,7 @@ Based on academic research, practitioner analysis, and community-maintained cata
 
 Claude wrote the majority of rule definitions, documentation, and test cases in this repository. ChatGPT and Gemini generated text samples for cross-model validation. A human designed the rule categories, severity assignments, quality criteria, and the research-to-rule pipeline. A human validated every AI-generated rule against test documents containing known patterns.
 
-The CITATION.cff lists the human author. AI tools are not listed as authors, consistent with [Committee for Publication Ethics (COPE) guidance](https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools) on AI and authorship.
+The CITATION.cff lists the human author. It omits AI tools, consistent with [Committee for Publication Ethics (COPE) guidance](https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools) on AI and authorship.
 
 ## Citation
 

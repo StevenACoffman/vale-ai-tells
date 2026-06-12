@@ -956,3 +956,33 @@ Each given task carries certain constraints.
 We flagged particular concerns in the review.
 
 We added named operational support to the tier.
+
+## PassiveVoice: passive constructions that should trigger
+
+The cake was eaten before the meeting started.
+
+The handler is called by the runtime.
+
+A decision has been made to proceed.
+
+The report is being written by the intern.
+
+The request will be rejected.
+
+## PassiveVoiceAdverb: adverb-gap passives that should trigger
+
+The flag was never used in production.
+
+Errors are automatically logged to the audit table.
+
+The patch was not merged.
+
+The server is rarely restarted.
+
+## PassiveDensity: sustained passive voice that should trigger
+
+The proposal was reviewed by the committee. Several concerns were raised
+during the meeting. The budget is considered adequate for the first phase.
+A decision has been made to proceed. The vendor was selected after a long
+evaluation. Implementation details will be finalized next quarter. The team
+felt good about the outcome.

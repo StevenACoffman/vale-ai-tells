@@ -5,7 +5,7 @@
 <!-- vale ai-tells-experimental.VocabularySwap = NO -->
 The `ai-tells-experimental` style contains script-based rules that use Tengo to detect structural patterns beyond Vale's regular expression rules. These rules analyze document-level properties like sentence-length distribution and paragraph uniformity.
 
-All experimental rules default to `warning` level. They ship as a separate `ai-tells-experimental.zip` release artifact (which includes the `config/scripts/` directory the Tengo rules need). Download it and unzip into your `StylesPath`, then opt in:
+All experimental rules default to `warning` level. Releases publish them as a separate `ai-tells-experimental.zip` artifact (which includes the `config/scripts/` directory the Tengo rules need). Download it and unzip into your `StylesPath`, then opt in:
 
 ```ini
 [*.md]
@@ -140,7 +140,7 @@ Detects documents that avoid contractions almost entirely despite using informal
 
 ### AverageSentenceLength
 
-A metric-based rule (YAML only, no script) that flags documents where the average sentence length exceeds 25 words.
+A metric-based rule (YAML only, without a script) that flags documents where the average sentence length exceeds 25 words.
 
 **Research basis:**
 
@@ -255,6 +255,46 @@ Detects when an unusually high proportion of enumerated lists in a document use 
 <!-- vale ai-tells.OverusedVocabulary = YES -->
 <!-- vale ai-tells.ConclusionMarkers = YES -->
 <!-- vale ai-tells.VerbTricolon = YES -->
+
+<!-- vale write-good.Passive = NO -->
+<!-- vale ai-tells-experimental.PassiveVoice = NO -->
+<!-- vale ai-tells-experimental.PassiveVoiceAdverb = NO -->
+
+### PassiveVoice
+
+Flags passive constructions where the participle directly follows the auxiliary ("was eaten," "is called," "has been made"). A sequence-based rule (part-of-speech tags, no script): the participle slot requires a VBN tag from Vale's tagger.
+
+This rule and its two companions replace `Google.Passive`, `write-good.Passive`, and `write-good.E-Prime` for projects that ran those styles alongside `ai-tells`. The regex rules match a form of "to be" followed by any word ending in "ed" (or an irregular participle), with only whitespace allowed between them. That design fails in both directions:
+
+- False positives on predicate adjectives and other "ed" words: "the results were mixed," "the talk was indeed useful," "the color is red."
+- False negatives on every passive with an adverb in the gap: "was never used," "is automatically generated."
+
+The VBN tag requirement clears the false positives, and `PassiveVoiceAdverb` covers the adverb gap. `write-good.E-Prime` needs no replacement: it flags every form of "to be," including "it's" and "here's," which makes it a philosophy rather than a passive detector.
+
+**Known limitations:** Participles that double as adjectives ("tired," "excited") tag as VBN even in predicate-adjective position, so "she was tired" fires. The rule deliberately carries no exception list: an allowlist would hide the passive sense of those same verbs ("the electron is excited by a photon"), and the project's stance is that users decide what to except. The tagger also guesses VBN for some words outside its vocabulary, which produces an occasional flag on a non-participle.
+
+### PassiveVoiceAdverb
+
+The companion rule for the adverb-gap shape: it matches one adverb (RB) between the auxiliary and the participle ("was never used," "is automatically generated," "was not merged," "is rarely restarted"). The regex rules miss this entire shape. A separate rule because Vale sequences cannot mark a token slot optional, the same relationship `EmptyPaddingStacked` has to `EmptyPadding`. Two or more adverbs in the gap ("was not actually used") still slip through.
+
+### PassiveDensity
+
+Measures the share of sentences in each section that contain a passive construction. Occasional passive voice is ordinary English. Sustained passive voice across a section is the fingerprint of AI formal register, and no per-instance rule can see it. Complements the per-instance `PassiveVoice` rules the way `TricolonDensityDocument` complements `VerbTricolon`.
+
+**How it works:**
+
+1. Splits the document into sections by markdown headings
+2. Within each section, strips code blocks, HTML comments, list items, and table rows
+3. Splits remaining prose into sentences by terminal punctuation
+4. Counts sentences containing an auxiliary, an optional adverb in the gap ("not," "never," or words like "automatically"), and a participle. This is a regex approximation of the tagged rules: it captures the participle and rejects "indeed," and requires regular "ed" forms to run four letters or longer (so "red" and "bed" stay clean). Individual misses and over-counts average out at section scale.
+5. Requires at least 6 sentences in the section
+6. Flags when at least 3 sentences and more than 35% of them contain a passive construction
+
+**Threshold rationale:** Even formal human prose mixes voices, and academic writing (the most passive-heavy human register) stays well under the threshold in typical sections. AI formal register sustains agent-free passives at rates ordinary prose does not reach. The 35% value is an initial estimate from the same small validation set as the other rules and needs corpus calibration.
+
+<!-- vale write-good.Passive = YES -->
+<!-- vale ai-tells-experimental.PassiveVoice = YES -->
+<!-- vale ai-tells-experimental.PassiveVoiceAdverb = YES -->
 
 ## Calibration status
 
