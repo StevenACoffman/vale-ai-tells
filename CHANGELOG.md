@@ -7,6 +7,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.18.0] - 2026-06-11
+
+<!-- vale off -->
+
+### Added
+
+- **PassiveVoice** (experimental): New sequence rule. Flags passive
+  constructions where the participle directly follows the auxiliary
+  ("was eaten," "is called," "has been made"). The participle slot
+  requires a past-participle tag from Vale's part-of-speech tagger, so
+  predicate adjectives ("the results were mixed," "the talk was indeed
+  useful," "the color is red") stay clean, unlike the regex rules in
+  Google and write-good. Carries no exception list: conventional
+  technical passives ("is deprecated," "is required") fire too, and
+  users decide what to except.
+- **PassiveVoiceAdverb** (experimental): New sequence rule. Companion
+  for the adverb-gap shape ("was never used," "is automatically
+  generated," "was not merged"), which the regex rules miss entirely
+  because they allow only whitespace between the auxiliary and the
+  participle.
+- **PassiveDensity** (experimental): New Tengo rule. Flags a section
+  when at least 3 sentences, and more than 35 percent of them, contain
+  a passive construction. Occasional passive voice is ordinary English;
+  sustained passive voice across a section is the fingerprint of AI
+  formal register, and no per-instance rule can see it.
+
+### Changed
+
+- The repository's own Vale config disables Google.Passive,
+  write-good.Passive, and write-good.E-Prime in favor of the new
+  passive voice rules.
+
+<!-- vale on -->
+
 ## [1.17.1] - 2026-06-11
 
 <!-- vale off -->
@@ -1009,6 +1043,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.18.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.17.1...v1.18.0
 [1.17.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.17.0...v1.17.1
 [1.17.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.16.0...v1.17.0
 [1.16.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.15.0...v1.16.0
