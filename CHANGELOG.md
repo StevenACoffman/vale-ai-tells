@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.19.0] - 2026-06-12
+
+<!-- vale off -->
+
+### Added
+
+- **ColonUsage**: New rule. Replaces Google.Colons, which lints heading
+  text too and flags the title half of "Appendix A: Glossary". The rule
+  keeps the lowercase-after-colon check but exempts headings (ATX and
+  setext) through a negated scope, and it skips acronyms, the pronoun
+  "I", quotations, and clock times. Vale strips markup before matching,
+  so a run-in bold label still flags; disable the rule where that
+  convention is established.
+
+### Changed
+
+- The repository's own Vale config disables ColonUsage for its own docs
+  and commit messages, which use the run-in bold label convention.
+
+### Fixed
+
+- Lint errors that predated this release in CLAUDE.md, TODO.md, and the
+  doc-lint skill.
+- The stale rule count in the CLAUDE.md project overview.
+- The README now spells out "regular expressions" where it said "regex".
+
+<!-- vale on -->
+
 ## [1.18.0] - 2026-06-11
 
 <!-- vale off -->
@@ -1043,6 +1071,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.19.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.18.0...v1.19.0
 [1.18.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.17.1...v1.18.0
 [1.17.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.17.0...v1.17.1
 [1.17.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.16.0...v1.17.0
