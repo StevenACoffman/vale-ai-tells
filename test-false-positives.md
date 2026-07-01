@@ -381,3 +381,13 @@ The service runs on two servers behind a load balancer.
 The two functions return different types.
 
 These three tests cover the edge cases.
+
+The bar splits into two pieces.
+
+The release rolls out in three regions.
+
+The report covers four phases of the project.
+
+The stream splits into two channels.
+
+The survey covers four categories of feedback.

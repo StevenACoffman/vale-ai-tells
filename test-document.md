@@ -1026,3 +1026,15 @@ There are three reasons this matters.
 Three reasons stand out:
 
 These three pillars hold up the whole approach.
+
+The federation capability set expands in three phases.
+
+The rollout breaks down into four stages.
+
+The migration is split into three phases.
+
+The findings fall into three categories.
+
+The plugins break down into four groups.
+
+The requests are sorted into two buckets.

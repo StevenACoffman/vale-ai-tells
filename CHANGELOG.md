@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Changed
+
+- **CataphoricForecasting**: Add a process-decomposition shape. A
+  progression or split verb, a preposition, then a mid-sentence cardinal
+  and a sequential-structure noun ("expands in three phases," "breaks
+  down into four stages," "is split into three phases"). The count sits
+  mid-sentence and lowercase, the shape the capitalized rules exclude on
+  purpose; the verb and the sequential noun together gate out the
+  ordinary count and the "three-tier" architecture reference. The noun
+  set stays to phase-like scaffolding, so a literal split into physical
+  parts or pieces does not fire.
+- **CataphoricForecasting**: Add the categorization companion shape. Same
+  grammar as the process-decomposition shape, with a grouping verb and a
+  non-sequential grouping noun ("falls into three categories," "breaks
+  down into four groups," "is sorted into two buckets"). The grouping
+  noun set is disjoint from the sequential one, so the two shapes never
+  fire on one clause.
+
+<!-- vale on -->
+
 ## [1.20.0] - 2026-06-30
 
 <!-- vale off -->

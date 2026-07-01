@@ -51,3 +51,22 @@ tokens:
   # --- Demonstrative + cardinal + framework noun ("These three pillars," "the
   # four personas"), the count-led reference the capitalized shapes miss.
   - "\\b(?:[Tt]hese|[Tt]hose|[Tt]he) (?:two|three|four|five|six|seven|eight|nine|ten) (?:(?:key|main|core|central|critical|essential|guiding|foundational|distinct|broad|common|primary|fundamental|overarching|major|underlying|driving|crucial|basic) )?(?:pillars|principles|tenets|cornerstones|throughlines|through-lines|personas|archetypes|imperatives|superpowers|levers|horizons|motifs|paradigms)\\b"
+
+  # --- Shape D: process decomposition — a progression or split verb, then a
+  # preposition, then a mid-sentence cardinal and a sequential-structure noun
+  # ("expands in three phases," "breaks down into four stages," "is split into
+  # three phases"). The count sits mid-sentence and lowercase, the shape the
+  # capitalized rules above exclude on purpose; the verb and the sequential
+  # noun together are the gate that keeps the ordinary count out ("all three
+  # files," a "three-tier" architecture). The sequential noun set stays to
+  # phase-like scaffolding, so a literal split into physical "parts" or "pieces"
+  # does not fire.
+  - "\\b(?:expands?|unfolds?|proceeds?|progresses?|evolves?|rolls? out|breaks?(?: down)?|splits?|happens?|occurs?|plays? out|(?:is|are|gets?) (?:split|divided|broken|separated|partitioned)) (?:in|into|across|over|through) (?:two|three|four|five|six|seven|eight|nine|ten) (?:(?:distinct|broad|main|key|core|central|critical|essential|major|separate|discrete|successive|sequential|iterative|overlapping|logical|clear|simple|easy|manageable|high-level|rough|initial|final) )?(?:phases|stages|steps|waves|rounds|movements|acts|chapters|iterations|sprints|passes|tranches|installments)\\b"
+
+  # --- Shape E: the categorization companion to Shape D. Same grammar — a
+  # grouping or split verb, a preposition, a mid-sentence cardinal — but a
+  # non-sequential grouping noun ("falls into three categories," "breaks down
+  # into four groups," "is sorted into two buckets"). The verb and the grouping
+  # noun are the same double gate, so the ordinary count stays out. The noun
+  # set is disjoint from Shape D, so the two shapes never fire on one clause.
+  - "\\b(?:falls?|divides?|splits?|breaks?(?: down)?|sorts?|groups?|classifies?|categori[sz]es?|(?:is|are|gets?) (?:grouped|divided|split|sorted|classified|categori[sz]ed|separated|broken)) (?:into|in) (?:two|three|four|five|six|seven|eight|nine|ten) (?:(?:distinct|broad|main|key|core|central|critical|essential|major|separate|discrete|logical|clear|simple|basic|rough|high-level|general|overarching) )?(?:categories|groups|buckets|types|kinds|camps|classes|classifications|clusters|families|cohorts)\\b"
