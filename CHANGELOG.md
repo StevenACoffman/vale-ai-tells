@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.21.0] - 2026-07-01
+
+<!-- vale off -->
+
+### Added
+
+- **FigurativeSits**: New rule. Flags "sits" used to place an abstraction
+  rather than a physical object ("sits at the intersection of design and
+  research," "sits alongside the incumbent," "the responsibility sits with
+  the platform team," "the migration ticket just sits there"). The sibling
+  of FigurativeLands, but the calculus flips: literal sitting is everywhere
+  (people, pets, furniture, and buildings all sit), so the rule gates on the
+  complement after the verb instead of the subject. Each token curates one
+  figurative sense: conceptual placement ("sits at the core of"), spectrum
+  range ("sits somewhere between"), an adverb plus a relational preposition
+  ("sits squarely within scope"), companion or ranking pairing ("sits
+  alongside," "sits atop," "sits astride"), the rests-with and within-scope
+  idioms ("the decision sits with the board"), dormancy ("sits idle," "sits
+  in isolation," "sits in limbo"), acceptance ("does not sit right"),
+  emotional weight ("sits heavy"), opposition ("sits at odds with"), and
+  noun-gated layer-stack and priority senses ("sits above the database
+  tier," "sits at the top of the backlog"). Literal sitting ("the cat sits
+  on the mat," "the cabin sits on the ridge") stays quiet; disable the rule
+  for furniture, cartography, or page-layout writing. "At the heart of"
+  stays with PromotionalPuffery to avoid a double flag.
+
+<!-- vale on -->
+
 ## [1.20.1] - 2026-06-30
 
 <!-- vale off -->
@@ -1142,6 +1170,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.21.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.20.1...v1.21.0
 [1.20.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.20.0...v1.20.1
 [1.20.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.19.0...v1.20.0
 [1.19.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.18.0...v1.19.0
