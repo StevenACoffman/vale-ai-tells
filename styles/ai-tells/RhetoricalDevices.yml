@@ -27,27 +27,5 @@ tokens:
   - "The question to ask:"
   - "The question to ask is:"
 
-  # "The X:" dramatic colon — terse noun + colon used for verdict
-  # emphasis. A human writer would say "The result is..." or rewrite
-  # the sentence; AI reaches for the colon to manufacture a drumroll.
-  - "The price:"
-  - "The catch:"
-  - "The kicker:"
-  - "The upshot:"
-  - "The tradeoff:"
-  - "The trade-off:"
-  - "The trick:"
-  - "The cost:"
-  - "The downside:"
-  - "The flip side:"
-  - "The bottom line:"
-  - "The takeaway:"
-  - "The result:"
-  - "The answer:"
-  - "The reason:"
-  - "The lesson:"
-  - "The moral:"
-  - "The point:"
-  - "The pitch:"
-  - "The fix:"
-  - "The payoff:"
+  # The "The X:" dramatic-colon labels moved to LabelAndExplain, which owns
+  # the "Label: sentence" construction.

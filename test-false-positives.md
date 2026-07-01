@@ -351,3 +351,15 @@ He said: "Go home now."
 <!-- vale ai-tells.ColonUsage = NO -->
 **Example:** Run-in bold labels flag without this suppression.
 <!-- vale ai-tells.ColonUsage = YES -->
+
+## LabelAndExplain: legitimate colons that should NOT trigger
+
+The output: green.
+
+The command: a dry run.
+
+The API: a set of endpoints for managing users and their sessions.
+
+The three files: config.yml, main.go, and the integration test suite.
+
+The following options are available: verbose, quiet, and debug output.

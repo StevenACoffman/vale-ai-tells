@@ -994,3 +994,13 @@ The takeaway: Always check the output.
 We compared three options: Each one failed differently.
 
 One pattern stood out: Capitalizing after every colon.
+
+## LabelAndExplain: noun-phrase labels that should trigger
+
+The dominant attendee report: developers build from scratch because finding an existing extension is harder than writing a new one.
+
+The real problem: nobody reads the documentation before filing issues.
+
+One recurring complaint: the onboarding flow loses people at the third step.
+
+The catch: you have to configure it manually every single time.

@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **LabelAndExplain**: New rule. Flags the "noun-phrase label:
+  explanatory sentence" construction ("The dominant attendee report:
+  developers build from scratch because finding an existing extension
+  is harder than writing a new one."). A determiner-led label of up to
+  four lowercase words, a colon, then a lowercase clause of 20 or more
+  characters ending in sentence punctuation. The lowercase clause leaves
+  the capitalized "Label: Sentence" case to ColonUsage; the length
+  requirement skips short values ("The output: green.") and dotted file
+  lists; a lookbehind skips copula clause-labels ("The following options
+  are available: ..."). A capitalized noun-phrase label needs
+  part-of-speech tagging to catch and stays out of scope, because a
+  Vale sequence cannot require a token after a skip gap.
+
+### Changed
+
+- **RhetoricalDevices**: The "The X:" dramatic-colon labels ("The catch:,"
+  "The takeaway:," "The upshot:," and the rest) moved to LabelAndExplain,
+  which now owns the "Label: sentence" construction. They still fire
+  whatever follows the colon, so they keep catching the short and
+  capitalized continuations the structural token skips. The question and
+  test patterns ("Ask yourself:," "The test:") stay in RhetoricalDevices.
+
+<!-- vale on -->
+
 ## [1.19.0] - 2026-06-12
 
 <!-- vale off -->

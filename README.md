@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 60 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 61 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -171,6 +171,7 @@ This package contains 60 rule files covering different categories of AI tells. A
 | `FormalTransitions` | Formal transitions: "Moreover," "Furthermore," "What's more," "Case in point," etc. |
 | `GrowthMetaphors` | The startup-as-organism register: "incubate," "gestate," "nascent," "fledgling," "embryonic," "cultivate," "nurture," "in its infancy," plus scoped startup phrases ("minimum viable," "seed funding," "organic growth"). Disable for medical, nature, or agricultural writing. |
 | `HedgingPhrases` | Compulsive hedging: "It's important to note that," "That being said," "Generally speaking," "As you might expect," etc. |
+| `LabelAndExplain` | The "noun-phrase label: explanatory sentence" construction ("The dominant attendee report: developers build from scratch because finding an existing extension is harder than writing a new one."). A determiner-led label of up to four lowercase words, a colon, then a lowercase clause of 20 or more characters ending in sentence punctuation. The lowercase clause leaves the capitalized "Label: Sentence" case to `ColonUsage`; the length requirement skips short values ("The output: green.") and dotted file lists; a lookbehind skips copula clause-labels ("The following options are available: ..."). Also holds the curated dramatic-colon labels ("The catch:," "The takeaway:," "The upshot:") moved from `RhetoricalDevices`, which fire whatever follows the colon. A capitalized label ("The Redis cache: it evicts...") needs part-of-speech tagging to catch and stays uncovered. |
 | `ListIntroductions` | Announcements of upcoming lists or summaries: "Below you'll find," "Here's a breakdown of," "Here's everything you need to know," "The following sections will," etc. |
 | `MarketingHeadings` | Promotional-register heading clichés: "The Ultimate Guide," "Everything You Need to Know," "Mastering X," "Unlocking X," "The Power of X," "The Future of X," "Revolutionizing X," etc. |
 | `Metacommentary` | Throat-clearing and self-commentary that narrates the text rather than adding content |
