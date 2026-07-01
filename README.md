@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 62 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 63 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -167,6 +167,7 @@ This package contains 62 rule files covering different categories of AI tells. A
 | `FalseBalance` | Evasive "both sides" language: "both sides present valid points," "nuanced approach," etc. |
 | `FalseExclusivity` | False insider drama: "nobody talks about," "what most people miss," "the dirty secret," "the elephant in the room," etc. |
 | `FigurativeLands` | "Lands" as an overused arrival verb: "the request lands on the node," "the PR lands in main," "where the idea lands." Exempts common literal landers (a plane, a bird, a probe); rare ones fire, so disable the rule for aviation or nature writing. |
+| `FigurativeSits` | "Sits" as an overused placement verb: "sits at the intersection of," "sits alongside," responsibility that "sits with" a team, work that "sits idle." Gated on the figurative complement, so literal sitting stays quiet; disable the rule for furniture, cartography, or page-layout writing. |
 | `FillerPhrases` | Padding and performative sincerity: "a wide range of," "in order to," "honestly," "to be perfectly honest," "the honest truth," etc. |
 | `FormalRegister` | Overly formal vocabulary: "utilize," "facilitate," "commence," etc. |
 | `FormalTransitions` | Formal transitions: "Moreover," "Furthermore," "What's more," "Case in point," etc. |

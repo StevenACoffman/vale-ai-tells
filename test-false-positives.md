@@ -139,6 +139,24 @@ The drone lands on the pad automatically.
 
 Public lands in the west are federally protected.
 
+## FigurativeSits: literal sitting that should NOT trigger
+
+The cat sits on the mat by the window.
+
+She sits at her desk every morning.
+
+A cabin sits on the ridge above the lake.
+
+Our server rack sits behind the second door.
+
+Books sit on the top shelf.
+
+Guests sit around the table for dinner.
+
+The painting sits above the fireplace in the den.
+
+The toddler will not sit still for the photo.
+
 ## ColloquialAssessments ("move"): literal uses that should NOT trigger
 
 The next move in the protocol is a handshake.

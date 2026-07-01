@@ -851,6 +851,50 @@ The webhook lands at the wrong endpoint.
 
 The estimate lands at five million.
 
+## FigurativeSits
+
+That work sits at the intersection of design and research.
+
+The tension sits at the core of the debate.
+
+The answer sits somewhere between the two extremes.
+
+This approach sits squarely within scope.
+
+The new tool sits comfortably alongside the old one.
+
+The proposal sits atop the priority list.
+
+Responsibility for the outage sits with the platform team.
+
+Take a moment to sit with that discomfort.
+
+The feature sits in isolation from the rest of the product.
+
+The migration ticket just sits there, sprint after sprint.
+
+Half the backlog sits idle while we argue about scope.
+
+That criticism does not sit right with the team.
+
+The verdict sits heavy on everyone involved.
+
+The new policy sits at odds with our stated values.
+
+The proposal sits in limbo until the next review.
+
+Governance sits front and center in the redesign.
+
+Leadership sits on the fence about the reorg.
+
+The whole plan sits precariously on a single assumption.
+
+The framework sits astride research and product.
+
+The cache sits above the database tier.
+
+Onboarding sits at the top of the backlog.
+
 ## ShipOveruse
 
 Ship it. Just ship it and move on.
