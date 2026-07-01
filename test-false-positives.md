@@ -363,3 +363,21 @@ The API: a set of endpoints for managing users and their sessions.
 The three files: config.yml, main.go, and the integration test suite.
 
 The following options are available: verbose, quiet, and debug output.
+
+## CataphoricForecasting: literal counts that should NOT trigger
+
+The commit changed all three files.
+
+The build took about five minutes to finish.
+
+We identified four factors during the review.
+
+The directory holds three files.
+
+The map labels the four corners.
+
+The service runs on two servers behind a load balancer.
+
+The two functions return different types.
+
+These three tests cover the edge cases.

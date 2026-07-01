@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 61 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 62 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -150,6 +150,7 @@ This package contains 61 rule files covering different categories of AI tells. A
 | `AnnouncementHeadings` | Headings that narrate content rather than being it: "What You'll Learn," "What We'll Cover," "What to Expect," "Here's What You'll Get," etc. |
 | `AnthropomorphicJustification` | Treating abstractions like employees: "earns its keep," "does the heavy lifting," "pulls its weight," "pays for itself," "speaks for itself," "load-bearing," "does the real work," etc. |
 | `AffirmativeFormulas` | Revelation patterns: "Here's the thing," "And that's the beauty of it," "Let that sink in," etc. |
+| `CataphoricForecasting` | Numbered lead-ins that announce a count of items and then enumerate them: "Three pillars support this strategy," "Four user journeys define the experience," "Here are the four options," "There are three reasons this matters," etc. Anchored to a sentence-initial capitalized cardinal, so mid-sentence counts ("all three files," "about five minutes") stay clean. The forecasting-verb shape can fire on a literal count subject ("Four wheels drive the axle") and a few scaffold nouns have literal senses ("Three levers control the press"); disable the rule for mechanical or hardware writing. Vale cannot confirm a list actually follows, so sentence-initial position is the proxy for the adjacency. |
 | `ClosingPleasantries` | Sign-off language: "I hope this helps," "Feel free to ask," "Don't hesitate to reach out," etc. |
 | `ColloquialAssessments` | Knowing-tone verdicts: "the joke lands," "really lands," "X is the move," "that's the move," "what really matters," "all that matters," etc. |
 | `ColonUsage` | A capitalized word after a colon, the "Label: Sentence" construction ("The takeaway: Always test."). Replaces `Google.Colons`, which also lints heading text and flags the title half of "Appendix A: Glossary"; headings are exempt here. Acronyms, the pronoun "I," quotations, and clock times stay clean. Vale strips markup before matching, so run-in bold labels ("**Example:** Like this.") still flag; disable the rule where that convention is established. |

@@ -1004,3 +1004,25 @@ The real problem: nobody reads the documentation before filing issues.
 One recurring complaint: the onboarding flow loses people at the third step.
 
 The catch: you have to configure it manually every single time.
+
+## CataphoricForecasting: numbered lead-ins that should trigger
+
+Three pillars support this strategy.
+
+Four core principles guide the redesign.
+
+Four user journeys define the experience.
+
+Two forces shape the outcome.
+
+Here are the four user journeys that define the experience:
+
+Below are the three options to consider.
+
+The following five steps set up the environment.
+
+There are three reasons this matters.
+
+Three reasons stand out:
+
+These three pillars hold up the whole approach.

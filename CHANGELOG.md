@@ -11,6 +11,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **CataphoricForecasting**: New rule. Flags the numbered lead-in that
+  announces a count of items and then enumerates them ("Three pillars
+  support this strategy," "Four user journeys define the experience,"
+  "Here are the four options," "There are three reasons this matters").
+  Three shapes: a capitalized cardinal plus a curated framework noun, a
+  capitalized cardinal plus a noun phrase plus a forecasting verb, and the
+  listicle pivot ("Here are the four ...," "The following five ...," a short
+  cardinal-led clause ending in a colon). The tell is a lead-in, so the count
+  is the sentence-initial subject; the capitalized cardinal excludes the
+  ordinary mid-sentence number ("all three files," "about five minutes,"
+  "the four corners of the map"). The forecasting-verb shape can fire on a
+  literal count subject ("Four wheels drive the axle") and a few scaffold
+  nouns carry literal senses ("Three levers control the press"); disable the
+  rule for mechanical or hardware writing. Vale has no cross-block lookahead,
+  so it cannot confirm the list that follows and leans on the sentence-initial
+  position instead.
+
 - **LabelAndExplain**: New rule. Flags the "noun-phrase label:
   explanatory sentence" construction ("The dominant attendee report:
   developers build from scratch because finding an existing extension
