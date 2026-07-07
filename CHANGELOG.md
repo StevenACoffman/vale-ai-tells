@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.21.1] - 2026-07-07
+
+<!-- vale off -->
+
+### Changed
+
+- **FigurativeLands**: Add a subordinator-gated arrival shape. A temporal
+  or conditional subordinator ("once," "when," "whenever," "after,"
+  "before," "until," "if," "as soon as"), a short subject, then the verb
+  with no destination preposition ("once the feature lands," "when the PR
+  lands," "until the fix lands"). The subordinator does the gating: the
+  bare form floods, so only the subordinated form fires. The shared
+  exceptions still apply, so a plane or a bird stays quiet.
+
+<!-- vale on -->
+
 ## [1.21.0] - 2026-07-01
 
 <!-- vale off -->
@@ -1170,6 +1186,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.21.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.21.0...v1.21.1
 [1.21.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.20.1...v1.21.0
 [1.20.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.20.0...v1.20.1
 [1.20.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.19.0...v1.20.0
