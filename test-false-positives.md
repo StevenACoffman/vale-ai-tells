@@ -139,6 +139,12 @@ The drone lands on the pad automatically.
 
 Public lands in the west are federally protected.
 
+When the plane lands at 6 PM, taxi to the gate.
+
+Once the bird lands on the branch, it sings.
+
+Before the rocket lands, deploy the legs.
+
 ## FigurativeSits: literal sitting that should NOT trigger
 
 The cat sits on the mat by the window.

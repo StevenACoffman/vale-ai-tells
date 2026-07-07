@@ -851,6 +851,14 @@ The webhook lands at the wrong endpoint.
 
 The estimate lands at five million.
 
+Once the feature lands, we can iterate.
+
+When the PR lands, CI runs the full suite.
+
+Until the fix lands, use the workaround.
+
+As soon as the release lands, update the docs.
+
 ## FigurativeSits
 
 That work sits at the intersection of design and research.
