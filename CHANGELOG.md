@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.21.2] - 2026-07-09
+
+<!-- vale off -->
+
+### Changed
+
+- **HeadingTitleCase** (experimental): Exempt ordinal heading prefixes
+  through the capitalization extension's `prefix` field. Labels such as
+  "Section 1:", "Appendix A", and "Chapter IV" no longer read as Title
+  Case, and neither do bare numeric ordinals ("1.1", "2."), with or
+  without a trailing colon. The rule still checks the remainder of the
+  heading, and the first word after the prefix still needs its capital
+  letter. Recognized labels: Appendix, Chapter, Example, Figure, Part,
+  Phase, Section, Stage, Step, and Table, each followed by a number, a
+  single letter, or a roman numeral. The README now documents copying
+  the rule into a project-owned style to change the prefix or the
+  built-in exceptions, since `vale sync` overwrites packaged styles;
+  word-level exceptions keep working through the project vocabulary.
+
+<!-- vale on -->
+
 ## [1.21.1] - 2026-07-07
 
 <!-- vale off -->
@@ -1186,6 +1207,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.21.2]: https://github.com/tbhb/vale-ai-tells/compare/v1.21.1...v1.21.2
 [1.21.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.21.0...v1.21.1
 [1.21.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.20.1...v1.21.0
 [1.20.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.20.0...v1.20.1
