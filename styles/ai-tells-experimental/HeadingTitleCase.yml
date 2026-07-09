@@ -5,6 +5,9 @@ level: warning
 scope: heading
 match: $sentence
 style: AP
+# Ordinal prefixes ("Section 1:", "Appendix A", "1.1") are stripped before
+# the case check; the first word after the prefix must still be capitalized.
+prefix: '^(?:(?:Appendix|Chapter|Example|Figure|Part|Phase|Section|Stage|Step|Table)\s+(?:\d+(?:\.\d+)*|[A-Z]\b|[IVXLCDM]+\b)|\d+(?:\.\d+)*)[.:]?(?:\s+|$)'
 exceptions:
   - API
   - APIs

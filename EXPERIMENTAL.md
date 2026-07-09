@@ -179,6 +179,8 @@ A capitalization rule that flags markdown headings using Title Case instead of s
 
 **How it works:** Uses Vale's built-in `capitalization` extension. The two relevant settings are `match: $sentence` and `scope: heading`. Acronyms like API and SQL, alongside proper nouns like GitHub, Docker, and PostgreSQL, live in a built-in exceptions list that the rule consults before flagging anything.
 
+**Ordinal prefixes:** The rule's `prefix` setting strips a leading ordinal label before checking the case, with or without a colon. Headings such as `Section 1: Data collection methods`, `Appendix A`, `Chapter IV: The long road home`, and `1.1 Results` stay clean. The rule still checks the rest of the heading, so `Section 1: Data Tables Are Here` still trips it, and the first word after the prefix still needs a capital letter. Recognized labels: Appendix, Chapter, Example, Figure, Part, Phase, Section, Stage, Step, and Table, each followed by a number, a single letter, or a roman numeral. Bare numeric ordinals like `1.1` or `2.` also count.
+
 **Adding project-specific exceptions:** Users can add their own exceptions (product names, domain terms) without modifying the rule. Drop the relevant entries into your project's `accept.txt` vocabulary file:
 
 ```text
@@ -188,6 +190,8 @@ SomeDomainTerm
 ```
 
 The rule merges these into its exceptions at runtime because it uses `vocab: true` (the default). Make sure your `.vale.ini` has `Vocab = MyProject` set.
+
+**Changing the prefix or the built-in list:** Overrides in `.vale.ini` cover rule levels and on/off toggles, not fields like `prefix` or `exceptions`. On top of that, `vale sync` overwrites the packaged rule file on every run. To change those fields, copy the rule into a style your project owns and turn off the packaged copy. The [customization section in the README](README.md#copying-headingtitlecase-into-your-own-style) shows the steps.
 
 ### VocabularySwap
 

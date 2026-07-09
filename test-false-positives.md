@@ -415,3 +415,25 @@ The report covers four phases of the project.
 The stream splits into two channels.
 
 The survey covers four categories of feedback.
+
+## HeadingTitleCase: ordinal prefixes that should NOT trigger
+
+<!-- vale ai-tells-experimental.HeadingTitleCase = YES -->
+
+### Section 1: Data collection methods
+
+### Appendix A
+
+### Appendix B: Survey instruments
+
+### Chapter IV: The long road home
+
+### Part II
+
+### Step 3 Configure the server
+
+### 1.1 This heading keeps its first word capitalized
+
+### 2. Introduction to the test suite
+
+<!-- vale ai-tells-experimental.HeadingTitleCase = NO -->

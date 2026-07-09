@@ -281,6 +281,23 @@ BasedOnStyles = ai-tells
 ai-tells.HedgingPhrases = error
 ```
 
+### Copying HeadingTitleCase into your own style
+
+The experimental [HeadingTitleCase rule](EXPERIMENTAL.md#headingtitlecase) needs more per-project tuning than any other rule in the package, and most of its settings only live in the rule file itself. Word-level exceptions (product names in your headings) work through the project vocabulary, as [EXPERIMENTAL.md](EXPERIMENTAL.md#headingtitlecase) describes. Everything else sits in fields that `.vale.ini` can't override: the built-in exceptions list and the ordinal prefix pattern that recognizes labels like `Section 1:` and `Appendix A`. And `vale sync` overwrites packaged styles on every run. Edits to the synced copy don't survive.
+
+To own those settings, copy the rule into a style your project controls and turn off the packaged copy:
+
+```bash
+mkdir -p styles/MyProject
+cp styles/ai-tells-experimental/HeadingTitleCase.yml styles/MyProject/
+```
+
+```ini
+[*.md]
+BasedOnStyles = ai-tells, ai-tells-experimental, MyProject
+ai-tells-experimental.HeadingTitleCase = NO
+```
+
 ## Early prevention with AI agent instructions
 
 If you use an AI coding assistant, add instructions to your project's `CLAUDE.md`, `AGENTS.md`, or similar file to prevent Vale violations before they happen:
