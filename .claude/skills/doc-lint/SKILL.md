@@ -76,7 +76,7 @@ Re-run linters to confirm all issues resolved:
 just lint-docs path/to/file.md
 ```
 
-**The target: zero errors and zero warnings.** Both linters must pass clean.
+**Aim for zero errors and zero warnings.** Both linters must pass clean.
 
 ## Handling difficult warnings
 
