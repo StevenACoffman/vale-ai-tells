@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.22.0] - 2026-07-12
+
+<!-- vale off -->
+
+### Changed
+
+- **ContrastiveFormulas**: Add the bare appositive contrast ("a
+  refinement, not a rivalry"). The clause tokens all require a subject
+  and a verb, so the verbless form slipped through in prose and never
+  fired in headings. The new token needs no verb and fires in both
+  places, and it subsumes the single-word-subject "X is a Y, not a Z"
+  token, which is removed.
+- **CataphoricForecasting**: Add bare cardinal-opener shapes with no
+  curated noun or verb: the determiner-led count ("The three axes"),
+  the sentence-initial count subject ("Eight repos seed the list"),
+  and the folksy proportion ("three of every four runs," "nine times
+  out of ten"). Temporal and partitive openers ("Three years ago,"
+  "The two weeks of onboarding," "The three of us") stay clean via
+  lookahead. A legitimate back-reference now fires ("The two functions
+  return different types"); drop the count or add a project exception.
+  The message now mentions measured figures as well as items.
+- **AnthropomorphicJustification**: Broaden the lexicon beyond the
+  fixed idioms. New families: the bare grant with a curated object
+  list ("earns a caveat," "earned the name"), coronation ("crowns the
+  release," "crowning achievement"), rank-claiming gated on trophy
+  objects ("claims the top spot," "stakes a claim") so a paper that
+  claims a result stays clean, and agency verbs ("behaves itself,"
+  "pretends otherwise," "cares deeply," "delivers on its promise,"
+  "hangs on a single assumption," "hangs in the balance").
+- **VerbTricolon**: Reword the message so it does not open with a
+  spelled-out cardinal, which the broadened CataphoricForecasting now
+  flags.
+
+<!-- vale on -->
+
 ## [1.21.2] - 2026-07-09
 
 <!-- vale off -->
@@ -1207,6 +1242,7 @@ Initial release with 11 rules for detecting AI writing patterns.
 - **FillerPhrases**: Padding language that adds no meaning
 - **FormalRegister**: Unnecessarily formal vocabulary choices
 
+[1.22.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.21.2...v1.22.0
 [1.21.2]: https://github.com/tbhb/vale-ai-tells/compare/v1.21.1...v1.21.2
 [1.21.1]: https://github.com/tbhb/vale-ai-tells/compare/v1.21.0...v1.21.1
 [1.21.0]: https://github.com/tbhb/vale-ai-tells/compare/v1.20.1...v1.21.0
