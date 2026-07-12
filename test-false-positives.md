@@ -268,6 +268,12 @@ The supercharged engine roared to life.
 
 A turbocharged sedan passed us.
 
+## ContrastiveFormulas: non-appositive commas that should NOT trigger
+
+She gave a talk, not knowing the demo would fail.
+
+We merged a fix, not that anyone noticed.
+
 ## ContrastiveNegation: non-tells that should NOT trigger
 
 The feature is no longer supported.

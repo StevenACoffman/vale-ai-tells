@@ -16,6 +16,10 @@ The question isn't whether to adopt these practices; it's how to implement them 
 It's less about the technology and more about the mindset.
 What matters isn't the destination; it's the journey itself.
 The real challenge isn't technical; it's cultural.
+The new lint pass is a refinement, not a rivalry.
+It reads as a guardrail, not a gate.
+
+### A refinement, not a rivalry
 
 ## Affirmative formulas
 
