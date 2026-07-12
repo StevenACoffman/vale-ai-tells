@@ -263,6 +263,18 @@ Three or more consecutive bullets that look like file paths should fire:
 - src/auth/session.ts
 - tests/auth/login.test.ts
 
+Backticked paths, the agent's usual dressing, should fire:
+
+- `src/auth/login.ts`
+- `src/auth/session.ts`
+- `tests/auth/login.test.ts`
+
+Paths with trailing annotations should fire:
+
+- src/auth/login.ts: add the retry handler
+- **src/auth/session.ts**: pool the connections
+- src/auth/api.ts - route the callback
+
 Negative cases (should not fire):
 
 A single file bullet:

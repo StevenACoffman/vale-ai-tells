@@ -62,7 +62,7 @@ The `ai-tells-commits` style provides 13 rules purpose-built for commit messages
 | `CommitChangelogStyle` | Keep-a-Changelog-style headings inside a single commit body: `## Added`, `### Fixed`, `### Breaking Changes`, etc. CHANGELOG.md is the place for that format. |
 | `CommitMarketingAdjectives` | Marketing intensifiers: "production-ready," "enterprise-grade," "mission-critical," "battle-tested," "bulletproof," etc. State what changed and why. |
 | `CommitUnquantifiedClaims` | Unquantified performance, size, or speed claims: "significantly faster," "much smaller," "blazingly fast," etc. Currently at `warning` level. Back claims with numbers. |
-| `CommitFileListing` | Three or more consecutive bullets that look like file paths. Currently at `warning` level. The diff already shows files changed; describe what changed about the code. |
+| `CommitFileListing` | Three or more consecutive bullets that look like file paths, bare ("src/app.ts"), backticked, bolded, or with a trailing annotation ("src/app.ts: add handler"). Currently at `warning` level. The diff already shows files changed; describe what changed about the code. |
 
 <!-- vale on -->
 

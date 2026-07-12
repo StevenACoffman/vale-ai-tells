@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Fixed
+
+- **CommitFileListing**: Fire on the lists agents actually write. The
+  per-line terminator required a newline after every bullet, but Vale
+  hands raw text to the regex without a trailing newline on the last
+  line, so a three-bullet list came up one repetition short and the
+  rule never fired on its own test case. The terminator now accepts
+  end-of-text, and the whitespace atoms no longer cross line
+  boundaries. Paths wrapped in backticks or bold markers and paths
+  with a trailing annotation ("src/app.ts: add handler") now count as
+  file bullets too.
+
+<!-- vale on -->
+
 ## [1.22.0] - 2026-07-12
 
 <!-- vale off -->
