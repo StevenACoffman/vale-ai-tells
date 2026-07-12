@@ -1081,6 +1081,16 @@ There are three reasons this matters.
 
 Three reasons stand out:
 
+The three axes matter here.
+
+Eight repos seed the list.
+
+Two options exist for the rollout.
+
+Three of every four runs fail the check.
+
+Nine times out of ten the cache answers first.
+
 These three pillars hold up the whole approach.
 
 The federation capability set expands in three phases.

@@ -177,7 +177,7 @@ A capitalization rule that flags markdown headings using Title Case instead of s
 
 - Wikipedia "Signs of AI writing": "AI chatbots strongly tend to capitalize all main words in section headings."
 
-**How it works:** Uses Vale's built-in `capitalization` extension. The two relevant settings are `match: $sentence` and `scope: heading`. Acronyms like API and SQL, alongside proper nouns like GitHub, Docker, and PostgreSQL, live in a built-in exceptions list that the rule consults before flagging anything.
+**How it works:** Uses Vale's built-in `capitalization` extension. The relevant settings are `match: $sentence` and `scope: heading`. Acronyms like API and SQL, alongside proper nouns like GitHub, Docker, and PostgreSQL, live in a built-in exceptions list that the rule consults before flagging anything.
 
 **Ordinal prefixes:** The rule's `prefix` setting strips a leading ordinal label before checking the case, with or without a colon. Headings such as `Section 1: Data collection methods`, `Appendix A`, `Chapter IV: The long road home`, and `1.1 Results` stay clean. The rule still checks the rest of the heading, so `Section 1: Data Tables Are Here` still trips it, and the first word after the prefix still needs a capital letter. Recognized labels: Appendix, Chapter, Example, Figure, Part, Phase, Section, Stage, Step, and Table, each followed by a number, a single letter, or a roman numeral. Bare numeric ordinals like `1.1` or `2.` also count.
 

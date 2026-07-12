@@ -390,7 +390,7 @@ The command: a dry run.
 
 The API: a set of endpoints for managing users and their sessions.
 
-The three files: config.yml, main.go, and the integration test suite.
+The staged files: config.yml, main.go, and the integration test suite.
 
 The following options are available: verbose, quiet, and debug output.
 
@@ -408,9 +408,17 @@ The map labels the four corners.
 
 The service runs on two servers behind a load balancer.
 
-The two functions return different types.
+We compared the two functions line by line.
 
 These three tests cover the edge cases.
+
+Three years ago the team migrated the stack.
+
+Two weeks later the bug came back.
+
+The two weeks of onboarding cover environment setup.
+
+The three of us reviewed the patch.
 
 The bar splits into two pieces.
 
