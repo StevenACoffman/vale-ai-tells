@@ -12,6 +12,10 @@ tokens:
   - earned its place
   - earned its spot
   - more than earns?
+  # Bare grant: the artifact earns a reward beyond its keep ("earns a
+  # caveat," "earned the name"). The determiner plus a curated object
+  # keeps literal wages out.
+  - earn(?:s|ed)? (?:a|an|the) (?:caveat|mention|footnote|call-?out|closer look|second look|spot|place|slot|pass|nod|name|title|label|badge|crown|shout-?out|asterisk|gold star)
 
   # "Paying" family
   - pays? for itself
@@ -95,6 +99,39 @@ tokens:
   - deserves? checking
   - deserves? rethinking
   - deserves? revisiting
+
+  # "Crowning" family.
+  # Coronation applied to artifacts: a commit "crowns the release," a
+  # benchmark win is "the crowning achievement." Royalty and dental
+  # prose have the literal senses; disable the rule there.
+  - crown(?:s|ed)? (?:a|an|the|its)
+  - crowning (?:achievement|glory|jewel|touch|moment)
+
+  # "Claiming" family.
+  # The artifact competes for rank ("claims the top spot," "claims
+  # pride of place"). Gated on the trophy object, so a paper that
+  # claims a result stays clean.
+  - claims? (?:the|its|a) (?:top |first |second |third )?(?:spot|place|billing|title|crown|throne|mantle|prize|lead|podium)
+  - claims? (?:pride of place|cent(?:er|re) stage)
+  - stake(?:s|d)? (?:a|its|out a) claim
+
+  # "Agency" family.
+  # Verbs of intention or feeling applied to artifacts: code that
+  # "behaves itself," docs that "pretend otherwise," a linter that
+  # "cares deeply," a README that "delivers on its promise," a design
+  # that "hangs on a single assumption."
+  - behaves? itself
+  - behaving itself
+  - on its best behavior
+  - on its best behaviour
+  - pretend(?:s|ed|ing)? otherwise
+  - pretend(?:s|ed|ing)? not to
+  - cares? deeply
+  - deliver(?:s|ed|ing)? on (?:its|that|the|every) promise
+  - keeps? (?:its|that) promise
+  - breaks? (?:its|that) promise
+  - hangs? on (?:a single|(?:this |that )?one|whether|every word)
+  - hangs? in the balance
 
   # "Harm" family.
   # Treats inanimate subjects (a check, a config, a flag) as moral

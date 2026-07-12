@@ -681,6 +681,18 @@ The flag does no harm to existing callers.
 
 This migration causes harm if run twice.
 
+The helper earns a caveat.
+
+That commit crowns the release.
+
+The parser claims the top spot in the benchmark.
+
+The linter cares deeply about whitespace.
+
+The README delivers on its promise.
+
+The whole design hangs on a single assumption.
+
 ## NarrativePivots (game / playbook / script)
 
 This release changed the game for our customers.

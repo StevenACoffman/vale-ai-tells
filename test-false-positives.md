@@ -212,6 +212,16 @@ The order of operations matters.
 The team does the work of reviewing every PR.
 <!-- vale ai-tells.AnthropomorphicJustification = YES -->
 
+## AnthropomorphicJustification (agency verbs): literal uses that should NOT trigger
+
+She earns a salary at the firm.
+
+The paper claims a new lower bound.
+
+Hang on a second while I check.
+
+The portrait shows a jeweled crown.
+
 Engineers do the hard work of maintaining the runtime.
 
 The interns did real work on the migration tooling.
