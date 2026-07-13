@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 72 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 73 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -182,6 +182,7 @@ This package contains 72 rule files covering different categories of AI tells. A
 | `FormalTransitions` | Formal transitions: "Moreover," "Furthermore," "What's more," "Case in point," etc. |
 | `GrowthMetaphors` | The startup-as-organism register: "incubate," "gestate," "nascent," "fledgling," "embryonic," "cultivate," "nurture," "in its infancy," plus scoped startup phrases ("minimum viable," "seed funding," "organic growth"). Disable for medical, nature, or agricultural writing. |
 | `HedgingPhrases` | Compulsive hedging: "It's important to note that," "That being said," "Generally speaking," "As you might expect," etc. |
+| `HollowAcknowledgment` | The staged-insight antithesis that names a thing and then declines to act on it: "names the gap without filling it," "identifies the problem without solving it," "raises the question without answering it," plus the shorthand "all analysis, no action." Gated on a notice-verb, a "without" gerund, and a back-referring pronoun, so an ordinary "left without saying goodbye" stays quiet. Distinct from `ContrastiveFormulas`, which negates a category rather than an action. |
 | `LabelAndExplain` | The "noun-phrase label: explanatory sentence" construction ("The dominant attendee report: developers build from scratch because finding an existing extension is harder than writing a new one."). A determiner-led label of up to four lowercase words, a colon, then a lowercase clause of 20 or more characters ending in sentence punctuation. The lowercase clause leaves the capitalized "Label: Sentence" case to `ColonUsage`; the length requirement skips short values ("The output: green.") and dotted file lists; a lookbehind skips copula clause-labels ("The following options are available: ..."). Also holds the curated dramatic-colon labels ("The catch:," "The takeaway:," "The upshot:") moved from `RhetoricalDevices`, which fire whatever follows the colon. A capitalized label ("The Redis cache: it evicts...") needs part-of-speech tagging to catch and stays uncovered. |
 | `ListIntroductions` | Announcements of upcoming lists or summaries: "Below you'll find," "Here's a breakdown of," "Here's everything you need to know," "The following sections will," etc. |
 | `MarketingHeadings` | Promotional-register heading clichés: "The Ultimate Guide," "Everything You Need to Know," "Mastering X," "Unlocking X," "The Power of X," "The Future of X," "Revolutionizing X," etc. |
@@ -190,7 +191,7 @@ This package contains 72 rule files covering different categories of AI tells. A
 | `MicDropHeadings` | Tagline-style headings: "Clarity, not cleverness," "Simple, then fast," "Speed over correctness," "X first, Y second," etc. |
 | `NarrativePivots` | Unearned dramatic pivots: "something shifted," "everything changed," "that changed everything," "changed the game," "rewrote the playbook," "flipped the script," "it was a wake-up call," etc. |
 | `OpeningCliches` | AI-style openings: "In today's rapidly evolving landscape," "Without further ado," "Whether you're," etc. |
-| `OrganicConsequence` | False inevitability: "emerges naturally," "a natural consequence," "follows naturally from," etc. |
+| `OrganicConsequence` | False inevitability: "emerges naturally," "a natural consequence," "follows naturally from," and the effortless-emergence shape where a result "falls straight out of" its premise. The manner adverb gates the emergence shape, so a literal "the pen fell out of my pocket" stays quiet. |
 | `OverusedVocabulary` | Words with documented AI overuse: "delve," "comprehensive," "unprecedented," "sophisticated," "salient," "efficacy," "paramount," "cognizant," "camaraderie," "palpable," "fleeting," "amidst," "genuinely," "genuine," "supercharge," "unleash," "democratize," etc. Verb forms (leverage, harness, etc.) moved to `OverusedVocabularyVerbs`. |
 | `OverusedVocabularyVerbs` | Verb forms of AI vocabulary fingerprints: "leverage," "navigate," "showcase," "harness," "embark," "foster," "spearhead." Sequence-based for precision — noun forms such as "financial leverage" do not trigger. |
 | `ParallelStaccato` | Back-to-back minimal sentences with parallel structure: "Engineers build. Managers ship." "Content carries the personality. Chrome doesn't." Solo two-word staccato: "Complexity scales." |

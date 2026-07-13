@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **HollowAcknowledgment**: New rule. Flags the staged-insight
+  antithesis that names a thing and then declines to act on it: "names
+  the gap without filling it," "identifies the problem without solving
+  it," "raises the question without answering it," plus the shorthand
+  "all analysis, no action." Gated on a notice-verb, a "without"
+  gerund, and a back-referring pronoun, so a plain "left without saying
+  goodbye" stays quiet.
 - **FigurativeStrikes**: New rule. Flags "strikes" for resonance and
   aptness: an argument that "strikes a chord," a critique that "strikes
   at the core of" the design, a phrase that "strikes the right tone,"
@@ -80,6 +87,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **OrganicConsequence**: Add the effortless-emergence shape where a
+  result "falls straight out of" its premise ("the design fell straight
+  out of the constraints"). The manner adverb (straight, right,
+  cleanly, directly, naturally) is the gate, so a literal "the pen fell
+  out of my pocket" stays quiet.
 - **AnthropomorphicJustification**: Add "hinges on" alongside the
   existing "hangs on" arm ("the whole plan hinges on a single
   assumption," "hinges on whether"), gated on the same abstract

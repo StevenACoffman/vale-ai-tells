@@ -1019,6 +1019,26 @@ The library falls out of favor.
 
 The project falls victim to scope creep.
 
+## OrganicConsequence (effortless emergence)
+
+The design fell straight out of the constraints.
+
+The API falls right out of the data model.
+
+The proof falls cleanly out of the lemma.
+
+## HollowAcknowledgment
+
+It names the gap without filling it.
+
+The post identifies the problem without solving it.
+
+This raises the question without answering it.
+
+The audit flags the risk without mitigating it.
+
+The write-up is all analysis and no action.
+
 ## FigurativeStrikes
 
 The argument strikes a chord with reviewers.

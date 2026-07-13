@@ -334,6 +334,26 @@ Rain falls steadily on the roof.
 
 The ball falls to the floor when you drop it.
 
+## OrganicConsequence: literal falling out that should NOT trigger
+
+The pen fell out of my pocket.
+
+She fell out of the boat.
+
+The card fell out of the envelope.
+
+## HollowAcknowledgment: plain "without" clauses that should NOT trigger
+
+She left without saying goodbye.
+
+He fixed the bug without breaking anything.
+
+The script runs without printing output.
+
+The team names the release after a constellation.
+
+The linter identifies three issues in the file.
+
 ## FigurativeStrikes: literal striking that should NOT trigger
 
 Strike a match to light the burner.
