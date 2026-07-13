@@ -699,6 +699,8 @@ The benchmark decided the debate.
 
 Latency puts the matter to rest.
 
+The whole rollout hinges on whether the cache holds.
+
 ## NarrativePivots (game / playbook / script)
 
 This release changed the game for our customers.
@@ -1016,6 +1018,44 @@ Bugs fall through the cracks.
 The library falls out of favor.
 
 The project falls victim to scope creep.
+
+## FigurativeStrikes
+
+The argument strikes a chord with reviewers.
+
+The critique strikes at the core of the design.
+
+This phrase strikes the right tone.
+
+The rewrite struck gold on the first try.
+
+## FigurativeLends
+
+The structure lends itself to reuse.
+
+The benchmark lends credence to the claim.
+
+The footnote lends weight to the argument.
+
+## FigurativeDraws
+
+This section draws on prior work.
+
+The post draws a distinction between the two.
+
+The heading draws attention to the caveat.
+
+The chapter draws to a close.
+
+## FigurativeCasts
+
+The finding casts doubt on the result.
+
+The outage casts a long shadow over the launch.
+
+The rewrite casts a wide net.
+
+We cast aside the legacy path.
 
 ## FigurativeHolds
 

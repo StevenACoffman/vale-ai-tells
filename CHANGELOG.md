@@ -11,6 +11,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **FigurativeStrikes**: New rule. Flags "strikes" for resonance and
+  aptness: an argument that "strikes a chord," a critique that "strikes
+  at the core of" the design, a phrase that "strikes the right tone,"
+  "struck gold." Complement-gated in the FigurativeSits mold, so
+  literal striking (a match, lightning, a labor strike) stays quiet;
+  "strike a balance" remains in FalseBalance and "at the heart of"
+  remains in PromotionalPuffery.
+- **FigurativeLends**: New rule. Flags "lends" for conferring an
+  abstract quality: a structure that "lends itself to" reuse, a study
+  that "lends credence," a detail that "lends weight." Complement-gated,
+  so literal lending (money, a book) stays quiet.
+- **FigurativeDraws**: New rule. Flags "draws" for sourcing and
+  comparison: an argument that "draws on" prior work, a section that
+  "draws a distinction," a heading that "draws attention to" a caveat,
+  a post that "draws to a close." Complement-gated, so literal drawing
+  (a card, water, a weapon, blood) stays quiet.
+- **FigurativeCasts**: New rule. Flags "casts" for projecting an
+  abstraction: a finding that "casts doubt on" a result, a decision
+  that "casts a long shadow," a rewrite that "casts a wide net."
+  Complement-gated, so literal casting (a fishing line, metal, a vote,
+  actors) stays quiet.
 - **FigurativeFalls**: New rule. Flags "falls" for shortcoming,
   membership, and neglect: a result that "falls short," a design that
   "falls apart," a case that "falls under" a category or "falls within
@@ -59,6 +80,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **AnthropomorphicJustification**: Add "hinges on" alongside the
+  existing "hangs on" arm ("the whole plan hinges on a single
+  assumption," "hinges on whether"), gated on the same abstract
+  complements so a literal door hinge stays quiet.
 - **AnthropomorphicJustification**: Add the adjudication family, where
   a fact gets the gavel: "availability settles the question," "the
   benchmark decides the debate," "latency puts the matter to rest,"

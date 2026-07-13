@@ -132,6 +132,8 @@ tokens:
   - breaks? (?:its|that) promise
   - hangs? on (?:a single|(?:this |that )?one|whether|every word)
   - hangs? in the balance
+  - hinges? (?:on|upon) (?:a single|(?:this |that )?one|whether|the (?:assumption|answer|outcome|question))
+  - hinged (?:on|upon) (?:a single|(?:this |that )?one|whether)
 
   # "Adjudication" family.
   # A fact or metric handed the gavel: "availability settles the

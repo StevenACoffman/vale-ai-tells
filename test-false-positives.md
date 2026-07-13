@@ -334,6 +334,40 @@ Rain falls steadily on the roof.
 
 The ball falls to the floor when you drop it.
 
+## FigurativeStrikes: literal striking that should NOT trigger
+
+Strike a match to light the burner.
+
+Lightning strikes the tower during storms.
+
+The workers went on strike for higher pay.
+
+## FigurativeLends: literal lending that should NOT trigger
+
+Please lend me the book until Friday.
+
+The bank lends money at a fixed rate.
+
+## FigurativeDraws: literal drawing that should NOT trigger
+
+Draw a card from the top of the deck.
+
+She drew water from the well.
+
+The sheriff drew his weapon.
+
+The nurse drew blood for the test.
+
+## FigurativeCasts: literal casting that should NOT trigger
+
+Cast the fishing line toward the reeds.
+
+They cast the bronze statue in one pour.
+
+Voters cast their ballots by noon.
+
+The director cast her in the lead role.
+
 ## FigurativeHolds: literal holding that should NOT trigger
 
 She holds a master's degree in physics.
