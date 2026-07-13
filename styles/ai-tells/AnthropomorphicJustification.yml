@@ -133,6 +133,20 @@ tokens:
   - hangs? on (?:a single|(?:this |that )?one|whether|every word)
   - hangs? in the balance
 
+  # "Adjudication" family.
+  # A fact or metric handed the gavel: "availability settles the
+  # question," "the benchmark decides the debate," "latency puts the
+  # matter to rest." State the conclusion and the evidence instead of
+  # letting the noun rule on it.
+  - settles? the (?:question|debate|matter|argument|issue|dispute)
+  - settled the (?:question|debate|matter|argument|issue|dispute)
+  - decides? the (?:question|debate|matter|argument|issue|dispute)
+  - decided the (?:question|debate|matter|argument|issue|dispute)
+  - puts? the (?:question|debate|matter|argument|issue|dispute) to (?:rest|bed)
+  - put the (?:question|debate|matter|argument|issue|dispute) to (?:rest|bed)
+  - lays? the (?:question|debate|matter|argument|issue|dispute) to rest
+  - laid the (?:question|debate|matter|argument|issue|dispute) to rest
+
   # "Harm" family.
   # Treats inanimate subjects (a check, a config, a flag) as moral
   # agents capable of inflicting or withholding damage — the

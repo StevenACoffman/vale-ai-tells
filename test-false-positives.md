@@ -318,6 +318,26 @@ The truck carries freight across the state.
 
 She carried the groceries upstairs.
 
+## FigurativeHolds: literal holding that should NOT trigger
+
+She holds a master's degree in physics.
+
+He held the rope while she climbed.
+
+The jar holds two liters.
+
+The court holds session on Mondays.
+
+The clamp holds the panel in place.
+
+## AnthropomorphicJustification (adjudication): literal settling that should NOT trigger
+
+We settled on a date for the review.
+
+The team settled into the new office.
+
+Dust settles on the shelf overnight.
+
 ## FigurativeRuns: literal running that should NOT trigger
 
 Run the tests before you push.

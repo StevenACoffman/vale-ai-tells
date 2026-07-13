@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **FigurativeHolds**: New rule. Flags "holds" as a possession verb for
+  abstractions: a chart that "holds the same wide spread," a result
+  that "holds across datasets," a claim that "holds up under
+  scrutiny," an approach that "holds great promise," "the correlation
+  still holds." Gated on the figurative complement or a curated
+  abstract subject, so literal holding (hands, jars, court sessions)
+  stays quiet; "holds its own" remains in AnthropomorphicJustification.
 - **FigurativeRides**: New rule. Flags "rides" as a dependence and
   piggybacking verb ("everything rides on this migration," "the fix
   rides along with the release," "the cache rides on top of Redis,"
@@ -30,6 +37,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   "a theme runs through the essay"). Literal senses ("run the
   tests," "the server runs on port 8080," "up and running") never
   match; "run a tight ship" remains in ShipOveruse.
+
+### Changed
+
+- **AnthropomorphicJustification**: Add the adjudication family, where
+  a fact gets the gavel: "availability settles the question," "the
+  benchmark decides the debate," "latency puts the matter to rest,"
+  "laid the issue to rest." Human settling ("we settled on a date,"
+  "the team settled in") stays quiet.
 
 <!-- vale on -->
 

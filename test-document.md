@@ -693,6 +693,12 @@ The README delivers on its promise.
 
 The whole design hangs on a single assumption.
 
+Availability settles the question.
+
+The benchmark decided the debate.
+
+Latency puts the matter to rest.
+
 ## NarrativePivots (game / playbook / script)
 
 This release changed the game for our customers.
@@ -984,6 +990,22 @@ The change carries significant risk.
 The approach carries a caveat.
 
 One integration test carries the suite.
+
+## FigurativeHolds
+
+The p99 chart holds the same wide spread.
+
+The observation holds true at scale.
+
+The claim holds up under scrutiny.
+
+The result holds across datasets.
+
+The correlation still holds.
+
+The approach holds great promise.
+
+That argument holds little weight.
 
 ## FigurativeRuns
 
