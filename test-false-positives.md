@@ -318,6 +318,22 @@ The truck carries freight across the state.
 
 She carried the groceries upstairs.
 
+## FigurativeFalls: literal falling that should NOT trigger
+
+The price fell sharply after the announcement.
+
+The temperature falls below freezing at night.
+
+Night falls early in December.
+
+She fell down the stairs and bruised her knee.
+
+Leaves fall from the trees in autumn.
+
+Rain falls steadily on the roof.
+
+The ball falls to the floor when you drop it.
+
 ## FigurativeHolds: literal holding that should NOT trigger
 
 She holds a master's degree in physics.

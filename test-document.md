@@ -991,6 +991,32 @@ The approach carries a caveat.
 
 One integration test carries the suite.
 
+## FigurativeFalls
+
+This one falls short.
+
+The approach falls flat.
+
+The design falls apart under load.
+
+That concern falls by the wayside.
+
+This falls outside the scope of the review.
+
+The request falls on deaf ears.
+
+Responsibility falls to the platform team.
+
+This falls under the umbrella of security.
+
+Everything falls into place.
+
+Bugs fall through the cracks.
+
+The library falls out of favor.
+
+The project falls victim to scope creep.
+
 ## FigurativeHolds
 
 The p99 chart holds the same wide spread.

@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 67 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 68 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -166,6 +166,7 @@ This package contains 67 rule files covering different categories of AI tells. A
 | `ExplainerHeadings` | Tutorial-blog heading clichés: "Deep Dive," "Under the Hood," "Demystifying X," "Why It Matters," "A Closer Look," etc. |
 | `FalseBalance` | Evasive "both sides" language: "both sides present valid points," "nuanced approach," etc. |
 | `FalseExclusivity` | False insider drama: "nobody talks about," "what most people miss," "the dirty secret," "the elephant in the room," etc. |
+| `FigurativeFalls` | "Falls" as an overused verb for shortcoming, membership, and neglect: a result that "falls short," a design that "falls apart," a case that "falls under" a category or "falls within scope," a task that "falls by the wayside" or "through the cracks," a request that "falls on deaf ears," responsibility that "falls to" a team. Gated on the figurative complement, so literal falling (prices, temperature, night, rain) stays quiet; disable the rule for gravity or weather writing. The past-tense "things fell into place" stays in `NarrativePivots`, and "falls into three categories" stays in `CataphoricForecasting`. |
 | `FigurativeHolds` | "Holds" as an overused possession verb for abstractions: a chart that "holds the same wide spread," a result that "holds across datasets," a claim that "holds up under scrutiny," an approach that "holds great promise," "the correlation still holds." Gated on the figurative complement or a curated abstract subject, so literal holding (hands, jars, court sessions) stays quiet; disable the rule for legal or wrestling writing. "Holds its own" stays in `AnthropomorphicJustification`. |
 | `FigurativeLands` | "Lands" as an overused arrival verb: "the request lands on the node," "the PR lands in main," "where the idea lands." Also catches the prepositionless arrival after a temporal or conditional subordinator ("once the feature lands," "when the PR lands," "until the fix lands"). Exempts common literal landers (a plane, a bird, a probe); rare ones fire, so disable the rule for aviation or nature writing. |
 | `FigurativeCarries` | "Carries" as an overused freighting verb: a term that "carries baggage," a change that "carries significant risk," an approach that "carries a caveat," one test that "carries the suite." Gated on the figurative complement, so literal carrying (bags, freight) stays quiet; disable the rule for freight or logistics writing. "Carries its weight" stays in `AnthropomorphicJustification`. |

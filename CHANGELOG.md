@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **FigurativeFalls**: New rule. Flags "falls" for shortcoming,
+  membership, and neglect: a result that "falls short," a design that
+  "falls apart," a case that "falls under" a category or "falls within
+  scope," a task that "falls by the wayside" or "through the cracks," a
+  request that "falls on deaf ears," responsibility that "falls to" a
+  team. Complement-gated in the FigurativeSits mold, so literal falling
+  (prices, temperature, night, rain) stays quiet; disable the rule for
+  gravity or weather writing. The past-tense "things fell into place"
+  remains in NarrativePivots, and "falls into three categories" remains
+  in CataphoricForecasting.
+
+<!-- vale on -->
+
 ## [1.23.0] - 2026-07-12
 
 <!-- vale off -->
