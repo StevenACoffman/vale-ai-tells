@@ -85,9 +85,12 @@ tokens:
   # the list," "Two options exist"). The broad companion to Shapes A and B:
   # the capitalized cardinal is still the anchor, but the noun and verb are
   # not curated, so the plain count subject fires too ("Five people attended").
-  # A temporal opener is a different construction ("Three years ago ..."),
-  # excluded by the lookahead.
-  - "\\b(?:Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve) (?!(?:of|or|to|and|in|out|more|percent|dozen|hundred|thousand|million|billion|seconds?|minutes?|hours?|days?|weeks?|months?|quarters?|years?|decades?|times)\\b)[a-z]+ [a-z]+"
+  # The following words allow capitals so a title-case heading fires too
+  # ("Three Layers Guard an EDA"); a proper noun that opens with a cardinal
+  # fires as well ("Three Mile Island"), so add a project exception for
+  # those. A temporal opener is a different construction ("Three years
+  # ago ..."), excluded by the case-insensitive lookahead.
+  - "\\b(?:Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve) (?!(?i:of|or|to|and|in|out|more|percent|dozen|hundred|thousand|million|billion|seconds?|minutes?|hours?|days?|weeks?|months?|quarters?|years?|decades?|times)\\b)[A-Za-z][a-z]+ [A-Za-z][a-z]+"
 
   # --- Shape H: the folksy proportion ("Three of every four skills," "nine
   # out of every ten runs"). The spelled-out ratio dresses an estimate up as

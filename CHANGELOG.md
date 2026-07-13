@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Fixed
+
+- **CataphoricForecasting**: Fire on title-case headings. The bare
+  cardinal-subject shape required lowercase words after the count, so
+  "Three Layers Guard an EDA" as a heading stayed silent while its
+  sentence-case twin fired. The words after the cardinal now allow
+  capitals and the temporal lookahead matches case-insensitively, so
+  "Two Weeks Notice" still stays clean. A cardinal-led proper noun
+  ("Three Mile Island") now fires; add a project exception where
+  those recur.
+
+<!-- vale on -->
+
 ## [1.22.1] - 2026-07-12
 
 <!-- vale off -->

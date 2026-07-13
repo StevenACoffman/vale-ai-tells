@@ -1103,6 +1103,8 @@ Three of every four runs fail the check.
 
 Nine times out of ten the cache answers first.
 
+### Three Layers Guard the Pipeline
+
 These three pillars hold up the whole approach.
 
 The federation capability set expands in three phases.
