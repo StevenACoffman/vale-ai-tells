@@ -302,6 +302,48 @@ The store sells fresh organic produce.
 
 Her earliest memories date from infancy.
 
+## FigurativeRides: literal riding that should NOT trigger
+
+She rides the bus to work every day.
+
+He rides a horse on weekends.
+
+The kids ride bikes to school.
+
+## FigurativeCarries: literal carrying that should NOT trigger
+
+The courier carries a backpack full of parts.
+
+The truck carries freight across the state.
+
+She carried the groceries upstairs.
+
+## FigurativeRuns: literal running that should NOT trigger
+
+Run the tests before you push.
+
+The server runs on port 8080.
+
+The demo is up and running.
+
+The pipeline runs nightly and the script runs in about five seconds.
+
+The cron job runs across every region.
+
+The suite runs through every fixture twice.
+
+The binary runs under Docker in CI.
+
+The daemon runs under systemd with a service file.
+
+The workflow runs on every push to main.
+
+The cable runs under the floor to the rack.
+
+The road runs across the valley.
+
+She went for a run this morning.
+
 ## SemicolonUsage: legitimate semicolons that should NOT trigger
 
 We visited Paris, France; Berlin, Germany; and Tokyo, Japan.

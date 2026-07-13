@@ -963,6 +963,44 @@ No setup, no config, no credit card.
 
 Fast startup, no heavy dependencies.
 
+## FigurativeRides
+
+Everything rides on this migration.
+
+The fix rides along with the release.
+
+The cache rides on top of Redis.
+
+The launch is riding the wave of adoption.
+
+The plan rides on whether CI stays green.
+
+## FigurativeCarries
+
+The term carries baggage in this community.
+
+The change carries significant risk.
+
+The approach carries a caveat.
+
+One integration test carries the suite.
+
+## FigurativeRuns
+
+The problem runs deep.
+
+That choice runs counter to the design.
+
+The new parser runs circles around the old one.
+
+The experiment ran its course.
+
+The team is running on fumes.
+
+One limit runs under the whole table.
+
+A single assumption runs through the entire design.
+
 ## GrowthMetaphors
 
 We incubate early-stage ideas in our accelerator.

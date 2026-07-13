@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **FigurativeRides**: New rule. Flags "rides" as a dependence and
+  piggybacking verb ("everything rides on this migration," "the fix
+  rides along with the release," "the cache rides on top of Redis,"
+  "riding the wave of adoption"). Complement-gated in the
+  FigurativeSits mold, so literal riding (buses, horses) stays quiet;
+  disable the rule for transit or equestrian writing.
+- **FigurativeCarries**: New rule. Flags "carries" as a freighting
+  verb ("carries baggage," "carries significant risk," "carries a
+  caveat," "carries the day," "one test carries the suite").
+  Complement-gated, so literal carrying (bags, freight) stays quiet;
+  "carries its weight" remains in AnthropomorphicJustification.
+- **FigurativeRuns**: New rule. Flags "runs" on curated figurative
+  complements only, since software literally runs everywhere: "runs
+  deep," "runs counter to," "runs the gamut," "runs the risk of,"
+  "ran its course," "running on fumes," "hit the ground running,"
+  and the pervasion shape ("one limit runs under the whole table,"
+  "a theme runs through the essay"). Literal senses ("run the
+  tests," "the server runs on port 8080," "up and running") never
+  match; "run a tight ship" remains in ShipOveruse.
+
+<!-- vale on -->
+
 ## [1.22.2] - 2026-07-12
 
 <!-- vale off -->

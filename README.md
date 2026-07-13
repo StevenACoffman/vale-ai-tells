@@ -138,7 +138,7 @@ ai-tells.ClosingPleasantries = NO
 
 ## Rules included
 
-This package contains 63 rule files covering different categories of AI tells. All rules default to `error` level.
+This package contains 66 rule files covering different categories of AI tells. All rules default to `error` level.
 
 <!-- vale off -->
 
@@ -167,6 +167,9 @@ This package contains 63 rule files covering different categories of AI tells. A
 | `FalseBalance` | Evasive "both sides" language: "both sides present valid points," "nuanced approach," etc. |
 | `FalseExclusivity` | False insider drama: "nobody talks about," "what most people miss," "the dirty secret," "the elephant in the room," etc. |
 | `FigurativeLands` | "Lands" as an overused arrival verb: "the request lands on the node," "the PR lands in main," "where the idea lands." Also catches the prepositionless arrival after a temporal or conditional subordinator ("once the feature lands," "when the PR lands," "until the fix lands"). Exempts common literal landers (a plane, a bird, a probe); rare ones fire, so disable the rule for aviation or nature writing. |
+| `FigurativeCarries` | "Carries" as an overused freighting verb: a term that "carries baggage," a change that "carries significant risk," an approach that "carries a caveat," one test that "carries the suite." Gated on the figurative complement, so literal carrying (bags, freight) stays quiet; disable the rule for freight or logistics writing. "Carries its weight" stays in `AnthropomorphicJustification`. |
+| `FigurativeRides` | "Rides" as an overused dependence verb: "everything rides on this migration," a fix that "rides along" in a release, a cache that "rides on top of" Redis, a launch "riding the wave." Gated on the figurative complement, so literal riding (buses, horses) stays quiet; disable the rule for transit or equestrian writing. |
+| `FigurativeRuns` | "Runs" gated hard on figurative complements, since software literally runs everywhere: "runs deep," "runs counter to," "runs the gamut," "runs the risk of," "runs circles around," "ran its course," "running on fumes," "hit the ground running," and the pervasion shape ("one limit runs under the whole table," "a theme runs through the essay"). Everyday literal senses ("run the tests," "the server runs on port 8080," "up and running") never match; disable the rule for athletics or plumbing writing. "Run a tight ship" stays in `ShipOveruse`. |
 | `FigurativeSits` | "Sits" as an overused placement verb: "sits at the intersection of," "sits alongside," responsibility that "sits with" a team, work that "sits idle." Gated on the figurative complement, so literal sitting stays quiet; disable the rule for furniture, cartography, or page-layout writing. |
 | `FillerPhrases` | Padding and performative sincerity: "a wide range of," "in order to," "honestly," "to be perfectly honest," "the honest truth," etc. |
 | `FormalRegister` | Overly formal vocabulary: "utilize," "facilitate," "commence," etc. |
