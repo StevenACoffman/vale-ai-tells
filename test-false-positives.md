@@ -328,6 +328,18 @@ It was a quiet evening at home.
 
 She asked the children to keep quiet.
 
+## FigurativeLoud: literal loudness that should NOT trigger
+
+The room was loud during the concert.
+
+She played loud music all afternoon.
+
+He read the passage out loud to the class.
+
+I was just thinking out loud.
+
+There was a loud noise from the server room.
+
 ## FigurativeWins: precedence jargon and literal winning that should NOT trigger
 
 The last write wins in this store.

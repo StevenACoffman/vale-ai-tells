@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **FigurativeLoud**: New rule. The mirror of FigurativeQuiet: "loud"
+  for personified emphasis. A check that "fails loudly," a linter that
+  "loudly complains," a metric that "sends a loud signal," a warning
+  that comes through "loud and clear." Gated on the construction, so
+  literal loudness (a room, music, a noise) and bare "out loud"
+  (reading, thinking) never match.
 - **FigurativeQuiet**: New rule. Flags "quiet" for personified
   inaction: a check that "stays quiet," a log that "goes quiet," a
   handler that "quietly drops" the error, "quietly ships," "quietly

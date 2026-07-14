@@ -717,6 +717,16 @@ The handler quietly drops the error.
 
 The adapter quietly falls back to the default.
 
+## FigurativeLoud
+
+The check fails loudly on bad input.
+
+The linter loudly complains about the unused import.
+
+The metric sends a loud signal about scale.
+
+The alert came through loud and clear.
+
 ## FigurativeWins
 
 This approach wins the day.
