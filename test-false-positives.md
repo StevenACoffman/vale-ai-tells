@@ -340,6 +340,10 @@ The truck carries freight across the state.
 
 She carried the groceries upstairs.
 
+The function carries out the validation logic.
+
+The team carries out data processing nightly.
+
 ## FigurativeFalls: literal falling that should NOT trigger
 
 The price fell sharply after the announcement.

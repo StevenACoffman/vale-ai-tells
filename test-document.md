@@ -1013,6 +1013,16 @@ The approach carries a caveat.
 
 One integration test carries the suite.
 
+The daemon carries no pipeline logic yet.
+
+The module carries the validation logic.
+
+The packet carries the payload across the link.
+
+The header carries the auth token.
+
+The signal carries data to the receiver.
+
 ## FigurativeFalls
 
 This one falls short.

@@ -20,6 +20,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **FigurativeCarries**: Add the content-possession shape, where an
+  inanimate component is treated as a vessel that hauls abstract cargo
+  rather than one that contains or transmits it ("the daemon carries no
+  pipeline logic," "the packet carries the payload," "the signal
+  carries data"). Gated on code-structure and transport nouns, so
+  literal physical carrying and the phrasal "carries out" (execute)
+  stay quiet. The message now names containment as well as consequence.
 - **FigurativeRides**: Add the vehicle-exploitation shape, where an
   operation is dressed as a passenger on the infrastructure it merely
   uses ("the query rides the index," "the lookup rides the cache," "the

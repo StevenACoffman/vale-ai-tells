@@ -1,6 +1,6 @@
 ---
 extends: existence
-message: "AI overused verb: '%s'. State the consequence or the obligation directly. Disable this rule for freight or logistics prose."
+message: "AI overused verb: '%s'. Name what it contains or entails directly. Disable this rule for freight or logistics prose."
 level: error
 nonword: true
 ignorecase: true
@@ -29,3 +29,15 @@ tokens:
   # --- Heroics: one component drags the rest across the finish line
   # ("the cache carries the team," "one test carries the suite").
   - "\\bcarr(?:y|ies|ied|ying) the (?:day|team|torch|banner|mantle|load|conversation|narrative|argument|story|suite|whole \\w+)\\b"
+
+  # --- Content possession: an inanimate component treated as a vessel that
+  # hauls abstract cargo rather than one that contains or transmits it ("the
+  # daemon carries no pipeline logic," "the module carries the validation
+  # logic," "the packet carries the payload," "the signal carries data").
+  # The transport framing is the tell in either domain, so the code-structure
+  # nouns and the networking data nouns are both in the set. The "(?!out\\b)"
+  # keeps the phrasal "carries out the logic" (execute) from matching, and
+  # the head-noun set excludes physical objects, so literal "carries freight"
+  # stays quiet. An optional determiner and one modifier word sit between the
+  # verb and the head noun.
+  - "\\bcarr(?:y|ies|ied|ying) (?!out\\b)(?:no |a |an |any |little |the |all the |its |their |extra |additional |significant |real |actual |meaningful |core )?(?:[a-z]+ )?(?:logic|functionality|behaviors?|behaviours?|semantics|side[ -]effects?|state|payloads?|data|traffic|tokens?|headers?|cookies?|signals?|metadata|information)\\b"
