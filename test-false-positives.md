@@ -316,6 +316,18 @@ She rides the bus to campus every morning.
 
 He rides the elevator to the tenth floor.
 
+## FigurativeQuiet: literal quiet that should NOT trigger
+
+The room was quiet during the exam.
+
+Please be quiet in the library.
+
+We enabled the quiet flag to suppress output.
+
+It was a quiet evening at home.
+
+She asked the children to keep quiet.
+
 ## FigurativeWins: precedence jargon and literal winning that should NOT trigger
 
 The last write wins in this store.

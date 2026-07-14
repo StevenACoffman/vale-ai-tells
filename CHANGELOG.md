@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **FigurativeQuiet**: New rule. Flags "quiet" for personified
+  inaction: a check that "stays quiet," a log that "goes quiet," a
+  handler that "quietly drops" the error, "quietly ships," "quietly
+  falls back." Gated on the construction (an inanimate subject going
+  silent, or "quietly" ahead of an action verb), so literal quiet (a
+  room, a person, the quiet flag) never matches. Named for the tell
+  this package's own prose leaned on all session.
 - **FigurativeWins**: New rule. Flags "wins" framing a choice as a
   contest: an approach that "wins the day," a design that "wins out," a
   refactor that is "a quick win," "a winning combination," "for the

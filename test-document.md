@@ -705,6 +705,18 @@ The query narrows itself to the smallest range.
 
 The config tunes itself over time.
 
+## FigurativeQuiet
+
+The check stays quiet on valid input.
+
+The log goes quiet after the retry.
+
+The queue quiets down overnight.
+
+The handler quietly drops the error.
+
+The adapter quietly falls back to the default.
+
 ## FigurativeWins
 
 This approach wins the day.
