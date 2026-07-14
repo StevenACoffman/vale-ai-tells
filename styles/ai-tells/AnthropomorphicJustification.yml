@@ -124,6 +124,13 @@ tokens:
   - behaving itself
   - on its best behavior
   - on its best behaviour
+  # Reflexive agency: an operation performs a deliberate act on itself
+  # ("the query narrows itself," "the config tunes itself"). The
+  # self-directed verb is the tell. "Sorts itself out" and "resolves
+  # itself" ride along as the idiomatic cousins.
+  - (?:narrows?|scopes?|tunes?|optimi[sz]es?|tightens?|rewrites?|configures?|corrects?|prunes?|trims?) itself
+  - sorts? itself out
+  - resolves? itself
   - pretend(?:s|ed|ing)? otherwise
   - pretend(?:s|ed|ing)? not to
   - cares? deeply

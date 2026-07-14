@@ -38,6 +38,14 @@ tokens:
   - "\\brid(?:es|ing)? the momentum\\b"
   - "\\brid(?:es|ing)? high\\b"
 
+  # --- Vehicle exploitation: an operation dressed as a passenger on the
+  # infrastructure it merely uses ("the query rides the index," "the lookup
+  # rides the cache," "the scan rides the hot path"). The mechanism noun is
+  # the gate and the set stays to software infrastructure that cannot be
+  # literally ridden, so a literal "rides the bus" or "rides the elevator"
+  # never enters the rule.
+  - "\\brid(?:es|ing)? the (?:index|cache|(?:hot|fast|slow|happy|read|write|critical) path|pipeline|queue|wire|backbone|mainline|gradient|event loop|fast lane)\\b"
+
   # --- Supervision and gambling idioms ("riding herd on the linters,"
   # "let it ride until the next release").
   - "\\brid(?:es|ing)? herd on\\b"

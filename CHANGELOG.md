@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- vale off -->
+
+### Added
+
+- **FigurativeWins**: New rule. Flags "wins" framing a choice as a
+  contest: an approach that "wins the day," a design that "wins out," a
+  refactor that is "a quick win," "a winning combination," "for the
+  win." Complement-gated in the FigurativeSits mold, so the precedence
+  sense ("last write wins," "the more specific rule wins") and literal
+  winning (a team, a game) stay quiet.
+
+### Changed
+
+- **FigurativeRides**: Add the vehicle-exploitation shape, where an
+  operation is dressed as a passenger on the infrastructure it merely
+  uses ("the query rides the index," "the lookup rides the cache," "the
+  scan rides the hot path"). Gated on a curated software-mechanism noun
+  set, so a literal "rides the bus" stays quiet.
+- **AnthropomorphicJustification**: Add the reflexive-agency shape,
+  where an operation performs a deliberate act on itself ("the query
+  narrows itself," "the config tunes itself," "the rule set prunes
+  itself"). Self-healing and self-correcting adjective forms stay quiet.
+
+<!-- vale on -->
+
 ## [1.24.0] - 2026-07-13
 
 <!-- vale off -->

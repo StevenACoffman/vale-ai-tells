@@ -701,6 +701,22 @@ Latency puts the matter to rest.
 
 The whole rollout hinges on whether the cache holds.
 
+The query narrows itself to the smallest range.
+
+The config tunes itself over time.
+
+## FigurativeWins
+
+This approach wins the day.
+
+The simpler design wins out.
+
+Caching is a quick win.
+
+That refactor is an easy win.
+
+It is a winning combination of speed and clarity.
+
 ## NarrativePivots (game / playbook / script)
 
 This release changed the game for our customers.
@@ -982,6 +998,10 @@ The cache rides on top of Redis.
 The launch is riding the wave of adoption.
 
 The plan rides on whether CI stays green.
+
+The query rides the index.
+
+The lookup rides the cache.
 
 ## FigurativeCarries
 

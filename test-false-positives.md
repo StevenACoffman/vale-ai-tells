@@ -310,6 +310,28 @@ He rides a horse on weekends.
 
 The kids ride bikes to school.
 
+## FigurativeRides: literal riding and vehicles that should NOT trigger
+
+She rides the bus to campus every morning.
+
+He rides the elevator to the tenth floor.
+
+## FigurativeWins: precedence jargon and literal winning that should NOT trigger
+
+The last write wins in this store.
+
+The more specific rule wins when they conflict.
+
+The home team wins most games at night.
+
+She wins the chess tournament again.
+
+## AnthropomorphicJustification (self-*): technical adjectives that should NOT trigger
+
+A self-healing cluster restarts failed nodes.
+
+The system is self-correcting by design.
+
 ## FigurativeCarries: literal carrying that should NOT trigger
 
 The courier carries a backpack full of parts.
