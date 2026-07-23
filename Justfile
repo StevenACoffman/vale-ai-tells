@@ -121,6 +121,10 @@ stats:
 
 # --- Release ---
 
+# Build the release artifacts locally (same script CI runs)
+build-packages out="dist":
+  scripts/build-packages.sh {{ out }}
+
 # Create an annotated release tag (e.g. just tag v1.5.0)
 tag version:
   git tag -a {{ version }} -m "{{ version }}"
@@ -130,11 +134,10 @@ tag version:
 update-release-notes version:
   set -euo pipefail
   ver="{{ version }}"
-  ver_no_v="${ver#v}"
   repo=$(gh repo view --json nameWithOwner -q .nameWithOwner)
   prev_tag=$(git describe --tags --abbrev=0 "${ver}^" 2>/dev/null || true)
-  notes=$(awk "/^## \[${ver_no_v}\]/{found=1; next} found && /^## \[/{exit} found && /^<!-- vale/{next} found{print}" CHANGELOG.md \
-    | awk 'BEGIN{b=1} /^[[:space:]]*$/{if(!b)printf "\n"; b=1; next} {b=0; print}')
+  # Same extractor the release workflow uses (scripts/extract-release-notes.sh).
+  notes=$(scripts/extract-release-notes.sh "${ver}")
   if [[ -n "$prev_tag" ]]; then
     notes+=$'\n\n'"**Full Changelog**: https://github.com/${repo}/compare/${prev_tag}...${ver}"
   fi

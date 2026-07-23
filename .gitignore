@@ -17,6 +17,9 @@ styles/write-good/
 # Temporary files
 tmp/
 
+# Release artifacts (built by scripts/build-packages.sh)
+dist/
+
 # OS files
 .DS_Store
 Thumbs.db

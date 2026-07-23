@@ -16,39 +16,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create packages
-        run: |
-          cd styles
-
-          # ai-tells and ai-tells-commits are style-only packages (flat zip)
-          zip -r ../ai-tells.zip ai-tells
-          zip -r ../ai-tells-commits.zip ai-tells-commits
-
-          # ai-tells-experimental includes Tengo scripts in config/.
-          # Vale's package sync expects a top-level dir wrapping
-          # a styles/ subtree so it can merge into StylesPath.
-          cd ..
-          mkdir -p pkg/ai-tells-experimental/styles
-          cp -r styles/ai-tells-experimental pkg/ai-tells-experimental/styles/
-          # Copy config but exclude the project vocabulary (not part of the package)
-          rsync -a --exclude='vocabularies/' styles/config/ pkg/ai-tells-experimental/styles/config/
-          cd pkg && zip -r ../ai-tells-experimental.zip ai-tells-experimental
+      - name: Build packages
+        run: scripts/build-packages.sh dist
 
       - name: Extract release notes from CHANGELOG
         run: |
-          VERSION="${GITHUB_REF#refs/tags/v}"
-          awk -v ver="$VERSION" '
-            $0 ~ "^## \\[" ver "\\]" {flag=1; next}
-            /^## \[/ {flag=0}
-            flag
-          ' CHANGELOG.md \
-            | sed -E '/^<!-- vale (off|on) -->$/d' \
-            | awk 'NF{found=1} found' \
-            > release-notes.md
-          if [ ! -s release-notes.md ]; then
-            echo "No CHANGELOG section found for v${VERSION}" >&2
-            exit 1
-          fi
+          scripts/extract-release-notes.sh "${GITHUB_REF#refs/tags/}" release-notes.md
           echo "--- release-notes.md ---"
           cat release-notes.md
 
@@ -56,8 +29,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            ai-tells.zip
-            ai-tells-commits.zip
-            ai-tells-experimental.zip
+            dist/ai-tells.zip
+            dist/ai-tells-commits.zip
+            dist/ai-tells-experimental.zip
           body_path: release-notes.md
           generate_release_notes: true

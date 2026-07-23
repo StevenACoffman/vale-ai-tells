@@ -45,13 +45,27 @@ every commit that should appear in the changelog needs a lowercase type prefix:
 `cog` drops any subject without a recognized prefix, such as `Fix a bug`, from
 the changelog. Use `fix: a bug` instead.
 
+## How the version section reaches the tag
+
+`cog` writes a `## [vX.Y.Z]` changelog section only when it cuts that version.
+The section, the commit that carries it, and the tag must all land together,
+because the release workflow reads `CHANGELOG.md` from the tagged commit.
+`cog bump` does all three in one step, so prefer it over tagging by hand.
+Tagging first and regenerating the changelog afterward leaves the section in a
+commit that sits after the tag, and the workflow then finds no notes.
+
 ## Release flow
 
 ### 1. Confirm the tree is clean and linted
 
 ```bash
 just lint
+git status --short
 ```
+
+`cog bump` refuses to run against an unclean tree, so commit or stash any
+pending work first. Give each commit a Conventional Commit prefix so `cog` can
+classify it.
 
 ### 2. Preview the pending changelog
 
@@ -59,57 +73,102 @@ just lint
 just preview-changelog
 ```
 
-This shows the entries `cog` generates for the commits since the last tag.
-If a commit is missing, check its subject for a valid Conventional Commit
-prefix.
+This shows the entries `cog` generates for the commits since the last tag. If a
+commit is missing, check its subject for a valid Conventional Commit prefix.
 
-### 3. Regenerate the changelog
-
-```bash
-just generate-changelog
-```
-
-This overwrites `CHANGELOG.md`. Review the result and confirm the new version
-section is present, then commit it:
-
-```bash
-git add CHANGELOG.md
-git commit -m "chore: update changelog for vX.Y.Z"
-```
-
-### 4. Update the README rule count
+### 3. Update the README rule count
 
 If you added or removed rules, update the rule count and the package download
-URLs in `README.md` so they point at the new tag.
+URLs in `README.md` so they point at the new tag. Commit that change before you
+bump.
 
-### 5. Tag, push, and publish
+### 4. Cut the version with cog bump
 
 ```bash
-just release vX.Y.Z
+cog bump --version 1.26.0
 ```
 
-The `release` recipe does the following:
+`cog bump` writes the `## [v1.26.0]` section into `CHANGELOG.md`, commits it, and
+creates the tag on that commit. Use `--auto` instead of `--version` to let `cog`
+pick the next number from the Conventional Commit history. Confirm the notes
+extract before you push:
 
-1. Creates an annotated tag with `just tag`.
-2. Pushes the branch and the tag.
-3. Waits for the `release.yml` GitHub Actions workflow to finish.
-4. Copies the version's `CHANGELOG.md` section into the release notes with
-   `just update-release-notes`.
-5. Prints the release URL.
+```bash
+scripts/extract-release-notes.sh v1.26.0
+```
+
+### 5. Build the artifacts locally
+
+```bash
+just build-packages
+unzip -l dist/ai-tells-experimental.zip
+```
+
+This step is optional, and it lets you inspect the exact zips a release
+publishes.
+
+### 6. Publish
+
+Push the commit and the tag, then let the workflow build and attach the zips:
+
+```bash
+git push && git push --tags
+```
+
+To publish without waiting on the workflow, create the release from the local
+artifacts instead:
+
+```bash
+scripts/extract-release-notes.sh v1.26.0 release-notes.md
+gh release create v1.26.0 \
+  dist/ai-tells.zip dist/ai-tells-commits.zip dist/ai-tells-experimental.zip \
+  --title v1.26.0 --notes-file release-notes.md
+git push && git push --tags
+```
+
+The tag push still triggers the workflow, which updates the same release.
 
 ## What the workflow builds
 
 The `release.yml` workflow triggers on any `v*` tag and attaches three
-artifacts to the release. The workflow builds:
+artifacts to the release:
 
 - `ai-tells.zip`: the main prose style package.
 - `ai-tells-commits.zip`: the commit-message style package.
 - `ai-tells-experimental.zip`: the experimental package, including its Tengo
   scripts under `config/`.
 
-The workflow also extracts release notes from the matching `CHANGELOG.md`
-section. If no section matches the tag, the workflow fails, so make sure step 3
-ran before you tag.
+The workflow does not build these inline. It calls two scripts that you can also
+run locally:
+
+- `scripts/build-packages.sh [output-dir]` builds the three zips into
+  `dist/` by default. Run `just build-packages` to inspect the exact artifacts a
+  release would publish.
+- `scripts/extract-release-notes.sh <version> [output-file]` prints the
+  `CHANGELOG.md` section for a version and exits non-zero when no section
+  matches. Use it to check the notes before you tag.
+
+If no section matches the tag, the workflow fails, so cut the version with
+`cog bump` (step 4) rather than tagging by hand.
+
+## Recovering from a tag placed too early
+
+If a tag already points at a commit whose `CHANGELOG.md` has no matching
+section, the release cannot publish. Confirm the gap, then re-cut the version.
+
+```bash
+scripts/extract-release-notes.sh v1.26.0   # reports "No CHANGELOG section found"
+```
+
+Delete the tag locally and on the remote, then run the release flow from step 4.
+This is safe only when no release consumes the tag yet. Check with
+`gh release view v1.26.0` first.
+
+```bash
+git tag -d v1.26.0
+git push origin :refs/tags/v1.26.0
+cog bump --version 1.26.0
+```
 
 ## Fixing a published release
 
