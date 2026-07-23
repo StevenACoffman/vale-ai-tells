@@ -45,6 +45,7 @@ whitepaper
 yamllint
 
 # Author and tool names
+cocogitto
 Dasel
 Gorrie
 Kassorla
