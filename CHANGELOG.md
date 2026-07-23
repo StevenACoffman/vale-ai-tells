@@ -1,11 +1,15 @@
 # Changelog
 
-## Unreleased ([2d6b204..c6f0ae5](https://github.com/aitells/vale-ai-tells/compare/2d6b204..c6f0ae5))
+## [v1.26.0](https://github.com/aitells/vale-ai-tells/compare/v1.25.0..v1.26.0) - 2026-07-23
 
 ### Bug Fixes
 
 - vocab addition - ([c6f0ae5](https://github.com/aitells/vale-ai-tells/commit/c6f0ae57bb38dd66cfa51549c2347351e29c223d)) - Steve Coffman
 - EmphaticCopula matched bold and VerbTricolon crossed sentences - ([5137460](https://github.com/aitells/vale-ai-tells/commit/513746064f8d4eef88978e287d7eb39674187335)) - Steve Coffman
+
+#### Continuous Integration
+
+- package releases via local scripts and document the flow - ([dc7dd21](https://github.com/aitells/vale-ai-tells/commit/dc7dd2185660104b8b2054b6fe96e681702ddc39)) - Steve Coffman
 
 - - -
 
