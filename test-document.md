@@ -343,6 +343,14 @@ Just code. Just ship.
 
 The workflow is just write, just commit.
 
+## EmphaticCopula
+
+This *is* the correct approach.
+
+You must *not* skip the check.
+
+It all comes down to _the_ details.
+
 ## VerbTricolon
 
 ### Gerund tricolons

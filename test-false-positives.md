@@ -236,6 +236,14 @@ The phone unlocks with a fingerprint.
 
 The achievement unlocked at level 30.
 
+## EmphaticCopula: bold is not italic (should NOT trigger)
+
+Bold marks a defined term, and **the** term here reads as bold.
+
+A bolded **is** signals a defined word.
+
+Treat a bold **not** as ordinary emphasis.
+
 ## VerbTricolon: noun lists that should NOT trigger
 
 The building plan, the meeting agenda, and the ceiling height were all wrong.
@@ -251,6 +259,8 @@ They need servers, databases, and load balancers.
 We use PostgreSQL, Redis, and Elasticsearch.
 
 You want speed, reliability, and simplicity.
+
+The service logs events, tracks metrics. It reports totals, and archives records.
 
 ## ShipOveruse: suffixes and compounds that should NOT trigger
 
